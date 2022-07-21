@@ -283,12 +283,12 @@ else if((comparehour==0) && (comparemin<0))
                         <b><center>일별 3시간 트래픽</center></b>
                                               <div style="display:inline-block; float:right; margin-right:10px;">
                                                   평균<br />
-                                                <asp:Label ID="Label102" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                                                <asp:Label ID="Label102" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                                                 <asp:Label ID="Label103" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label><br />
                                                   </div>
                                             <div style="display:inline-block; float:right; margin-right:10px;">
                                                   최대값<br />
-                                            <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                                            <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                                             <asp:Label ID="Label44" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label><br />
                                             <asp:Label ID="Label45" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label>
                                             </div>    
@@ -556,12 +556,12 @@ $('#div100').html('<canvas id="myChart" width="400" height="200"></canvas>'); //
                                     <b><center>일별 트래픽</center></b>
                                         <div style="display:inline-block; float:right; margin-right:10px;">
                                         평균<br />
-                                        <asp:Label ID="Label100" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                                        <asp:Label ID="Label100" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                                         <asp:Label ID="Label101" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label><br />
                                         </div>
                                         <div style="display:inline-block; float:right;  margin-right:20px;" >
                                         최대값<br />
-                                        <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                                        <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                                         <asp:Label ID="Label41" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label><br />
                                         <asp:Label ID="Label42" runat="server" Text="Label" Font-Size="Smaller" Visible="false"></asp:Label>
                                         </div>

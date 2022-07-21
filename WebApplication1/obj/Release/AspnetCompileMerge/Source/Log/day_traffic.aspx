@@ -505,7 +505,7 @@ function addData(chart, data) {
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                    <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                     
                     
                 </div>
@@ -695,7 +695,7 @@ Chart.pluginService.register(randomColorPlugin);
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                    <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                     
                 </div>
 
@@ -856,7 +856,7 @@ function addData(chart, data) {
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label46" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                    <asp:Label ID="Label46" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                     
                 </div>
 
@@ -1017,7 +1017,7 @@ $(function () {
 
     </script>
                     최대값<br />
-                    <asp:Label ID="Label49" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">Mb/s</font><br />
+                    <asp:Label ID="Label49" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
                     
                 </div>
 
