@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\VIEW.csproj": {}
+    "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj": {}
   },
   "projects": {
-    "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\VIEW.csproj": {
+    "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\VIEW.csproj",
+        "projectUniqueName": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj",
         "projectName": "VIEW",
-        "projectPath": "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\VIEW.csproj",
+        "projectPath": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj",
         "packagesPath": "C:\\Users\\jun\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\obj\\",
+        "outputPath": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

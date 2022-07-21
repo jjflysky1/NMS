@@ -48,7 +48,7 @@ namespace pingtime
                                 //}
 
                                 MAIL.Subject = "장비 복구 알림";
-                                MAIL.Body = serverip + " 장비가 복구 되었습니다. 시간 : " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+                                MAIL.Body = serverip + " 장비가 복구 되었습니다. " + Environment.NewLine + "시간 : " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
                                 MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                                 MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
 
@@ -118,7 +118,7 @@ namespace pingtime
                                 //}
 
                                 MAIL.Subject = "장비 다운 알림";
-                                MAIL.Body = serverip + " 장비가 다운 되었습니다. 시간 : " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+                                MAIL.Body = serverip + " 장비가 다운 되었습니다." + Environment.NewLine + "시간 : " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
                                 MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                                 MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
 

@@ -77,3 +77,15 @@ D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj
 D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\pingtime.dll
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\Renci.SshNet.dll
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\pingtime\bin\Release\Renci.SshNet.xml
+D:\c#\c# 소스\source\repos\NMS\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\pingtime\obj\Release\pingtime.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\pingtime\obj\Release\pingtime.dll
+D:\c#\c# 소스\source\repos\NMS\pingtime\obj\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\NMS\pingtime\obj\Release\pingtime.csproj.AssemblyReference.cache
