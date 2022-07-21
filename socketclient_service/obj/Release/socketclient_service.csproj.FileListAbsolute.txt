@@ -1,0 +1,8 @@
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\bin\Release\socketclient_service.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\bin\Release\socketclient_service.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\bin\Release\socketclient_service.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\obj\Release\socketclient_service.ProjectInstaller.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\obj\Release\socketclient_service.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\obj\Release\socketclient_service.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\obj\Release\socketclient_service.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\socketclient_service\obj\Release\socketclient_service.pdb

@@ -1,0 +1,16 @@
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\LNM_TRA.exe.config
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\LNM_TRA.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\LNM_TRA.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\AP.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\SecurityServer.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\MySql.Data.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\SnmpSharpNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\AP.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\SecurityServer.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\bin\Debug\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\obj\Debug\LNM_TRA.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\obj\Debug\LNM_TRA.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\obj\Debug\LNM_TRA.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\obj\Debug\LNM_TRA.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM_TRA\obj\Debug\LNM_TRA.pdb

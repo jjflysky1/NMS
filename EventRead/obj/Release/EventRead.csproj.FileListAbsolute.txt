@@ -1,0 +1,27 @@
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\bin\Release\EventRead.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\bin\Release\EventRead.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csproj.CopyComplete
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.pdb
+C:\업무\중소기업 중앙회\Process\EventRead\bin\Release\EventRead.dll
+C:\업무\중소기업 중앙회\Process\EventRead\bin\Release\EventRead.pdb
+C:\업무\중소기업 중앙회\Process\EventRead\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\EventRead\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.csproj.CopyComplete
+C:\업무\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.dll
+C:\업무\중소기업 중앙회\Process\EventRead\obj\Release\EventRead.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\bin\Release\EventRead.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\bin\Release\EventRead.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\bin\Release\MySql.Data.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\obj\Release\EventRead.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\obj\Release\EventRead.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\obj\Release\EventRead.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\EventRead\obj\Release\EventRead.pdb

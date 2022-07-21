@@ -1,0 +1,61 @@
+C:\Users\jun\source\repos\Process\Client\bin\Release\Client.exe
+C:\Users\jun\source\repos\Process\Client\bin\Release\Client.pdb
+C:\Users\jun\source\repos\Process\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\Client\obj\Release\Client.exe
+C:\Users\jun\source\repos\Process\Client\obj\Release\Client.pdb
+C:\Users\jun\source\repos\Process\Client\bin\Release\Client.exe.config
+C:\Users\jun\source\repos\Process\Client\bin\Release\Client.XmlSerializers.dll
+C:\Users\jun\source\repos\Process\Client\obj\Release\Client.XmlSerializers.dll
+C:\Users\jun\source\repos\Process\Client\obj\Release\Client.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\bin\Release\Client.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\bin\Release\Client.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\bin\Release\Client.XmlSerializers.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\bin\Release\Client.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\obj\Release\Client.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\obj\Release\Client.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Client\obj\Release\Client.XmlSerializers.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\bin\Release\Client.exe.config
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\bin\Release\Client.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\bin\Release\Client.XmlSerializers.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\bin\Release\Client.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\obj\Release\Client.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\obj\Release\Client.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\obj\Release\Client.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Client\obj\Release\Client.XmlSerializers.dll
+C:\업무\중소기업 중앙회\Process\Client\bin\Release\Client.exe.config
+C:\업무\중소기업 중앙회\Process\Client\bin\Release\Client.exe
+C:\업무\중소기업 중앙회\Process\Client\bin\Release\Client.XmlSerializers.dll
+C:\업무\중소기업 중앙회\Process\Client\bin\Release\Client.pdb
+C:\업무\중소기업 중앙회\Process\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\Client\obj\Release\Client.exe
+C:\업무\중소기업 중앙회\Process\Client\obj\Release\Client.pdb
+C:\업무\중소기업 중앙회\Process\Client\obj\Release\Client.XmlSerializers.dll
+C:\업무\중소기업 중앙회\Process\Client\obj\Release\Client.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.XmlSerializers.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.XmlSerializers.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe.config
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.XmlSerializers.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.XmlSerializers.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.XmlSerializers.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\bin\Release\Client.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.XmlSerializers.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\Client\obj\Release\Client.csproj.AssemblyReference.cache

@@ -1,0 +1,10 @@
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\License\bin\Release\License.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\License\bin\Release\License.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\License\bin\Release\License.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\License\bin\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.pdb

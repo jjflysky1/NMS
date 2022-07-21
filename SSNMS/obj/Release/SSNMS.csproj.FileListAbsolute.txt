@@ -1,0 +1,7 @@
+C:\Users\jun\source\repos\Process\SSNMS\bin\Release\SSNMS.exe
+C:\Users\jun\source\repos\Process\SSNMS\bin\Release\SSNMS.pdb
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.csproj.GenerateResource.Cache
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.exe
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.pdb

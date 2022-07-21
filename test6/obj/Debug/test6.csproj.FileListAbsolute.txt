@@ -1,0 +1,9 @@
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\bin\Debug\test6.exe.config
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\bin\Debug\test6.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\bin\Debug\test6.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\bin\Debug\SnmpSharpNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\obj\Debug\test6.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\obj\Debug\test6.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\obj\Debug\test6.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\obj\Debug\test6.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\test6\obj\Debug\test6.pdb

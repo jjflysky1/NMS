@@ -1,0 +1,13 @@
+C:\업무\중소기업 중앙회\Process\test3\bin\Release\test3.exe.config
+C:\업무\중소기업 중앙회\Process\test3\bin\Release\test3.exe
+C:\업무\중소기업 중앙회\Process\test3\bin\Release\test3.pdb
+C:\업무\중소기업 중앙회\Process\test3\obj\Release\test3.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\test3\obj\Release\test3.exe
+C:\업무\중소기업 중앙회\Process\test3\obj\Release\test3.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\test3.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\test3.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\test3.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\test3.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\test3.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\test3.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\test3.csprojAssemblyReference.cache

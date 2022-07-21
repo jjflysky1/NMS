@@ -1,0 +1,9 @@
+oid 값넣기
+insert into server_oid_list(serverip, model, oid, description)
+SELECT '192.168.215.231', model, oid, description FROM all_oid WHERE model = 'CISCO_2960X-24PD-L'
+
+a테이블에 없는거 b로 넣기
+
+SELECT service.serverip from service left outer join server_hd on service.serverip=server_hd.serverip where server_hd.serverip is null
+
+rows to columns

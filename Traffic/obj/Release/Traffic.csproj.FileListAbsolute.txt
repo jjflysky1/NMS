@@ -1,0 +1,54 @@
+C:\Users\jun\source\repos\Process\Traffic\obj\Release\Traffic.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\Traffic.dll
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\Traffic.pdb
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\Renci.SshNet.dll
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\Renci.SshNet.xml
+C:\Users\jun\source\repos\Process\Traffic\obj\Release\Traffic.dll
+C:\Users\jun\source\repos\Process\Traffic\obj\Release\Traffic.pdb
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\Traffic\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\Traffic\obj\Release\Traffic.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\obj\Release\Traffic.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\obj\Release\Traffic.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\obj\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\obj\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\Traffic\obj\Release\Traffic.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\Traffic.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\Traffic.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\Renci.SshNet.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\bin\Release\Renci.SshNet.xml
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csproj.CopyComplete
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.pdb
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\Traffic.dll
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\Traffic.pdb
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\Renci.SshNet.dll
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\Traffic\bin\Release\Renci.SshNet.xml
+C:\업무\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.csproj.CopyComplete
+C:\업무\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.dll
+C:\업무\중소기업 중앙회\Process\Traffic\obj\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\obj\Release\Traffic.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\obj\Release\Traffic.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\obj\Release\Traffic.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\obj\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\Traffic\obj\Release\Traffic.pdb

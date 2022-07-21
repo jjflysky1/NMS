@@ -1,0 +1,8 @@
+C:\Users\jun\source\repos\Process\Phone\bin\Release\Phone.dll
+C:\Users\jun\source\repos\Process\Phone\bin\Release\Phone.pdb
+C:\Users\jun\source\repos\Process\Phone\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\Phone\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\Phone\obj\Release\Phone.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\Phone\obj\Release\Phone.dll
+C:\Users\jun\source\repos\Process\Phone\obj\Release\Phone.pdb
+C:\Users\jun\source\repos\Process\Phone\obj\Release\Phone.csprojResolveAssemblyReference.cache

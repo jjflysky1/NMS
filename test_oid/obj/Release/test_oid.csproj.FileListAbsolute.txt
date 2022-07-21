@@ -1,0 +1,10 @@
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\bin\Release\test_oid.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\bin\Release\test_oid.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\bin\Release\test_oid.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\test_oid\obj\Release\test_oid.pdb

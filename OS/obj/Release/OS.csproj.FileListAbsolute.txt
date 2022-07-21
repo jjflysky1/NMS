@@ -1,0 +1,10 @@
+C:\Users\jun\source\repos\Process\OS\obj\Release\OS.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\OS\bin\Release\OS.dll
+C:\Users\jun\source\repos\Process\OS\bin\Release\OS.pdb
+C:\Users\jun\source\repos\Process\OS\bin\Release\Renci.SshNet.dll
+C:\Users\jun\source\repos\Process\OS\bin\Release\Renci.SshNet.xml
+C:\Users\jun\source\repos\Process\OS\obj\Release\OS.dll
+C:\Users\jun\source\repos\Process\OS\obj\Release\OS.pdb
+C:\Users\jun\source\repos\Process\OS\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\OS\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\OS\obj\Release\OS.csprojResolveAssemblyReference.cache

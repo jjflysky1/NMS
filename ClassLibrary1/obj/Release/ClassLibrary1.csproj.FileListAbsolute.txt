@@ -1,0 +1,9 @@
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\Tamir.SharpSSH.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\Org.Mentalis.Security.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\DiffieHellman.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\SERVICECLS.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\SERVICECLS.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\SERVICECLS.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\SERVICECLS.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\ClassLibrary1.csprojResolveAssemblyReference.cache

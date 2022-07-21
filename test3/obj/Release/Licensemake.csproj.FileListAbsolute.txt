@@ -1,0 +1,15 @@
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\bin\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj.AssemblyReference.cache

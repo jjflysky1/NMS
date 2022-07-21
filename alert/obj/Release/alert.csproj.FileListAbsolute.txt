@@ -1,0 +1,45 @@
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\bin\Release\alert.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\bin\Release\alert.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\bin\Release\alert.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.Properties.Resources.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\alert\obj\Release\alert.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\bin\Release\alert.exe.config
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\bin\Release\alert.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\bin\Release\alert.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.Properties.Resources.resources
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.csproj.GenerateResource.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\alert\obj\Release\alert.pdb
+C:\업무\중소기업 중앙회\Process\alert\bin\Release\alert.exe.config
+C:\업무\중소기업 중앙회\Process\alert\bin\Release\alert.exe
+C:\업무\중소기업 중앙회\Process\alert\bin\Release\alert.pdb
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.Properties.Resources.resources
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.csproj.GenerateResource.cache
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.exe
+C:\업무\중소기업 중앙회\Process\alert\obj\Release\alert.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.Properties.Resources.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\bin\Release\alert.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.Properties.Resources.resources
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.pdb

@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3d3da816-b215-4d6d-bea9-1c6fb0ff5762": {
+      "ProjectGuid": "3d3da816-b215-4d6d-bea9-1c6fb0ff5762",
+      "DisplayName": "LNM_TRA",
+      "ColorIndex": 0
+    },
+    "50895147-0983-4ff1-97de-6938230e7d50": {
+      "ProjectGuid": "50895147-0983-4ff1-97de-6938230e7d50",
+      "DisplayName": "LNM",
+      "ColorIndex": 1
+    },
+    "e8be67e6-527c-4bb6-b1c2-3ed0cb41b1a8": {
+      "ProjectGuid": "e8be67e6-527c-4bb6-b1c2-3ed0cb41b1a8",
+      "DisplayName": "License",
+      "ColorIndex": 2
+    },
+    "66ad1b79-a1b2-420d-8568-10654713f0e2": {
+      "ProjectGuid": "66ad1b79-a1b2-420d-8568-10654713f0e2",
+      "DisplayName": "pingtime",
+      "ColorIndex": 3
+    },
+    "0fe458f7-11df-43cf-a905-d1915df73759": {
+      "ProjectGuid": "0fe458f7-11df-43cf-a905-d1915df73759",
+      "DisplayName": "oid_insert",
+      "ColorIndex": 4
+    },
+    "ef48a707-4bf9-491b-8254-423dca97a051": {
+      "ProjectGuid": "ef48a707-4bf9-491b-8254-423dca97a051",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 5
+    },
+    "289bdd1d-d4ac-4896-8f49-1efe9c4174a2": {
+      "ProjectGuid": "289bdd1d-d4ac-4896-8f49-1efe9c4174a2",
+      "DisplayName": "Client",
+      "ColorIndex": 6
+    },
+    "a17a30dc-28fb-4bcd-b7d5-264eba26d1c0": {
+      "ProjectGuid": "a17a30dc-28fb-4bcd-b7d5-264eba26d1c0",
+      "DisplayName": "SNMPTRAP",
+      "ColorIndex": 7
+    },
+    "579e7b67-edb0-4e11-8043-b514224e3a06": {
+      "ProjectGuid": "579e7b67-edb0-4e11-8043-b514224e3a06",
+      "DisplayName": "SecurityServer",
+      "ColorIndex": 8
+    },
+    "2f28c8d5-b1c0-4d62-aeec-5866c83f4c18": {
+      "ProjectGuid": "2f28c8d5-b1c0-4d62-aeec-5866c83f4c18",
+      "DisplayName": "Licensemake",
+      "ColorIndex": 9
+    },
+    "8a4be62b-3481-4ff4-9bd1-c1da9fd867ee": {
+      "ProjectGuid": "8a4be62b-3481-4ff4-9bd1-c1da9fd867ee",
+      "DisplayName": "DBCON",
+      "ColorIndex": 10
+    },
+    "59cc6590-ce26-4d2e-a9be-75f1d3588e7a": {
+      "ProjectGuid": "59cc6590-ce26-4d2e-a9be-75f1d3588e7a",
+      "DisplayName": "Services",
+      "ColorIndex": 11
+    },
+    "4c2453a3-6975-46d6-a7f5-2d668631c69d": {
+      "ProjectGuid": "4c2453a3-6975-46d6-a7f5-2d668631c69d",
+      "DisplayName": "AutoAdd",
+      "ColorIndex": 12
+    },
+    "902d182a-7813-43c5-a2ba-9b76797b2a77": {
+      "ProjectGuid": "902d182a-7813-43c5-a2ba-9b76797b2a77",
+      "DisplayName": "AP",
+      "ColorIndex": 13
+    },
+    "024853c5-e947-44a1-8e59-c7b1718c0e10": {
+      "ProjectGuid": "024853c5-e947-44a1-8e59-c7b1718c0e10",
+      "DisplayName": "alert",
+      "ColorIndex": 14
+    },
+    "fb409c72-fa0a-4584-95e9-d603dd6aff91": {
+      "ProjectGuid": "fb409c72-fa0a-4584-95e9-d603dd6aff91",
+      "DisplayName": "Dashbord_resource",
+      "ColorIndex": 15
+    },
+    "1b5df44b-5c12-45be-af17-4e3b19bc6194": {
+      "ProjectGuid": "1b5df44b-5c12-45be-af17-4e3b19bc6194",
+      "DisplayName": "SocketClient",
+      "ColorIndex": 0
+    },
+    "e87da239-7e81-4259-83e9-2eabf8391c67": {
+      "ProjectGuid": "e87da239-7e81-4259-83e9-2eabf8391c67",
+      "DisplayName": "SSIMCSerivce",
+      "ColorIndex": 1
+    },
+    "3f065d4e-b9e7-4cfb-adb6-154d55b3a158": {
+      "ProjectGuid": "3f065d4e-b9e7-4cfb-adb6-154d55b3a158",
+      "DisplayName": "SSNMService",
+      "ColorIndex": 2
+    },
+    "38e905b4-bbc3-4c28-8e19-aaa0aa7e0db4": {
+      "ProjectGuid": "38e905b4-bbc3-4c28-8e19-aaa0aa7e0db4",
+      "DisplayName": "test6",
+      "ColorIndex": 3
+    },
+    "7e998f88-fe07-4c80-87d7-5399c7d6130b": {
+      "ProjectGuid": "7e998f88-fe07-4c80-87d7-5399c7d6130b",
+      "DisplayName": "test5",
+      "ColorIndex": 4
+    },
+    "5ccb7256-7018-43ab-b8f3-bf739b19249b": {
+      "ProjectGuid": "5ccb7256-7018-43ab-b8f3-bf739b19249b",
+      "DisplayName": "test2",
+      "ColorIndex": 5
+    },
+    "2fc00ada-bfbd-40cd-aed1-d43ae06fc68f": {
+      "ProjectGuid": "2fc00ada-bfbd-40cd-aed1-d43ae06fc68f",
+      "DisplayName": "test_oid",
+      "ColorIndex": 6
+    },
+    "ba6210fe-f202-4696-a196-72c016d68944": {
+      "ProjectGuid": "ba6210fe-f202-4696-a196-72c016d68944",
+      "DisplayName": "test_oid",
+      "ColorIndex": 7
+    },
+    "f4f398f2-2d5b-4c39-9445-c687097f9740": {
+      "ProjectGuid": "f4f398f2-2d5b-4c39-9445-c687097f9740",
+      "DisplayName": "test_oid",
+      "ColorIndex": 8
+    },
+    "9861281c-549a-4ea1-ab4b-a7fb3394b556": {
+      "ProjectGuid": "9861281c-549a-4ea1-ab4b-a7fb3394b556",
+      "DisplayName": "linuxclient",
+      "ColorIndex": 9
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    },
+    "0b0e9ae2-826c-42e6-82e6-4c6428741d52": {
+      "ProjectGuid": "0b0e9ae2-826c-42e6-82e6-4c6428741d52",
+      "DisplayName": "service_reload",
+      "ColorIndex": 10
+    },
+    "b07bae55-ffbc-4a43-bab5-48fedd3f77c8": {
+      "ProjectGuid": "b07bae55-ffbc-4a43-bab5-48fedd3f77c8",
+      "DisplayName": "Service_reload",
+      "ColorIndex": 11
+    }
+  },
+  "NextColorIndex": 12
+}

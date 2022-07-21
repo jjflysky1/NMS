@@ -1,0 +1,261 @@
+C:\Users\jun\source\repos\Process\LNM\bin\Release\LNM.exe
+C:\Users\jun\source\repos\Process\LNM\bin\Release\LNM.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\pingtime.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Renci.SshNet.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\systeminfo.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Traffic.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\changepwd.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\pingtime.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Renci.SshNet.xml
+C:\Users\jun\source\repos\Process\LNM\bin\Release\SecurityServer.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\systeminfo.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Traffic.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\LNM\obj\Release\LNM.exe
+C:\Users\jun\source\repos\Process\LNM\obj\Release\LNM.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\AutoAdd.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Services.pdb
+C:\Users\jun\source\repos\Process\LNM\obj\Release\LNM.csprojResolveAssemblyReference.cache
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Phone.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Phone.pdb
+C:\Users\jun\source\repos\Process\LNM\bin\Release\AutoAdd.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\changepwd.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\SecurityServer.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\SnmpSharpNet.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Services.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Dashbord_resource.dll
+C:\Users\jun\source\repos\Process\LNM\bin\Release\Dashbord_resource.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\LNM.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\LNM.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\changepwd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Dashbord_resource.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Phone.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\SecurityServer.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Services.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\SnmpSharpNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\systeminfo.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\AutoAdd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\changepwd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Dashbord_resource.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Phone.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\SecurityServer.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Services.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\systeminfo.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\obj\Release\LNM.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\obj\Release\LNM.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\obj\Release\LNM.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\LNM\obj\Release\LNM.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\LNM.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\LNM.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\AutoAdd.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\changepwd.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Dashbord_resource.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Phone.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\pingtime.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Renci.SshNet.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\SecurityServer.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Services.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\SnmpSharpNet.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\systeminfo.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Traffic.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\AutoAdd.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\changepwd.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Dashbord_resource.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Phone.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\pingtime.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Renci.SshNet.xml
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\SecurityServer.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Services.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\systeminfo.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\Traffic.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\obj\Release\LNM.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\obj\Release\LNM.csproj.CopyComplete
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\obj\Release\LNM.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\LNM\obj\Release\LNM.pdb
+C:\업무\중소기업 중앙회\Process\LNM\obj\Release\LNM.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\LNM.exe
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\LNM.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\AutoAdd.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\changepwd.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Dashbord_resource.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\EventRead.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Phone.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\pingtime.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Renci.SshNet.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\SecurityServer.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Services.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\SnmpSharpNet.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\systeminfo.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Traffic.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\EventRead.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\AutoAdd.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\changepwd.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Dashbord_resource.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Phone.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\pingtime.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Renci.SshNet.xml
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\SecurityServer.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Services.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\systeminfo.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\Traffic.pdb
+C:\업무\중소기업 중앙회\Process\LNM\obj\Release\LNM.csproj.CopyComplete
+C:\업무\중소기업 중앙회\Process\LNM\obj\Release\LNM.exe
+C:\업무\중소기업 중앙회\Process\LNM\obj\Release\LNM.pdb
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\SNMPTRAP.dll
+C:\업무\중소기업 중앙회\Process\LNM\bin\Release\SNMPTRAP.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe.config
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AP.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\changepwd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\MySql.Data.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SnmpSharpNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AP.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\changepwd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe.config
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AP.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\changepwd.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\MySql.Data.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SnmpSharpNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AP.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\changepwd.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.exe
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\LNM.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\BouncyCastle.Crypto.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Google.Protobuf.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Compression.LZ4.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Hash.xxHash.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Buffers.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Memory.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Ubiety.Dns.Core.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\ZstdNet.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\AutoAdd.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Dashbord_resource.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\EventRead.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Google.Protobuf.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Google.Protobuf.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Compression.LZ4.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\K4os.Hash.xxHash.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\License.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\MySql.Data.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Phone.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Renci.SshNet.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Services.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SNMPTRAP.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Buffers.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Memory.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\systeminfo.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Traffic.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\obj\Release\LNM.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Service_reload.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\SecurityServer.dll.config
+D:\c#\c# 소스\source\repos\Process(mysql)\LNM\bin\Release\Service_reload.pdb

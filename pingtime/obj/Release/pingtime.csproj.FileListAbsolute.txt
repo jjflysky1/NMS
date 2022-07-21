@@ -1,0 +1,79 @@
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\pingtime.dll
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\pingtime.pdb
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\Renci.SshNet.dll
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\pingtime\bin\Release\Renci.SshNet.xml
+C:\Users\jun\source\repos\Process\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\pingtime\obj\Release\pingtime.dll
+C:\Users\jun\source\repos\Process\pingtime\obj\Release\pingtime.pdb
+C:\Users\jun\source\repos\Process\pingtime\obj\Release\pingtime.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\obj\Release\pingtime.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\obj\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\obj\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\pingtime\obj\Release\pingtime.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\pingtime.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\pingtime.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\Renci.SshNet.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\bin\Release\Renci.SshNet.xml
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csproj.CopyComplete
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.pdb
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\pingtime.dll
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\pingtime.pdb
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\Renci.SshNet.dll
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\pingtime\bin\Release\Renci.SshNet.xml
+C:\업무\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.csproj.CopyComplete
+C:\업무\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.dll
+C:\업무\중소기업 중앙회\Process\pingtime\obj\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\MySql.Data.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\MySql.Data.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.xml
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\pingtime.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\bin\Release\Renci.SshNet.xml
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\pingtime\obj\Release\pingtime.pdb

@@ -1,0 +1,9 @@
+C:\Users\jun\source\repos\Process\ClassLibrary2\bin\Release\Service2.dll
+C:\Users\jun\source\repos\Process\ClassLibrary2\bin\Release\Service2.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary2\obj\Release\ClassLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\ClassLibrary2\obj\Release\Service2.dll
+C:\Users\jun\source\repos\Process\ClassLibrary2\obj\Release\Service2.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary2\obj\Release\ClassLibrary2.csprojResolveAssemblyReference.cache
+C:\Users\jun\source\repos\Process\ClassLibrary2\bin\Release\Tamir.SharpSSH.dll
+C:\Users\jun\source\repos\Process\ClassLibrary2\bin\Release\Org.Mentalis.Security.dll
+C:\Users\jun\source\repos\Process\ClassLibrary2\bin\Release\DiffieHellman.dll

@@ -1,0 +1,39 @@
+C:\Users\jun\source\repos\Process\DBCON\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\DBCON\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\DBCON\obj\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\DBCON\obj\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\DBCON\obj\Release\DBCON.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\DBCON\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\DBCON\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\DBCON\obj\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\DBCON\obj\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\DBCON\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\DBCON\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\DBCON\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\DBCON\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\DBCON\obj\Release\DBCON.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.csprojAssemblyReference.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\DBCON\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\DBCON\obj\Release\DBCON.pdb

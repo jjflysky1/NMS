@@ -1,0 +1,14 @@
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Services.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Services.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\MySql.Data.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Renci.SshNet.Async.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Renci.SshNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Renci.SshNet.xml
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\bin\x64\Debug\Renci.SshNet.Async.xml
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\obj\x64\Debug\Services.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\obj\x64\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\obj\x64\Debug\Services.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\obj\x64\Debug\Services.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\Services\obj\x64\Debug\Services.pdb

@@ -1,0 +1,5 @@
+D:\c#\c# 소스\source\repos\Process(mysql)\Service_reload\bin\Release\Service_reload.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\Service_reload\bin\Release\Service_reload.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\Service_reload\obj\Release\Service_reload.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\Service_reload\obj\Release\Service_reload.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\Service_reload\obj\Release\Service_reload.pdb

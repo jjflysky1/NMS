@@ -1,0 +1,46 @@
+C:\Users\jun\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+C:\Users\jun\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.Cache
+C:\Users\jun\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\SSIMCSerivce\bin\Release\SSIMCService.exe
+C:\Users\jun\source\repos\Process\SSIMCSerivce\bin\Release\SSIMCService.pdb
+C:\Users\jun\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCService.exe
+C:\Users\jun\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\bin\Release\SSIMCService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\bin\Release\SSIMCService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\bin\Release\SSIMCService.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\bin\Release\SSIMCService.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCService.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCService.pdb
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\bin\Release\SSIMCService.exe
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\bin\Release\SSIMCService.pdb
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCService.exe
+C:\업무\중소기업 중앙회\Process\SSIMCSerivce\obj\Release\SSIMCService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\bin\Release\SSIMCService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\bin\Release\SSIMCService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\bin\Release\SSIMCService.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\bin\Release\SSIMCService.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\bin\Release\SSIMCService.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.pdb

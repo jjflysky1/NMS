@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LOGIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Computername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LOGINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LOGINResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COMPUTERNAME">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Computername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COMPUTERNAMEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COMPUTERNAMEResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CPU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CPUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MEMORY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MEMORY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MEMORYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MEMORYResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DISK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DISK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DISKResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DISKResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traffic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traffic" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrafficResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrafficResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ALL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CPU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MEMORY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DISK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ALLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ALLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="create_log">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serverip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cpu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memory" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="traffic" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="create_logResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="create_logResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="LOGINSoapIn">
+    <wsdl:part name="parameters" element="tns:LOGIN" />
+  </wsdl:message>
+  <wsdl:message name="LOGINSoapOut">
+    <wsdl:part name="parameters" element="tns:LOGINResponse" />
+  </wsdl:message>
+  <wsdl:message name="COMPUTERNAMESoapIn">
+    <wsdl:part name="parameters" element="tns:COMPUTERNAME" />
+  </wsdl:message>
+  <wsdl:message name="COMPUTERNAMESoapOut">
+    <wsdl:part name="parameters" element="tns:COMPUTERNAMEResponse" />
+  </wsdl:message>
+  <wsdl:message name="OSSoapIn">
+    <wsdl:part name="parameters" element="tns:OS" />
+  </wsdl:message>
+  <wsdl:message name="OSSoapOut">
+    <wsdl:part name="parameters" element="tns:OSResponse" />
+  </wsdl:message>
+  <wsdl:message name="CPUSoapIn">
+    <wsdl:part name="parameters" element="tns:CPU" />
+  </wsdl:message>
+  <wsdl:message name="CPUSoapOut">
+    <wsdl:part name="parameters" element="tns:CPUResponse" />
+  </wsdl:message>
+  <wsdl:message name="MEMORYSoapIn">
+    <wsdl:part name="parameters" element="tns:MEMORY" />
+  </wsdl:message>
+  <wsdl:message name="MEMORYSoapOut">
+    <wsdl:part name="parameters" element="tns:MEMORYResponse" />
+  </wsdl:message>
+  <wsdl:message name="DISKSoapIn">
+    <wsdl:part name="parameters" element="tns:DISK" />
+  </wsdl:message>
+  <wsdl:message name="DISKSoapOut">
+    <wsdl:part name="parameters" element="tns:DISKResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrafficSoapIn">
+    <wsdl:part name="parameters" element="tns:Traffic" />
+  </wsdl:message>
+  <wsdl:message name="TrafficSoapOut">
+    <wsdl:part name="parameters" element="tns:TrafficResponse" />
+  </wsdl:message>
+  <wsdl:message name="ALLSoapIn">
+    <wsdl:part name="parameters" element="tns:ALL" />
+  </wsdl:message>
+  <wsdl:message name="ALLSoapOut">
+    <wsdl:part name="parameters" element="tns:ALLResponse" />
+  </wsdl:message>
+  <wsdl:message name="create_logSoapIn">
+    <wsdl:part name="parameters" element="tns:create_log" />
+  </wsdl:message>
+  <wsdl:message name="create_logSoapOut">
+    <wsdl:part name="parameters" element="tns:create_logResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SysteminfoSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <wsdl:input message="tns:LOGINSoapIn" />
+      <wsdl:output message="tns:LOGINSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COMPUTERNAME">
+      <wsdl:input message="tns:COMPUTERNAMESoapIn" />
+      <wsdl:output message="tns:COMPUTERNAMESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OS">
+      <wsdl:input message="tns:OSSoapIn" />
+      <wsdl:output message="tns:OSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CPU">
+      <wsdl:input message="tns:CPUSoapIn" />
+      <wsdl:output message="tns:CPUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MEMORY">
+      <wsdl:input message="tns:MEMORYSoapIn" />
+      <wsdl:output message="tns:MEMORYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DISK">
+      <wsdl:input message="tns:DISKSoapIn" />
+      <wsdl:output message="tns:DISKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traffic">
+      <wsdl:input message="tns:TrafficSoapIn" />
+      <wsdl:output message="tns:TrafficSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ALL">
+      <wsdl:input message="tns:ALLSoapIn" />
+      <wsdl:output message="tns:ALLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="create_log">
+      <wsdl:input message="tns:create_logSoapIn" />
+      <wsdl:output message="tns:create_logSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SysteminfoSoap" type="tns:SysteminfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <soap:operation soapAction="http://tempuri.org/LOGIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COMPUTERNAME">
+      <soap:operation soapAction="http://tempuri.org/COMPUTERNAME" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OS">
+      <soap:operation soapAction="http://tempuri.org/OS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CPU">
+      <soap:operation soapAction="http://tempuri.org/CPU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MEMORY">
+      <soap:operation soapAction="http://tempuri.org/MEMORY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DISK">
+      <soap:operation soapAction="http://tempuri.org/DISK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traffic">
+      <soap:operation soapAction="http://tempuri.org/Traffic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ALL">
+      <soap:operation soapAction="http://tempuri.org/ALL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create_log">
+      <soap:operation soapAction="http://tempuri.org/create_log" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SysteminfoSoap12" type="tns:SysteminfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <soap12:operation soapAction="http://tempuri.org/LOGIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COMPUTERNAME">
+      <soap12:operation soapAction="http://tempuri.org/COMPUTERNAME" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OS">
+      <soap12:operation soapAction="http://tempuri.org/OS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CPU">
+      <soap12:operation soapAction="http://tempuri.org/CPU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MEMORY">
+      <soap12:operation soapAction="http://tempuri.org/MEMORY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DISK">
+      <soap12:operation soapAction="http://tempuri.org/DISK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traffic">
+      <soap12:operation soapAction="http://tempuri.org/Traffic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ALL">
+      <soap12:operation soapAction="http://tempuri.org/ALL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create_log">
+      <soap12:operation soapAction="http://tempuri.org/create_log" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Systeminfo">
+    <wsdl:port name="SysteminfoSoap" binding="tns:SysteminfoSoap">
+      <soap:address location="http://192.168.0.190:75/soap/Systeminfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SysteminfoSoap12" binding="tns:SysteminfoSoap12">
+      <soap12:address location="http://192.168.0.190:75/soap/Systeminfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

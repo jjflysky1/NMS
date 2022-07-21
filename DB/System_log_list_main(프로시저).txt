@@ -1,0 +1,49 @@
+BEGIN
+
+	  DROP TEMPORARY TABLE IF EXISTS temp_log;
+	 CREATE TEMPORARY TABLE temp_log
+	(
+		no int NOT NULL AUTO_INCREMENT,
+		serverip varchar(50),
+		computer_name varchar(50),
+		memory varchar(50),
+		traffic varchar(50),
+		time datetime,
+		log_time int,
+		hd varchar(50),
+		UNIQUE KEY DA_AUTO_INCREMENT_TEST_IDX01(no)
+	);
+
+	DROP TEMPORARY TABLE IF EXISTS temp_log2;
+	 CREATE TEMPORARY TABLE temp_log2
+	(
+		no int  NOT NULL,
+		serverip varchar(50),
+		computer_name varchar(50),
+		memory varchar(50),
+		traffic varchar(50),
+		time datetime,
+		log_time int,
+		hd varchar(50)
+	);
+
+
+   set @sql := CONCAT("insert into temp_log(serverip, computer_name, log_time)
+   select serverip , computer_name, log_time from service_server ",search);
+
+	PREPARE stmt from @sql; 
+	EXECUTE stmt;
+	DEALLOCATE PREPARE stmt;
+
+
+	set @sql := CONCAT("insert into temp_log2(no, serverip, computer_name, log_time)
+	select no, serverip, computer_name, log_time  from temp_log where ",where1);
+
+	PREPARE stmt from @sql; 
+	EXECUTE stmt;
+	DEALLOCATE PREPARE stmt;
+
+	select no, serverip, computer_name,log_time from temp_log2 ;
+	
+	
+END

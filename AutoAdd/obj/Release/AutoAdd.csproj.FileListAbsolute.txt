@@ -1,0 +1,51 @@
+C:\Users\jun\source\repos\Process\AutoAdd\bin\Release\AutoAdd.dll
+C:\Users\jun\source\repos\Process\AutoAdd\bin\Release\AutoAdd.pdb
+C:\Users\jun\source\repos\Process\AutoAdd\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\AutoAdd\bin\Release\DBCON.pdb
+C:\Users\jun\source\repos\Process\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\AutoAdd\obj\Release\AutoAdd.dll
+C:\Users\jun\source\repos\Process\AutoAdd\obj\Release\AutoAdd.pdb
+C:\Users\jun\source\repos\Process\AutoAdd\obj\Release\AutoAdd.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\bin\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\bin\Release\AutoAdd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\obj\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\AutoAdd\obj\Release\AutoAdd.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\bin\Release\AutoAdd.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\bin\Release\AutoAdd.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\bin\Release\DBCON.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.dll
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.pdb
+C:\업무\중소기업 중앙회\Process\AutoAdd\bin\Release\AutoAdd.dll
+C:\업무\중소기업 중앙회\Process\AutoAdd\bin\Release\AutoAdd.pdb
+C:\업무\중소기업 중앙회\Process\AutoAdd\bin\Release\DBCON.dll
+C:\업무\중소기업 중앙회\Process\AutoAdd\bin\Release\DBCON.pdb
+C:\업무\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+C:\업무\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.dll
+C:\업무\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.pdb
+C:\업무\중소기업 중앙회\Process\AutoAdd\obj\Release\AutoAdd.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\AutoAdd.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\DBCON.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\MySql.Data.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\DBCON.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.dll
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\AutoAdd.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\AutoAdd.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.dll
+D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.pdb

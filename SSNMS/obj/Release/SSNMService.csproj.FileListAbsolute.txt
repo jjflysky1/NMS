@@ -1,0 +1,49 @@
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.Cache
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\SSNMS\bin\Release\SSNMService.exe
+C:\Users\jun\source\repos\Process\SSNMS\bin\Release\SSNMService.pdb
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMService.exe
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMService.pdb
+C:\Users\jun\source\repos\Process\SSNMS\obj\Release\SSNMService.csprojResolveAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\bin\Release\SSNMService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\bin\Release\SSNMService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process\SSNMS\obj\Release\SSNMService.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\bin\Release\SSNMService.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\bin\Release\SSNMService.pdb
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csprojAssemblyReference.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.exe
+\\192.168.0.190\김형준 - 설치파일 저장\백업\업무\NMS 소스관리\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.pdb
+C:\업무\중소기업 중앙회\Process\SSNMS\bin\Release\SSNMService.exe
+C:\업무\중소기업 중앙회\Process\SSNMS\bin\Release\SSNMService.pdb
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.exe
+C:\업무\중소기업 중앙회\Process\SSNMS\obj\Release\SSNMService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\bin\Release\SSNMService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\bin\Release\SSNMService.pdb
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csprojAssemblyReference.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.exe
+C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\bin\Release\SSNMService.exe.config
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\bin\Release\SSNMService.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\bin\Release\SSNMService.pdb
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.exe
+D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.pdb

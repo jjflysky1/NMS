@@ -1,0 +1,11 @@
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\SecurityServer.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\SecurityServer.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\MySql.Data.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\SnmpSharpNet.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\bin\x64\Debug\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\obj\x64\Debug\SecurityServer.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\obj\x64\Debug\SecurityServer.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\obj\x64\Debug\SecurityServer.csproj.CopyComplete
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\obj\x64\Debug\SecurityServer.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\SecurityServer\obj\x64\Debug\SecurityServer.pdb

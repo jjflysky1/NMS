@@ -1,0 +1,10 @@
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.csprojAssemblyReference.cache
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.Form1.resources
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.Properties.Resources.resources
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.csproj.GenerateResource.cache
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.csproj.CoreCompileInputs.cache
+C:\업무\중소기업 중앙회\Process\SocketClient1\bin\Release\SocketClient1.exe.config
+C:\업무\중소기업 중앙회\Process\SocketClient1\bin\Release\SocketClient1.exe
+C:\업무\중소기업 중앙회\Process\SocketClient1\bin\Release\SocketClient1.pdb
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.exe
+C:\업무\중소기업 중앙회\Process\SocketClient1\obj\Release\SocketClient1.pdb

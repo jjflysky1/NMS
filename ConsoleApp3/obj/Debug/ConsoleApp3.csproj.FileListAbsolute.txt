@@ -1,0 +1,8 @@
+C:\Users\jun\source\repos\Process\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\jun\source\repos\Process\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\jun\source\repos\Process\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\jun\source\repos\Process\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\jun\source\repos\Process\ConsoleApp3\bin\Debug\Tamir.sharpSsh.dll
+C:\Users\jun\source\repos\Process\ConsoleApp3\bin\Debug\Org.Mentalis.Security.dll
+C:\Users\jun\source\repos\Process\ConsoleApp3\bin\Debug\DiffieHellman.dll

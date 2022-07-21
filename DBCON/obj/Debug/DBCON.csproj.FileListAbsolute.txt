@@ -1,0 +1,6 @@
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\bin\Debug\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\bin\Debug\DBCON.pdb
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Debug\DBCON.csprojAssemblyReference.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Debug\DBCON.csproj.CoreCompileInputs.cache
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Debug\DBCON.dll
+C:\Users\jjfly\source\c# 소스\source\repos\Process(mysql)\DBCON\obj\Debug\DBCON.pdb

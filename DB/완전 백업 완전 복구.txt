@@ -1,0 +1,4 @@
+--백업 procedure, function, trigger 포함 백업 
+mysqldump --routines  --triggers -unms -pP@ssw0rd cs > cs.sql
+복구 방법
+mysql  -unms -pP@ssw0rd test < cs.sql

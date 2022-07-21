@@ -1,0 +1,2 @@
+select `service`.`ServerIP` AS `ServerIP`,`log_time_config`.`log_time` AS `log_time`,`service`.`Computer_Name` AS `Computer_Name` 
+from (`service` join `log_time_config`) where `service`.`Category` LIKE '%서버%' 

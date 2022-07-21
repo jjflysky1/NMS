@@ -1,0 +1,10 @@
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\SERVICECLS.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\SERVICECLS.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\Renci.SshNet.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\Renci.SshNet.xml
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\iis.csprojResolveAssemblyReference.cache
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\iis.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\SERVICECLS.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\obj\Release\SERVICECLS.pdb
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\DBCON.dll
+C:\Users\jun\source\repos\Process\ClassLibrary1\bin\Release\DBCON.pdb

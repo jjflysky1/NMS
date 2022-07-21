@@ -1,0 +1,62 @@
+﻿어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 설치하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 롤백하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 설치하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+Service1 서비스를 설치하고 있습니다...
+EventLog 소스 Service1을(를) 로그 Application에 만들고 있습니다...
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 롤백하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+이벤트 로그를 소스 Service1의 이전 상태로 복원하고 있습니다.
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 설치하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+Service1 서비스를 설치하고 있습니다...
+EventLog 소스 Service1을(를) 로그 Application에 만들고 있습니다...
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 롤백하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+이벤트 로그를 소스 Service1의 이전 상태로 복원하고 있습니다.
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 설치하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+Service1 서비스를 설치하고 있습니다...
+EventLog 소스 Service1을(를) 로그 Application에 만들고 있습니다...
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 롤백하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+이벤트 로그를 소스 Service1의 이전 상태로 복원하고 있습니다.
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 설치하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+어셈블리 'C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe'을(를) 롤백하고 있습니다.
+영향을 받는 매개 변수:
+   logtoconsole = 
+   logfile = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.InstallLog
+   assemblypath = C:\Users\jun\source\repos\Process\test4\bin\Release\test4.exe
+System.ServiceProcess.ServiceProcessInstaller 설치 관리자의 Rollback 단계를 진행하는 동안 예외가 발생했습니다.
+System.NullReferenceException: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+설치의 Rollback 단계를 진행하는 동안 예외가 발생했습니다. 이 예외는 무시되고 롤백이 계속됩니다. 그러나 롤백이 완료된 후 컴퓨터를 초기 상태로 완전하게 되돌리지 못할 수 있습니다.

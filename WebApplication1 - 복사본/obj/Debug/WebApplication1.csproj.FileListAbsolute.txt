@@ -1,0 +1,7 @@
+C:\Users\jun\source\repos\Process\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\jun\source\repos\Process\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\jun\source\repos\Process\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\jun\source\repos\Process\WebApplication1\bin\WebApplication1.dll
+C:\Users\jun\source\repos\Process\WebApplication1\bin\WebApplication1.pdb
+C:\Users\jun\source\repos\Process\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\jun\source\repos\Process\WebApplication1\obj\Debug\WebApplication1.pdb

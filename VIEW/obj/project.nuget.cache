@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fldc4BaGHktcsG4SdmHgkRUPK7R6SNiYeY3nmP040bH9odSukFNZAtNrdgKAJXhczsB8+4UhHWSzB17WRYCLkA==",
+  "success": true,
+  "projectFilePath": "D:\\c#\\c# 소스\\source\\repos\\Process(mysql)\\VIEW\\VIEW.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jun\\.nuget\\packages\\cef.redist.x64\\88.2.9\\cef.redist.x64.88.2.9.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cef.redist.x86\\88.2.9\\cef.redist.x86.88.2.9.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cefsharp.common\\88.2.90\\cefsharp.common.88.2.90.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cefsharp.winforms\\88.2.90\\cefsharp.winforms.88.2.90.nupkg.sha512"
+  ],
+  "logs": []
+}
