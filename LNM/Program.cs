@@ -59,7 +59,7 @@ namespace LNM
                 ///윈도우서비스
                 Thread thread1 = new Thread(cls.service_window_thread);
                 thread1.Start();
-
+                
                 /////핑 확인
                 Thread thread2 = new Thread(cls4.pingthread);
                 thread2.Start();
