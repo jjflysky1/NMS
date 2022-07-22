@@ -100,7 +100,6 @@ namespace pingtime
                     ADT.Fill(DBSET, "BD");
                     foreach (DataRow row in DBSET.Tables["BD"].Rows)
                     {
-
                         if (row["email"].ToString() != "")
                         {
                             try
