@@ -1552,6 +1552,17 @@ namespace WebApplication1
                             st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
                         }
                     }
+                    if (model.Contains("AXGATE") == true)
+                    {
+                        if (status.Contains("Disconnect") == true)
+                        {
+                            st.Append("<img src='Dash_image/security_error.png' width='100' height='80'>");
+                        }
+                        else
+                        {
+                            st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
+                        }
+                    }
                     if (category.Contains("서버") == true)
                     {
                         if (status.Contains("Disconnect") == true)
