@@ -1502,6 +1502,7 @@ namespace WebApplication1
             int i = 100;
             int rote = 1;
             List<string> list = new List<string>();
+            list.Clear();
             foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
             {
 
