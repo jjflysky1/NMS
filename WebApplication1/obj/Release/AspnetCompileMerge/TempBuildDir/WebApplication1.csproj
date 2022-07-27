@@ -155,6 +155,25 @@
     <Content Include="Content\sb-admin-2.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\_all-skins.min.css" />
+    <Content Include="Dash_image\ap.jpg" />
+    <Content Include="Dash_image\ap.png" />
+    <Content Include="Dash_image\PngItem_1549489.png" />
+    <Content Include="Dash_image\rou.png" />
+    <Content Include="Dash_image\rou2.png" />
+    <Content Include="Dash_image\securi.png" />
+    <Content Include="Dash_image\security - 복사본.png" />
+    <Content Include="Dash_image\security.png" />
+    <Content Include="Dash_image\security_error - 복사본.png" />
+    <Content Include="Dash_image\security_error.png" />
+    <Content Include="Dash_image\SERVER.png" />
+    <Content Include="Dash_image\server2 - 복사본.png" />
+    <Content Include="Dash_image\server2.png" />
+    <Content Include="Dash_image\server2_error - 복사본.png" />
+    <Content Include="Dash_image\server2_error.png" />
+    <Content Include="Dash_image\switch - 복사본.png" />
+    <Content Include="Dash_image\switch.png" />
+    <Content Include="Dash_image\switch_error - 복사본.png" />
+    <Content Include="Dash_image\switch_error.png" />
     <Content Include="Default2.aspx" />
     <Content Include="Event\Event_Mail_modi.aspx" />
     <Content Include="Event\Event_list.aspx" />
@@ -206,14 +225,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Dash_image\ap.psd" />
+    <Content Include="Dash_image\security_error.psd" />
+    <Content Include="Dash_image\server2_error - 복사본.psd" />
+    <Content Include="Dash_image\server2_error.psd" />
+    <Content Include="Dash_image\switch_error.psd" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="rou.png" />
-    <Content Include="rou2.png" />
     <Content Include="Scripts\AdminLTE.css" />
     <Content Include="Scripts\adminlte.min.js" />
     <Content Include="Scripts\Allcss.css" />
@@ -253,11 +275,6 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\Raphael-min.js" />
-    <Content Include="security.png" />
-    <Content Include="security_error.png" />
-    <Content Include="SERVER.png" />
-    <Content Include="server2.png" />
-    <Content Include="server2_error.png" />
     <Content Include="Service\Mail_modi.aspx" />
     <Content Include="Service\Service_Down_History.aspx" />
     <Content Include="Service\Service_History.aspx" />
@@ -274,8 +291,6 @@
     <Content Include="Setting\Oid_List.aspx" />
     <Content Include="SOAP\chart.asmx" />
     <Content Include="SOAP\Systeminfo.asmx" />
-    <Content Include="switch.png" />
-    <Content Include="switch_error.png" />
     <Content Include="test2.aspx" />
     <Content Include="testt.aspx" />
     <Content Include="User\user.aspx" />

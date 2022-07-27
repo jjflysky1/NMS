@@ -1504,8 +1504,10 @@ namespace WebApplication1
             List<string> list = new List<string>();
             foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
             {
+
                 if (list.Contains(row1["serverip"].ToString()) == false)
                 {
+                    list.Add(row1["serverip"].ToString());
                     cpu = row1["cpu"].ToString();
                     memory = row1["memory"].ToString();
                     serverip = row1["serverip"].ToString();
@@ -1532,34 +1534,33 @@ namespace WebApplication1
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='switch_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='80'>");
                         }
                         else
                         {
-                            st.Append("<img src='switch.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/switch.png' width='100' height='80'>");
                         }
                     }
                     if (model.Contains("SECUI") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='security_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security_error.png' width='100' height='80'>");
                         }
                         else
                         {
-                            st.Append("<img src='security.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
                         }
-
                     }
                     if (category.Contains("서버") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='server2_error.png' width='60' height='80'>");
+                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='80'>");
                         }
                         else
                         {
-                            st.Append("<img src='server2.png' width='60' height='80'>");
+                            st.Append("<img src='Dash_image/server2.png' width='100' height='80'>");
                         }
                     }
                     st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
@@ -1570,7 +1571,7 @@ namespace WebApplication1
                     i++;
                     
                 }
-                list.Add(row1["serverip"].ToString());
+                
 
 
             }
