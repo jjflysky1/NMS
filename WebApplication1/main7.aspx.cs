@@ -147,7 +147,7 @@ namespace WebApplication1
             TD.Text = " <img src='Img/iconmonstr-monitoring-6-240_white.png' width='50px' height='50px' /><br><font size='4'><font color='#d4d4d4'>Management Amount</font>";
             TD.Attributes["style"] = "text-align : center; cursor:pointer;";
             TD.Attributes.Add("Onclick", "go('')");
-            
+
             TR.Cells.Add(TD);
 
             TD = new TableHeaderCell();
@@ -1444,7 +1444,7 @@ namespace WebApplication1
 
             }
         }
-     
+
         private void TBLADD1(string serverip, string event_log, string time, string computer_name)
         {
             TableRow TR;
@@ -1528,8 +1528,8 @@ namespace WebApplication1
                     //}
                     st.Append("<div style='width:130px; height:110px; float:left;  margin:0 auto; '>");
                     st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
-                    
-           
+
+
                     if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {
                         if (status.Contains("Disconnect") == true)
@@ -1580,9 +1580,9 @@ namespace WebApplication1
 
                     st = null;
                     i++;
-                    
+
                 }
-                
+
 
 
             }
