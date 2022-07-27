@@ -136,7 +136,6 @@
                         <small>Version 2.0</small>
                     </h1></font>--%>
                     <%--<asp:Button  ID="Button12" runat="server" Text="Putty 접속" CssClass="btn btn-link btn-sm navbar-left" OnClick="Button12_Click"  />--%>
-
                     <%--  <ol class="breadcrumb" >
                         <li><font color="black"><i class="fa fa-dashboard"></i>Home</li>
                         <li class="active">Dashboard</font></li>

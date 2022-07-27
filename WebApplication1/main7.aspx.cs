@@ -1489,90 +1489,91 @@ namespace WebApplication1
         private void javascript2()
         {
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where memory is not null and flag = '1' and Category like '%네트워크%'  ORDER BY INET_ATON(serverip) LIMIT 10 ";
-            string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where flag = '1' and Category IS NOT null  ORDER BY INET_ATON(serverip)   ";
+            //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where flag = '1' and Category IS NOT null  ORDER BY INET_ATON(serverip)   ";
+            string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model " +
+                "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY INET_ATON(a.serverip)) " +
+                "UNION " +
+                "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model FROM " +
+                "service where flag = '1' and Category IS NOT null) ORDER BY INET_ATON(serverip)";
             MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET4 = new DataSet();
             ADT4.Fill(DBSET4, "BD4");
-            string cpu, memory, serverip, category, status, os = "";
+            string cpu, memory, serverip, category, status, os, model = "";
             int i = 100;
             int rote = 1;
-
-
+            List<string> list = new List<string>();
             foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
             {
-                cpu = row1["cpu"].ToString();
-                memory = row1["memory"].ToString();
-                serverip = row1["serverip"].ToString();
-                category = row1["category"].ToString();
-                status = row1["status"].ToString();
-                os = row1["os"].ToString();
 
-                //라벨 추가
-                Label label = new Label();
-                label.ID = "Label" + i;
-                //string roatetion = "";
-                div3.Controls.Add(label);
-                StringBuilder st = new StringBuilder();
-                //if (i == 100)
-                //{
-
-                //}
-                st.Append("<div style='width:130px; height:110px; float:left;  margin:0 auto; '>");
-                st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
-                if (category.Contains("네트워크") == true)
+                if (list.Contains(row1["serverip"].ToString()) == false)
                 {
-                    if (status.Contains("Disconnect") == true)
+                    list.Add(row1["serverip"].ToString());
+                    cpu = row1["cpu"].ToString();
+                    memory = row1["memory"].ToString();
+                    serverip = row1["serverip"].ToString();
+                    category = row1["category"].ToString();
+                    status = row1["status"].ToString();
+                    os = row1["os"].ToString();
+                    model = row1["model"].ToString();
+
+                    //라벨 추가
+                    Label label = new Label();
+                    label.ID = "Label" + i;
+                    //string roatetion = "";
+                    div3.Controls.Add(label);
+                    StringBuilder st = new StringBuilder();
+                    //if (i == 100)
+                    //{
+
+                    //}
+                    st.Append("<div style='width:130px; height:110px; float:left;  margin:0 auto; '>");
+                    st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
+                    
+           
+                    if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {
-                        st.Append("<img src='switch_error.png' width='100' height='80'>");
+                        if (status.Contains("Disconnect") == true)
+                        {
+                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='80'>");
+                        }
+                        else
+                        {
+                            st.Append("<img src='Dash_image/switch.png' width='100' height='80'>");
+                        }
                     }
-                    else
+                    if (model.Contains("SECUI") == true)
                     {
-                        st.Append("<img src='switch.png' width='100' height='80'>");
+                        if (status.Contains("Disconnect") == true)
+                        {
+                            st.Append("<img src='Dash_image/security_error.png' width='100' height='80'>");
+                        }
+                        else
+                        {
+                            st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
+                        }
                     }
+                    if (category.Contains("서버") == true)
+                    {
+                        if (status.Contains("Disconnect") == true)
+                        {
+                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='80'>");
+                        }
+                        else
+                        {
+                            st.Append("<img src='Dash_image/server2.png' width='100' height='80'>");
+                        }
+                    }
+                    st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
+                    st.Append("</div>");
+                    label.Text = st.ToString();
+
+                    st = null;
+                    i++;
+                    
                 }
-                if (category.Contains("서버") == true)
-                {
-                    if (status.Contains("Disconnect") == true)
-                    {
-                        st.Append("<img src='server2_error.png' width='60' height='80'>");
-                    }
-                    else
-                    {
-                        st.Append("<img src='server2.png' width='60' height='80'>");
-                    }
-                }
-                st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
-                st.Append("</div>");
-                label.Text = st.ToString();
+                
 
-                st = null;
-                i++;
 
-                //Label label = new Label();
-                //label.ID = "Label" + i;
-                //string roatetion = "";
-
-                //div3.Controls.Add(label);
-                //StringBuilder st = new StringBuilder();
-                //if (i == 100)
-                //{
-
-                //}
-                //st.Append("<div style='width:130px; height:110px; float:left;  margin-right:0%; '>");
-                //if (status.Contains("Disconnect") == true)
-                //{
-                //    st.Append("<img src='switch_error.png' width='100' height='80'>");
-                //}
-                //else
-                //{
-                //    st.Append("<img src='switch.png' width='100' height='80'>");
-                //}
-                //st.Append("<font size='2'>" + row1["serverip"].ToString() + "</font>");
-                //st.Append("</div>");
-                //label.Text = st.ToString();
-
-                //st = null;
-                //i++;
             }
         }
 

@@ -683,6 +683,7 @@
                                         </ContentTemplate>
                                     </asp:UpdatePanel>
                                 </div>
+
                                 
                                 <%--<div class="" style="width:100%; text-align:center; margin-top:-30px;  margin-bottom:-40px; ">
                       <section class="content-header">
@@ -1039,7 +1040,8 @@
                                             }
                                         });
                                     };
-                                </script >
+
+                                </script>
                                         <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
                                             <div style="margin-left: 2%;">
                                                 <h4>
