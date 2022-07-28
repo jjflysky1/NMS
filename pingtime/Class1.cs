@@ -111,8 +111,6 @@ namespace pingtime
             {
                 Console.WriteLine(e.Message);
             }
-
-
         }
 
 
