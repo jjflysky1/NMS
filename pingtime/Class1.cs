@@ -115,7 +115,7 @@ namespace pingtime
 
         }
 
-        
+
         public class Part
         {
             public string Serverip { get; set; }
@@ -216,7 +216,7 @@ namespace pingtime
                                 time2 = time[2].Split('<');
                             }
                             Console.WriteLine(row["serverip"].ToString() + " " + time2[1]);
-                            if(row["status"].ToString().Contains("Disconnect") == true)
+                            if (row["status"].ToString().Contains("Disconnect") == true)
                             {
                                 server_down_mail send_mail = new server_down_mail();
                                 send_mail.send_mail(row["serverip"].ToString(), " 복구되었습니다.");
@@ -243,7 +243,7 @@ namespace pingtime
                         else
                         {
 
-                            
+
                             Console.WriteLine("============================= " + serverip + " DOWN!!!");
 
 
@@ -292,7 +292,7 @@ namespace pingtime
 
                     }
 
-                  
+
                     Thread.Sleep(sleep);
                 }
             }
