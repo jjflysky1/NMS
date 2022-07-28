@@ -41,3 +41,16 @@ D:\c#\c# 소스\source\repos\Process(mysql)\test6\obj\Release\test6.csproj.CoreC
 D:\c#\c# 소스\source\repos\Process(mysql)\test6\obj\Release\test6.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\Process(mysql)\test6\obj\Release\test6.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\test6\obj\Release\test6.pdb
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\test6.exe.config
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\test6.exe
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\test6.pdb
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\ManagedNativeWifi.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\ManagedWifi.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\ManagedNativeWifi.xml
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.exe
+D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.pdb

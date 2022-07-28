@@ -18,7 +18,13 @@ namespace test2
 
         static void Main(string[] args)
         {
-            Curl_SendEx();
+            for(int i =0; i<100; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            //Curl_SendEx();
         }
         static void Curl_SendEx()
         {

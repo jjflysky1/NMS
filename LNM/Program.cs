@@ -49,8 +49,8 @@ namespace LNM
 
 
                 //// LNM_TRA, Client 감시
-                Thread thread = new Thread(reload.reload);
-                thread.Start();
+                //Thread thread = new Thread(reload.reload);
+                //thread.Start();
 
                 //// 자동등록
                 Thread thread3 = new Thread(cls2.autoadd);

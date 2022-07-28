@@ -18,3 +18,10 @@ D:\c#\c# 소스\source\repos\Process(mysql)\test2\obj\Release\test2.csproj.Sugge
 D:\c#\c# 소스\source\repos\Process(mysql)\test2\obj\Release\test2.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\test2\obj\Release\test2.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\test2\obj\Release\test2.pdb
+D:\c#\c# 소스\source\repos\NMS\test2\bin\Release\test2.exe.config
+D:\c#\c# 소스\source\repos\NMS\test2\bin\Release\test2.exe
+D:\c#\c# 소스\source\repos\NMS\test2\bin\Release\test2.pdb
+D:\c#\c# 소스\source\repos\NMS\test2\obj\Release\test2.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\test2\obj\Release\test2.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test2\obj\Release\test2.exe
+D:\c#\c# 소스\source\repos\NMS\test2\obj\Release\test2.pdb
