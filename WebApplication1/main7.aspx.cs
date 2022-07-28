@@ -1535,44 +1535,44 @@ namespace WebApplication1
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='50'>");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/switch.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/switch.png' width='100' height='50'>");
                         }
                     }
                     if (model.Contains("SECUI") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/security_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security_error.png' width='100' height='50'>");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security.png' width='100' height='50'>");
                         }
                     }
                     if (model.Contains("AXGATE") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/security_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security_error.png' width='100' height='50'>");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/security.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/security.png' width='100' height='50'>");
                         }
                     }
                     if (category.Contains("서버") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='50'>");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/server2.png' width='100' height='80'>");
+                            st.Append("<img src='Dash_image/server2.png' width='100' height='50'>");
                         }
                     }
                     st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");

@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\NMS\웹페이지</_PublishTargetUrl>
-    <History>True|2022-07-27T05:04:50.5187002Z;True|2022-07-27T13:36:46.9771603+09:00;False|2022-07-27T13:35:52.2013478+09:00;True|2022-07-27T13:34:42.1833013+09:00;False|2022-07-27T13:34:20.2891173+09:00;False|2022-07-27T13:33:31.6662595+09:00;True|2022-07-27T13:05:24.2670473+09:00;True|2022-07-27T13:00:26.7131013+09:00;True|2022-07-27T12:57:15.0774574+09:00;True|2022-07-27T12:55:15.9140564+09:00;True|2022-07-21T14:30:28.3418589+09:00;</History>
+    <History>True|2022-07-28T00:36:45.1393321Z;True|2022-07-27T14:04:50.5187002+09:00;True|2022-07-27T13:36:46.9771603+09:00;False|2022-07-27T13:35:52.2013478+09:00;True|2022-07-27T13:34:42.1833013+09:00;False|2022-07-27T13:34:20.2891173+09:00;False|2022-07-27T13:33:31.6662595+09:00;True|2022-07-27T13:05:24.2670473+09:00;True|2022-07-27T13:00:26.7131013+09:00;True|2022-07-27T12:57:15.0774574+09:00;True|2022-07-27T12:55:15.9140564+09:00;True|2022-07-21T14:30:28.3418589+09:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App.ico">
@@ -63,10 +63,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/26/2011 12:43:20</publishTime>
     </File>
     <File Include="bin/WebApplication1.dll">
-      <publishTime>07/27/2022 14:04:19</publishTime>
+      <publishTime>07/28/2022 09:35:49</publishTime>
     </File>
     <File Include="bin/WebApplication1.pdb">
-      <publishTime>07/27/2022 14:04:19</publishTime>
+      <publishTime>07/28/2022 09:35:49</publishTime>
     </File>
     <File Include="Chart/BarChart.aspx">
       <publishTime>08/07/2018 09:24:22</publishTime>
@@ -183,16 +183,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2020 15:24:02</publishTime>
     </File>
     <File Include="Dash_image/security.png">
-      <publishTime>08/03/2020 15:24:02</publishTime>
+      <publishTime>07/28/2022 09:34:52</publishTime>
     </File>
     <File Include="Dash_image/security_error - 복사본.png">
       <publishTime>07/19/2022 10:02:38</publishTime>
     </File>
     <File Include="Dash_image/security_error.png">
-      <publishTime>07/19/2022 10:02:38</publishTime>
+      <publishTime>07/28/2022 09:33:53</publishTime>
     </File>
     <File Include="Dash_image/security_error.psd">
-      <publishTime>07/19/2022 10:02:18</publishTime>
+      <publishTime>07/28/2022 09:34:18</publishTime>
     </File>
     <File Include="Dash_image/SERVER.png">
       <publishTime>08/03/2020 15:24:02</publishTime>
@@ -201,7 +201,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2020 15:24:02</publishTime>
     </File>
     <File Include="Dash_image/server2.png">
-      <publishTime>07/27/2022 13:28:25</publishTime>
+      <publishTime>07/28/2022 09:31:41</publishTime>
     </File>
     <File Include="Dash_image/server2_error - 복사본.png">
       <publishTime>08/03/2020 15:24:02</publishTime>
@@ -210,7 +210,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/19/2022 10:02:20</publishTime>
     </File>
     <File Include="Dash_image/server2_error.png">
-      <publishTime>07/27/2022 13:28:36</publishTime>
+      <publishTime>07/28/2022 09:32:40</publishTime>
     </File>
     <File Include="Dash_image/server2_error.psd">
       <publishTime>07/27/2022 13:28:11</publishTime>
@@ -219,13 +219,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2020 15:24:02</publishTime>
     </File>
     <File Include="Dash_image/switch.png">
-      <publishTime>07/27/2022 13:18:36</publishTime>
+      <publishTime>07/28/2022 09:35:30</publishTime>
     </File>
     <File Include="Dash_image/switch_error - 복사본.png">
       <publishTime>07/19/2022 10:02:54</publishTime>
     </File>
     <File Include="Dash_image/switch_error.png">
-      <publishTime>07/27/2022 13:18:43</publishTime>
+      <publishTime>07/28/2022 09:35:36</publishTime>
     </File>
     <File Include="Dash_image/switch_error.psd">
       <publishTime>07/19/2022 10:02:23</publishTime>
@@ -381,7 +381,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/08/2021 11:46:10</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>07/27/2022 14:04:44</publishTime>
+      <publishTime>07/28/2022 09:36:37</publishTime>
     </File>
     <File Include="Properties/PublishProfiles/CustomProfile.pubxml">
       <publishTime>11/24/2017 15:01:01</publishTime>
