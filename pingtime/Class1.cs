@@ -237,6 +237,21 @@ namespace pingtime
                             cmd = null;
                             CON.Close();
 
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
+                            MySqlCommand cmd2 = new MySqlCommand("Auto_add_server", CON);
+                            cmd2.CommandType = CommandType.StoredProcedure;
+                            cmd2.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                            cmd2.Parameters.AddWithValue("@network_name", "");
+                            cmd2.ExecuteNonQuery();
+                            cmd2.Dispose();
+                            cmd2 = null;
+                            CON.Close();
+
+
+
                         }
                         else
                         {
@@ -262,8 +277,8 @@ namespace pingtime
                             cmd2 = null;
                             CON.Close();
 
-                            //server_down_mail send_mail = new server_down_mail();
-                            //send_mail.send_mail(row["serverip"].ToString());
+                            server_down_mail send_mail = new server_down_mail();
+                            send_mail.send_mail(row["serverip"].ToString(), "다운되었습니다");
 
                         }
 

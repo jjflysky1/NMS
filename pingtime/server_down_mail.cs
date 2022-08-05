@@ -24,7 +24,7 @@ namespace pingtime
                     MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
                     string SQL = "";
                     SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  from mail_target a , server_down_log b , " +
-                        " mail_info c where c.flag = 1 and b.serverip = '" + serverip + "' and a.serverip = b.ServerIP ORDER BY TIME DESC limit 1 ";
+                        " mail_info c where c.flag = 1 and b.serverip = '" + serverip + "' and a.serverip = b.ServerIP ORDER BY TIME DESC  ";
                     MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
                     DataSet DBSET = new DataSet();
                     ADT.Fill(DBSET, "BD");

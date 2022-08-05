@@ -507,10 +507,8 @@ namespace WebApplication1
                 //{
 
                     DB.Open();
-
                     MySqlCommand cmd = new MySqlCommand();
                     cmd.Connection = DB;
-
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = "insert into Service ( serverip,create_date) values(@serverip,now())";
                     //cmd.Parameters.Add("@name", MySqlDbType.VarChar, 100).Value = TextBox1.Text;
@@ -518,7 +516,6 @@ namespace WebApplication1
                     //cmd.Parameters.Add("@serverid", MySqlDbType.VarChar, 100).Value = TextBox3.Text;
                     //cmd.Parameters.Add("@serverpwd", MySqlDbType.VarChar, 100).Value = TextBox4.Text;
                     cmd.ExecuteNonQuery();
-
                     cmd.Dispose();
                     cmd = null;
 
