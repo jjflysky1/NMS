@@ -109,7 +109,7 @@ namespace pingtime
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("리스트 체크 " + e.Message);
             }
         }
 
@@ -151,6 +151,7 @@ namespace pingtime
                             MySqlCommand cmd = new MySqlCommand("server_down_log_sp", CON);
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                            cmd.Parameters.AddWithValue("@status1", "Down");
                             cmd.ExecuteNonQuery();
                             cmd.Dispose();
                             cmd = null;
@@ -160,7 +161,36 @@ namespace pingtime
                             {
                                 server_down_mail send_mail = new server_down_mail();
                                 send_mail.send_mail(row["serverip"].ToString(), "다운되었습니다");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("-------------------------------------------------------------이메일 보내기 안됨");
+                            }
 
+                        }
+                        if (row["status"].ToString().Contains("Timeout") == true)
+                        {
+
+                            Console.WriteLine("============================= " + serverip + " Timeout!!!");
+
+                            ///열려있지 않으면 오픈
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
+                            MySqlCommand cmd = new MySqlCommand("server_down_log_sp", CON);
+                            cmd.CommandType = CommandType.StoredProcedure;
+                            cmd.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                            cmd.Parameters.AddWithValue("@status1", "Time Out");
+                            cmd.ExecuteNonQuery();
+                            cmd.Dispose();
+                            cmd = null;
+                            CON.Close();
+
+                            try
+                            {
+                                server_down_mail send_mail = new server_down_mail();
+                                send_mail.send_mail(row["serverip"].ToString(), "타임아웃");
                             }
                             catch (Exception ex)
                             {
@@ -169,11 +199,11 @@ namespace pingtime
 
                         }
 
-
+                        
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine("여기1" + e.Message);
                     }
 
                     try
@@ -253,6 +283,58 @@ namespace pingtime
 
 
                         }
+                        else if (reply.Status == IPStatus.TimedOut) // 네트워크 타임아웃
+                        {
+                            //Process cmad = new Process();
+                            //cmad.StartInfo.FileName = "cmd.exe";
+                            //cmad.StartInfo.RedirectStandardInput = true;
+                            //cmad.StartInfo.RedirectStandardOutput = true;
+                            //cmad.StartInfo.CreateNoWindow = true;
+                            //cmad.StartInfo.UseShellExecute = false;
+                            //cmad.Start();
+                            //cmad.StandardInput.WriteLine("ping " + row["serverip"].ToString() + " -n 1");
+                            //cmad.StandardInput.Flush();
+                            //cmad.StandardInput.Close();
+                            //cmad.WaitForExit();
+                            ////Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                            //string[] time = cmad.StandardOutput.ReadToEnd().Split('\n');
+                            //time = time[6].Split(':');
+                            //time = time[1].Split(' ');
+                            //string[] time2 = { };
+                            //if (time[2].Contains("=") == true)
+                            //{
+                            //    time2 = time[2].Split('=');
+
+                            //}
+                            //else if (time[2].Contains("<") == true)
+                            //{
+                            //    time2 = time[2].Split('<');
+                            //}
+                            //Console.WriteLine(row["serverip"].ToString() + " " + time2[1]);
+                            if (row["status"].ToString().Contains("Server Timeout") == true)
+                            {
+                                server_down_mail send_mail = new server_down_mail();
+                                send_mail.send_mail(row["serverip"].ToString(), " 타임아웃");
+                            }
+
+                            ///열려있지 않으면 오픈
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
+                            MySqlCommand cmd = new MySqlCommand();
+                            cmd.Connection = CON;
+                            cmd.CommandType = System.Data.CommandType.Text;
+                            cmd.CommandText = "update service set pingtime = @pingtime, status = @status where serverip = @serverip ";
+                            cmd.Parameters.Add("@pingtime", MySqlDbType.VarChar, 100).Value = "timeout";
+                            cmd.Parameters.Add("@status", MySqlDbType.VarChar, 100).Value = "Server Disconnect/ping";
+                            cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = row["serverip"].ToString();
+                            cmd.ExecuteNonQuery();
+                            cmd.Dispose();
+                            cmd = null;
+                            CON.Close();
+
+                        }
                         else
                         {
 
@@ -301,7 +383,7 @@ namespace pingtime
                         cmd2 = null;
                         CON.Close();
 
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine("여기3" + e.Message);
 
                     }
 
@@ -311,7 +393,7 @@ namespace pingtime
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("여기2" + e.Message);
             }
 
 
