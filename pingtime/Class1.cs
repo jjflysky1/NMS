@@ -277,8 +277,8 @@ namespace pingtime
                             cmd2 = null;
                             CON.Close();
 
-                            server_down_mail send_mail = new server_down_mail();
-                            send_mail.send_mail(row["serverip"].ToString(), "다운되었습니다");
+                            //server_down_mail send_mail = new server_down_mail();
+                            //send_mail.send_mail(row["serverip"].ToString(), "다운되었습니다");
 
                         }
 
