@@ -547,11 +547,16 @@
                                                     yAxes: [
                                                         {
                                                             ticks: {
-                                                                fontColor: "#d4d4d4"
+                                                                fontColor: "#d4d4d4",
+                                                                //reverse: true //리버스
 
                                                             }
                                                         }
-                                                    ]
+                                                    ],
+                                                    y2: {
+                                                        reverse: true
+                                                    }
+
                                                 }
                                             }
                                         });

@@ -56,17 +56,30 @@ namespace pingtime
                                 SMTPMAIL.Send(MAIL);
 
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.CommandText = "update server_down_log set mail_send_time = NULL where serverip = @serverip";
                                 cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 50).Value = serverip;
                                 cmd.ExecuteNonQuery();
+                                
+
+                                cmd.Connection = CON;
+                                cmd.CommandType = System.Data.CommandType.Text;
+                                cmd.CommandText = "insert into mail_send_time(serverip, send_time, status) values('"+ @serverip + "',now(),"+ "'복구'" +")";
+                                cmd.ExecuteNonQuery();
+                                
                                 cmd.Dispose();
-                                cmd = null;
+                                
+
                                 CON.Close();
                                 CON.Dispose();
+
+                               
 
                                 Console.WriteLine("------------------------------------------------------------- 복구 이메일 보내기 완료");
                     
@@ -93,8 +106,7 @@ namespace pingtime
                     //SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  from mail_target a , server_down_log b ,  mail_info c " +
                     //    "where c.flag = 1 AND (SELECT  date_format(DATE_ADD(mail_send_time, INTERVAL 1440 MINUTE), '%Y-%m-%d %T') FROM server_down_log " +
                     //    "WHERE serverip = '" + serverip + "' ORDER BY TIME DESC LIMIT 1) < NOW() AND b.serverip = '" + serverip + "' and a.serverip = b.ServerIP and DATE_ADD(mail_send_time, INTERVAL 1440 MINUTE) < now()  ORDER BY TIME DESC";
-                    SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  FROM mail_target a , server_down_log b ,  mail_info c where c.flag = 1 AND  " +
-                        "b.serverip = '" + serverip + "' and a.serverip = b.ServerIP AND mail_send_time IS null ORDER BY TIME DESC";
+                    SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  FROM mail_target a , server_down_log b ,  mail_info c where c.flag = 1 AND b.serverip = '" + serverip + "' and a.serverip = b.ServerIP AND mail_send_time IS null ORDER BY TIME DESC";
                     MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
                     DataSet DBSET = new DataSet();
                     ADT.Fill(DBSET, "BD");
@@ -125,15 +137,24 @@ namespace pingtime
                                 SMTPMAIL.Send(MAIL);
 
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.CommandText = "update server_down_log set mail_send_time = now() where serverip = @serverip";
                                 cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 50).Value = serverip;
                                 cmd.ExecuteNonQuery();
-                                cmd.Dispose();
+                                
+                                cmd.Connection = CON;
+                                cmd.CommandType = System.Data.CommandType.Text;
+                                cmd.CommandText = "insert into mail_send_time(serverip, send_time, status) values('" + @serverip + "',now()," + "'다운'" + ")";
+                                cmd.ExecuteNonQuery();
+                                
                                 cmd = null;
+
                                 CON.Close();
                                 CON.Dispose();
                                 Console.WriteLine("------------------------------------------------------------- 다운 이메일 보내기 완료");
@@ -152,75 +173,7 @@ namespace pingtime
                     Console.WriteLine("다운 메일에러 2");
                 }
             }
-            else if (status.Contains("타임") == true)
-            {
-                try
-                {
-                    DBCON.Class1 DBCON = new DBCON.Class1();
-                    MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
-                    string SQL = "";
-                    //SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  from mail_target a , server_down_log b ,  mail_info c " +
-                    //    "where c.flag = 1 AND (SELECT  date_format(DATE_ADD(mail_send_time, INTERVAL 1440 MINUTE), '%Y-%m-%d %T') FROM server_down_log " +
-                    //    "WHERE serverip = '" + serverip + "' ORDER BY TIME DESC LIMIT 1) < NOW() AND b.serverip = '" + serverip + "' and a.serverip = b.ServerIP and DATE_ADD(mail_send_time, INTERVAL 1440 MINUTE) < now()  ORDER BY TIME DESC";
-                    SQL = "select distinct a.phone , a.email, a.mailno ,mailip , mail_sender  FROM mail_target a , server_down_log b ,  mail_info c where c.flag = 1 AND  " +
-                        "b.serverip = '" + serverip + "' and a.serverip = b.ServerIP AND mail_send_time IS null ORDER BY TIME DESC";
-                    MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
-                    DataSet DBSET = new DataSet();
-                    ADT.Fill(DBSET, "BD");
-                    foreach (DataRow row in DBSET.Tables["BD"].Rows)
-                    {
-                        if (row["email"].ToString() != "")
-                        {
-                            try
-                            {
-
-                                MailMessage MAIL = new MailMessage();
-                                SmtpClient SMTPMAIL = new SmtpClient(row["mailip"].ToString());
-                                MAIL.From = new MailAddress(row["mail_sender"].ToString());
-                                SMTPMAIL.Port = 25;
-                                //MAIL.To.Add(Recever.Text.ToString());
-                                MAIL.To.Add(row["email"].ToString());
-                                //if (CC.Text.ToString() != "")
-                                //{
-                                //    MAIL.CC.Add(CC.Text.ToString());
-                                //}
-
-                                MAIL.Subject = "장비 타임아웃 알림";
-                                MAIL.Body = serverip + " 장비가 타임아웃 되었습니다." + Environment.NewLine + "시간 : " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
-                                MAIL.BodyEncoding = System.Text.Encoding.UTF8;
-                                MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
-
-
-                                SMTPMAIL.Send(MAIL);
-
-
-                                CON.Open();
-                                MySqlCommand cmd = new MySqlCommand();
-                                cmd.Connection = CON;
-                                cmd.CommandType = System.Data.CommandType.Text;
-                                cmd.CommandText = "update server_down_log set mail_send_time = now() where serverip = @serverip";
-                                cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 50).Value = serverip;
-                                cmd.ExecuteNonQuery();
-                                cmd.Dispose();
-                                cmd = null;
-                                CON.Close();
-                                CON.Dispose();
-                                Console.WriteLine("------------------------------------------------------------- 타임아웃 이메일 보내기 완료");
-
-                            }
-                            catch
-                            {
-                                Console.WriteLine("다운 메일에러 1");
-                            }
-                        }
-
-                    }
-                }
-                catch
-                {
-                    Console.WriteLine("다운 메일에러 2");
-                }
-            }
+         
 
 
 

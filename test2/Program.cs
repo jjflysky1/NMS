@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +20,28 @@ namespace test2
 
         static void Main(string[] args)
         {
-            for(int i =0; i<100; i++)
-            {
-                Console.WriteLine(i);
-            }
+
+
+            MySqlConnection CON = new MySqlConnection("Server = 192.168.0.190; Database = cs; User id = nms; Password = P@ssw0rd");
+
+            CON.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = CON;
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "insert into mail_send_time(serverip, send_time, status) values(" + "'1'" + ",now()," + "'다운'" + ")";
+            cmd.ExecuteNonQuery();
+                      
+
+            cmd.Connection = CON;
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "insert into mail_send_time(serverip, send_time, status) values(" + "'2'" + ",now()," + "'다운'" + ")";
+            cmd.ExecuteNonQuery();
+            
+            cmd = null;
+
+            CON.Close();
+            CON.Dispose();
+            Console.WriteLine("------------------------------------------------------------- 다운 이메일 보내기 완료");
 
 
             //Curl_SendEx();
