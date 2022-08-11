@@ -170,7 +170,6 @@
                     </li>
                     <li style=" margin-right:10px">
                         <asp:DropDownList ID="DropDownList1" runat="server" Height="35"  Class="form-control navbar-left" Width="100px">
-                        <asp:ListItem>선택</asp:ListItem>
                         <asp:ListItem Value="4">Name</asp:ListItem>
                         
                         </asp:DropDownList>

@@ -75,9 +75,15 @@ namespace WebApplication1
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
+            //TD = new TableHeaderCell();
+            //TD.Width = 60;
+            //TD.Text = "연락처";
+            //TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
+            //TR.Cells.Add(TD);
+
             TD = new TableHeaderCell();
             TD.Width = 60;
-            TD.Text = "연락처";
+            TD.Text = "메일주소";
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
@@ -132,9 +138,15 @@ namespace WebApplication1
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
+            //TD = new TableHeaderCell();
+            //TD.Width = 60;
+            //TD.Text = "연락처";
+            //TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
+            //TR.Cells.Add(TD);
+
             TD = new TableHeaderCell();
             TD.Width = 60;
-            TD.Text = "연락처";
+            TD.Text = "메일주소";
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
@@ -179,7 +191,7 @@ namespace WebApplication1
             foreach (DataRow row in DBSET1.Tables["BD1"].Rows)
             {
                 TBLADD1(row["no"].ToString(), row["id"].ToString(), row["pwd"].ToString(), row["name"].ToString(), row["duty"].ToString(), row["phone"].ToString()
-                    , row["Eventname"].ToString());
+                    , row["Eventname"].ToString(), row["email"].ToString());
 
             }
 
@@ -224,7 +236,7 @@ namespace WebApplication1
 
             TD = new TableCell();
             TD.Width = 200;
-            TD.Text = phone.ToString();
+            TD.Text = email.ToString();
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
@@ -244,7 +256,7 @@ namespace WebApplication1
 
         }
         long b = 1;
-        private void TBLADD1(string NO, string id, string pwd, string name, string duty, string phone, string serverip)
+        private void TBLADD1(string NO, string id, string pwd, string name, string duty, string phone, string serverip,  string email)
         {
             TableRow TR;
             TableCell TD;
@@ -280,7 +292,7 @@ namespace WebApplication1
 
             TD = new TableCell();
             TD.Width = 200;
-            TD.Text = phone.ToString();
+            TD.Text = email.ToString();
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 

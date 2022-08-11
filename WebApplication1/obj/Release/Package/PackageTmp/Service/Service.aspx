@@ -182,8 +182,8 @@
                                 <li style="margin-right: 10px;">
                                     <asp:DropDownList ID="DropDownList1" runat="server" Height="35" Class="form-control navbar-left" Width="100px">
                                     
-                                        <asp:ListItem Value="4">IP</asp:ListItem>
-                                        <asp:ListItem Value="5">Category</asp:ListItem>
+                                        <asp:ListItem Value="4">아이피</asp:ListItem>
+                                        <asp:ListItem Value="5">구분</asp:ListItem>
                                     </asp:DropDownList>
                                 </li>
                                 <li style="margin-top: 5px; margin-right: 10px">

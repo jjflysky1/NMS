@@ -26,8 +26,8 @@ namespace WebApplication1
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            TextBox2.Attributes["onkeyPress"] = "if (event.keyCode==13){" + Page.GetPostBackEventReference(Button100) + "; return false;}";
 
-            
             if (!Page.IsPostBack)
             {
 

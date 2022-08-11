@@ -963,10 +963,13 @@
                                                 yAxes: [
                                                     {
                                                         ticks: {
-                                                            fontColor: "black"
+                                                            fontColor: "black",
+                                                            //reverse: true //리버스
                                                         }
                                                     }
                                                 ]
+
+                                                
                                             }
                                         }
                                     });
