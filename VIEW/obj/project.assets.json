@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.6": {
+    ".NETFramework,Version=v4.8": {
       "cef.redist.x64/88.2.9": {
         "type": "package",
         "build": {
@@ -21,12 +21,20 @@
           "cef.redist.x86": "[88.2.9]"
         },
         "compile": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
@@ -39,14 +47,18 @@
           "CefSharp.Common": "[88.2.90]"
         },
         "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         }
       }
     },
-    ".NETFramework,Version=v4.6/win": {
+    ".NETFramework,Version=v4.8/win": {
       "cef.redist.x64/88.2.9": {
         "type": "package",
         "build": {
@@ -66,12 +78,20 @@
           "cef.redist.x86": "[88.2.9]"
         },
         "compile": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
@@ -84,14 +104,18 @@
           "CefSharp.Common": "[88.2.90]"
         },
         "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         }
       }
     },
-    ".NETFramework,Version=v4.6/win-x64": {
+    ".NETFramework,Version=v4.8/win-x64": {
       "cef.redist.x64/88.2.9": {
         "type": "package",
         "build": {
@@ -111,12 +135,20 @@
           "cef.redist.x86": "[88.2.9]"
         },
         "compile": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
@@ -129,14 +161,18 @@
           "CefSharp.Common": "[88.2.90]"
         },
         "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         }
       }
     },
-    ".NETFramework,Version=v4.6/win-x86": {
+    ".NETFramework,Version=v4.8/win-x86": {
       "cef.redist.x64/88.2.9": {
         "type": "package",
         "build": {
@@ -156,12 +192,20 @@
           "cef.redist.x86": "[88.2.9]"
         },
         "compile": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.Core.dll": {},
-          "lib/net452/CefSharp.dll": {}
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
         },
         "build": {
           "buildTransitive/CefSharp.Common.props": {},
@@ -174,10 +218,14 @@
           "CefSharp.Common": "[88.2.90]"
         },
         "compile": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         },
         "runtime": {
-          "lib/net452/CefSharp.WinForms.dll": {}
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
         }
       }
     }
@@ -899,7 +947,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.6": [
+    ".NETFramework,Version=v4.8": [
       "CefSharp.Common >= 88.2.90",
       "CefSharp.WinForms >= 88.2.90",
       "cef.redist.x64 >= 88.2.9",
@@ -907,8 +955,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jun\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jun\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -920,29 +967,25 @@
       "outputPath": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\jun\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net46"
+        "net48"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net46": {
+        "net48": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net46": {
+      "net48": {
         "dependencies": {
           "CefSharp.Common": {
             "target": "Package",

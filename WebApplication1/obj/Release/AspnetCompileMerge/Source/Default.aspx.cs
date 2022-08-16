@@ -39,60 +39,73 @@ namespace WebApplication1
 
         protected void LOGIN_DB()
         {
+            SOAP.Systeminfo soapclient = new SOAP.Systeminfo();
 
-            SQL = "select * from user_ba where id = @id and pwd = @pwd and flag = 1";
+            HttpRequest currentRequest = HttpContext.Current.Request;
+            string ip = currentRequest.ServerVariables["REMOTE_ADDR"];
 
-            MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
-            DataSet DBSET = new DataSet();
-            ADT.SelectCommand.Parameters.Add("@id", MySqlDbType.VarChar, 50).Value = name.Value;
-            ADT.SelectCommand.Parameters.Add("@pwd", MySqlDbType.VarChar, 50).Value = password.Value;
-
-            try
+            if (soapclient.LOGIN(name.Value, password.Value,  ip) == "성공")
             {
-                ADT.Fill(DBSET);
-                if (DBSET.Tables[0].Rows.Count > 0)
-                {
-                    HttpRequest currentRequest = HttpContext.Current.Request;
+                Response.Redirect("main5.aspx?id=" + name.Value);
+            }
+            else
+            {
+                this.Label1.Text = "<script>alert('사용자 계정을 확인해 주세요');</script>";
+            }
+
+
+
+            //SQL = "select * from user_ba where id = @id and pwd = @pwd and flag = 1";
+
+            //MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
+            //DataSet DBSET = new DataSet();
+            //ADT.SelectCommand.Parameters.Add("@id", MySqlDbType.VarChar, 50).Value = name.Value;
+            //ADT.SelectCommand.Parameters.Add("@pwd", MySqlDbType.VarChar, 50).Value = password.Value;
+
+            //try
+            //{
+            //    ADT.Fill(DBSET);
+            //    if (DBSET.Tables[0].Rows.Count > 0)
+            //    {
+            //        HttpRequest currentRequest = HttpContext.Current.Request;
                   
-                    string ip = currentRequest.ServerVariables["REMOTE_ADDR"];
+            //        string ip = currentRequest.ServerVariables["REMOTE_ADDR"];
 
+            //        DB.Open();
+            //        MySqlCommand cmd = new MySqlCommand();
+            //        cmd.Connection = DB;
+            //        cmd.CommandType = System.Data.CommandType.Text;
+            //        cmd.CommandText = "insert into login_log_list (Clientip, id, time) values(@Clientip, @id, now())";
+            //        cmd.Parameters.Add("@id", MySqlDbType.VarChar, 100).Value = name.Value;
+            //        cmd.Parameters.Add("@Clientip", MySqlDbType.VarChar, 100).Value = ip;
+            //        cmd.ExecuteNonQuery();
+            //        DB.Close();
+            //        cmd.Dispose();
+            //        cmd = null;
 
+            //        Label1.Text = "<script>alert('환영합니다.');</script>";
+            //        Response.Redirect("main5.aspx?id=" + name.Value);
+            //    }
+            //    else
+            //    {
+            //        this.Label1.Text = "<script>alert('사용자 계정을 확인해 주세요');</script>";
+            //    }
+            //    DBSET.Clear();
+            //}
+            //catch (Exception EX)
+            //{
+            //    this.Label1.Text = EX.ToString();
+            //}
+            //DBSET.Dispose();
+            //ADT.Dispose();
 
-                    DB.Open();
-                    MySqlCommand cmd = new MySqlCommand();
-                    cmd.Connection = DB;
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = "insert into login_log_list (Clientip, id, time) values(@Clientip, @id, now())";
-                    cmd.Parameters.Add("@id", MySqlDbType.VarChar, 100).Value = name.Value;
-                    cmd.Parameters.Add("@Clientip", MySqlDbType.VarChar, 100).Value = ip;
-                    cmd.ExecuteNonQuery();
-                    DB.Close();
-                    cmd.Dispose();
-                    cmd = null;
-
-                    Label1.Text = "<script>alert('환영합니다.');</script>";
-                    Response.Redirect("main5.aspx?id=" + name.Value);
-                }
-                else
-                {
-                    this.Label1.Text = "<script>alert('사용자 계정을 확인해 주세요');</script>";
-                }
-                DBSET.Clear();
-            }
-            catch (Exception EX)
-            {
-                this.Label1.Text = EX.ToString();
-            }
-            DBSET.Dispose();
-            ADT.Dispose();
-
-            DBSET = null;
-            ADT = null;
+            //DBSET = null;
+            //ADT = null;
 
 
         
 
-            return;
+            //return;
 
         }
     }

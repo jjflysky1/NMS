@@ -29,20 +29,74 @@ namespace WebApplication1.SOAP
             return "Hello World";
         }
 
+        //[WebMethod]
+        //public DataSet LOGIN(string Computername, string IP)
+        //{
+
+        //        string SQL = "";
+        //        SQL = "select * from Service where ServerIP = '192.168.0.104' ";
+
+
+        //        MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
+        //        DataSet DBSET = new DataSet();
+        //        ADT.Fill(DBSET, "BD");
+        //        return DBSET;
+
+        //}
         [WebMethod]
-        public DataSet LOGIN(string Computername, string IP)
+        public string LOGIN(string user_id, string user_pwd, string ip)
         {
-           
-                string SQL = "";
-                SQL = "select * from Service where ServerIP = '192.168.0.104' ";
 
 
-                MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
-                DataSet DBSET = new DataSet();
-                ADT.Fill(DBSET, "BD");
-                return DBSET;
+            string SQL = "select * from user_ba where id = @id and pwd = @pwd and flag = 1";
+
+            MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
+            DataSet DBSET = new DataSet();
+            ADT.SelectCommand.Parameters.Add("@id", MySqlDbType.VarChar, 50).Value = user_id;
+            ADT.SelectCommand.Parameters.Add("@pwd", MySqlDbType.VarChar, 50).Value = user_pwd;
+
+            try
+            {
+                ADT.Fill(DBSET);
+                if (DBSET.Tables[0].Rows.Count > 0)
+                {
+                    DB.Open();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = DB;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = "insert into login_log_list (Clientip, id, time) values(@Clientip, @id, now())";
+                    cmd.Parameters.Add("@id", MySqlDbType.VarChar, 100).Value = user_id;
+                    cmd.Parameters.Add("@Clientip", MySqlDbType.VarChar, 100).Value = ip;
+                    cmd.ExecuteNonQuery();
+                    DB.Close();
+                    cmd.Dispose();
+                    cmd = null;
+
+                    return "성공";
+                }
+                else
+                {
+                   
+                }
+                DBSET.Clear();
+            }
+            catch (Exception EX)
+            {
+               
+            }
+            DBSET.Dispose();
+            ADT.Dispose();
+
+            DBSET = null;
+            ADT = null;
+
+
+
+
+            return "실패";
 
         }
+
 
 
         [WebMethod]

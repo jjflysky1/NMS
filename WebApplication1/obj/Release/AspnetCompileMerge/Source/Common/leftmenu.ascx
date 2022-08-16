@@ -152,10 +152,10 @@ $('ul.treeview-menu a').filter(function() {
 
 
            <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs"><i class="fa fa-user"></i>
-    <asp:Label ID="Label111" runat="server" Text="Label"></asp:Label></span>
-            </a>
+            <a href="../User/user.aspx">   <span class="hidden-xs"><i class="fa fa-user"></i>
+           <asp:Label ID="Label111" runat="server" Text="Label"></asp:Label></span>
+                </a>
+           
            
           </li>
           <!-- Control Sidebar Toggle Button -->
