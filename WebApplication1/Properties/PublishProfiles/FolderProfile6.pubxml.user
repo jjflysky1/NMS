@@ -5,7 +5,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\NMS\웹페이지</_PublishTargetUrl>
-    <History>True|2022-08-16T00:23:18.6643141Z;True|2022-08-16T09:19:52.9805454+09:00;True|2022-08-11T15:11:30.7918736+09:00;True|2022-07-28T09:36:45.1393321+09:00;True|2022-07-27T14:04:50.5187002+09:00;True|2022-07-27T13:36:46.9771603+09:00;False|2022-07-27T13:35:52.2013478+09:00;True|2022-07-27T13:34:42.1833013+09:00;False|2022-07-27T13:34:20.2891173+09:00;False|2022-07-27T13:33:31.6662595+09:00;True|2022-07-27T13:05:24.2670473+09:00;True|2022-07-27T13:00:26.7131013+09:00;True|2022-07-27T12:57:15.0774574+09:00;True|2022-07-27T12:55:15.9140564+09:00;True|2022-07-21T14:30:28.3418589+09:00;</History>
+    <History>True|2022-09-13T05:31:04.7153407Z;True|2022-09-13T14:21:03.5317176+09:00;True|2022-09-08T11:30:29.1118158+09:00;False|2022-09-08T11:29:29.2820480+09:00;True|2022-09-08T09:16:10.3887070+09:00;True|2022-08-16T09:23:18.6643141+09:00;True|2022-08-16T09:19:52.9805454+09:00;True|2022-08-11T15:11:30.7918736+09:00;True|2022-07-28T09:36:45.1393321+09:00;True|2022-07-27T14:04:50.5187002+09:00;True|2022-07-27T13:36:46.9771603+09:00;False|2022-07-27T13:35:52.2013478+09:00;True|2022-07-27T13:34:42.1833013+09:00;False|2022-07-27T13:34:20.2891173+09:00;False|2022-07-27T13:33:31.6662595+09:00;True|2022-07-27T13:05:24.2670473+09:00;True|2022-07-27T13:00:26.7131013+09:00;True|2022-07-27T12:57:15.0774574+09:00;True|2022-07-27T12:55:15.9140564+09:00;True|2022-07-21T14:30:28.3418589+09:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="App.ico">
@@ -21,10 +22,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/28/2017 09:25:13</publishTime>
     </File>
     <File Include="bin/DBCON.dll">
-      <publishTime>08/10/2022 12:11:12</publishTime>
+      <publishTime>09/13/2022 11:47:36</publishTime>
     </File>
     <File Include="bin/DBCON.pdb">
-      <publishTime>08/10/2022 12:11:12</publishTime>
+      <publishTime>09/13/2022 11:47:36</publishTime>
     </File>
     <File Include="bin/itextsharp.dll">
       <publishTime>11/30/2015 21:32:58</publishTime>
@@ -63,10 +64,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/26/2011 12:43:20</publishTime>
     </File>
     <File Include="bin/WebApplication1.dll">
-      <publishTime>08/16/2022 09:18:42</publishTime>
+      <publishTime>09/13/2022 14:30:59</publishTime>
     </File>
     <File Include="bin/WebApplication1.pdb">
-      <publishTime>08/16/2022 09:18:42</publishTime>
+      <publishTime>09/13/2022 14:30:59</publishTime>
     </File>
     <File Include="Chart/BarChart.aspx">
       <publishTime>08/07/2018 09:24:22</publishTime>
@@ -321,7 +322,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/18/2020 10:41:41</publishTime>
     </File>
     <File Include="Log/day_traffic.aspx">
-      <publishTime>07/21/2022 14:28:42</publishTime>
+      <publishTime>09/13/2022 14:30:46</publishTime>
     </File>
     <File Include="Log/day_traffic_main.aspx">
       <publishTime>07/15/2022 17:09:34</publishTime>
@@ -333,7 +334,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/15/2022 17:09:44</publishTime>
     </File>
     <File Include="Log/perioid_traffic.aspx">
-      <publishTime>07/21/2022 14:29:29</publishTime>
+      <publishTime>09/13/2022 14:20:12</publishTime>
     </File>
     <File Include="Log/Secure_Log.aspx">
       <publishTime>07/18/2022 13:29:29</publishTime>
@@ -348,7 +349,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/26/2022 12:30:36</publishTime>
     </File>
     <File Include="Log/System_Log_Main.aspx">
-      <publishTime>01/26/2022 12:29:03</publishTime>
+      <publishTime>09/13/2022 10:08:41</publishTime>
     </File>
     <File Include="main.aspx">
       <publishTime>01/28/2022 09:26:20</publishTime>
@@ -363,7 +364,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/12/2022 14:12:26</publishTime>
     </File>
     <File Include="main5.aspx">
-      <publishTime>08/10/2022 09:07:52</publishTime>
+      <publishTime>09/05/2022 15:33:09</publishTime>
     </File>
     <File Include="main6.aspx">
       <publishTime>01/18/2022 15:21:47</publishTime>
@@ -378,10 +379,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/15/2019 11:38:23</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>03/08/2021 11:46:10</publishTime>
+      <publishTime>08/16/2022 13:50:24</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>08/16/2022 09:23:14</publishTime>
+      <publishTime>09/13/2022 14:31:00</publishTime>
     </File>
     <File Include="Properties/PublishProfiles/CustomProfile.pubxml">
       <publishTime>11/24/2017 15:01:01</publishTime>
@@ -621,7 +622,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/11/2020 11:48:14</publishTime>
     </File>
     <File Include="User/user.aspx">
-      <publishTime>07/18/2022 13:16:41</publishTime>
+      <publishTime>08/22/2022 16:05:55</publishTime>
     </File>
     <File Include="User/user_modi.aspx">
       <publishTime>01/16/2018 09:27:45</publishTime>
@@ -639,7 +640,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2018 12:49:49</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/21/2022 14:30:13</publishTime>
+      <publishTime>09/08/2022 09:16:02</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>10/13/2017 11:21:29</publishTime>
@@ -648,10 +649,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/13/2017 11:21:29</publishTime>
     </File>
     <File Include="WebApplication1.csproj">
-      <publishTime>07/27/2022 13:35:50</publishTime>
+      <publishTime>08/16/2022 13:50:46</publishTime>
     </File>
     <File Include="WebApplication1.csproj.user">
-      <publishTime>07/21/2022 14:30:11</publishTime>
+      <publishTime>09/13/2022 14:30:57</publishTime>
     </File>
   </ItemGroup>
 </Project>

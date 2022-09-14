@@ -317,3 +317,4 @@ D:\c#\c# 소스\source\repos\NMS\LNM\obj\Release\LNM.csproj.CoreCompileInputs.ca
 D:\c#\c# 소스\source\repos\NMS\LNM\obj\Release\LNM.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\NMS\LNM\obj\Release\LNM.exe
 D:\c#\c# 소스\source\repos\NMS\LNM\obj\Release\LNM.pdb
+D:\c#\c# 소스\source\repos\NMS\LNM\obj\Release\LNM.csproj.SuggestedBindingRedirects.cache

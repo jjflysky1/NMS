@@ -311,7 +311,8 @@ else if((comparehour==0) && (comparemin<0))
                                    data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "' , 'HiddenField1':'" + starttime + "' , 'HiddenField2':'" + endtime +"'}",
                                     contentType: "application/json; charset=utf-8",
                                  dataType: "json",
-                                    async: true,
+                                 async: true,
+                                 cache: false,
                                     success: OnSuccess,
                                     failure: function (response) {
                                         alert(response.d);
@@ -333,7 +334,8 @@ else if((comparehour==0) && (comparemin<0))
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "' , 'HiddenField1':'" + starttime + "' , 'HiddenField2':'" + endtime +"'}",
                 contentType: "application/json; charset=utf-8",
                   dataType: "json",
-                async: true,
+                  async: true,
+                  cache: false,
                   success: OnSuccess,
                 failure: function (response) {
                     alert(response.d);
@@ -348,7 +350,8 @@ else if((comparehour==0) && (comparemin<0))
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "' , 'HiddenField1':'" + starttime + "' , 'HiddenField2':'" + endtime +"'}",
                 contentType: "application/json; charset=utf-8",
                   dataType: "json",
-                async: true,
+                  async: true,
+                  cache: false,
                 success: OnSuccess4,
                 failure: function (response) {
                     alert(response.d);
@@ -547,7 +550,7 @@ $('#div100').html('<canvas id="myChart" width="400" height="200"></canvas>'); //
         
 
 
-    </script>
+                     </script>
                 
                                <div id="div200" class="div200" style="width:48%; float:right; text-align:right;  height:100%;" >
                                         <canvas id="myChart2" width="400" height="200"></canvas>
@@ -585,7 +588,8 @@ $('#div100').html('<canvas id="myChart" width="400" height="200"></canvas>'); //
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "' , 'HiddenField1':'" + starttime + "' , 'HiddenField2':'" + endtime +"'}",
                 contentType: "application/json; charset=utf-8",
              dataType: "json",
-                async: true,
+             async: true,
+             cache: false,
                 success: OnSuccess4,
                 failure: function (response) {
                     alert(response.d);
@@ -819,7 +823,7 @@ $('#div200').html('<canvas id="myChart2" width="400" height="200"></canvas>'); /
 
 
      
-    </script>
+</script>
                      <div style="margin-top:0px; width:100% ; float:left; text-align:right">
                
                          

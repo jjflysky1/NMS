@@ -24,7 +24,7 @@ namespace SecurityServer
         /// 
 
 
-        int sleep = 10000;
+        int sleep = 20000;
         int trafficsleep = 1000;
         ///10초 : 10000
         ///1분 : 60000
@@ -281,7 +281,10 @@ namespace SecurityServer
 
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.CommandText = "update service set os = @os where serverip = @serverip ";
                                 cmd.Parameters.Add("@OS", MySqlDbType.VarChar, 100).Value = entry.Value.ToString().Replace(',', ' ');
@@ -346,7 +349,10 @@ namespace SecurityServer
 
                             MySqlCommand cmd = new MySqlCommand();
                             cmd.Connection = CON;
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             cmd.CommandType = System.Data.CommandType.Text;
                             cmd.CommandText = "update service set computer_name = @computer_name where serverip = @serverip ";
                             cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = row["serverip"].ToString();
@@ -360,7 +366,10 @@ namespace SecurityServer
                     catch (Exception ex)
                     {
                         Console.WriteLine("Error: " + ex + Environment.NewLine + "-------------------------------------------------------");
-                        CON.Open();
+                        if (CON.State != ConnectionState.Open)
+                        {
+                            CON.Open();
+                        }
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
                         cmd.CommandType = System.Data.CommandType.Text;
@@ -390,7 +399,10 @@ namespace SecurityServer
 
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.CommandText = "update service set uptime = @uptime where serverip = @serverip ";
                                 cmd.Parameters.Add("@uptime", MySqlDbType.VarChar, 100).Value = entry.Value.ToString();
@@ -1518,7 +1530,10 @@ namespace SecurityServer
                                 percen = (Convert.ToDouble(used) / total) * 100;
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
@@ -1605,7 +1620,10 @@ namespace SecurityServer
                                 {
                                     Console.WriteLine("CPU : " + entry.Value.ToString() + "%");
                                     cpu = Convert.ToDouble(entry.Value.ToString());
-                                    CON.Open();
+                                    if (CON.State != ConnectionState.Open)
+                                    {
+                                        CON.Open();
+                                    }
                                     MySqlCommand cmd = new MySqlCommand();
                                     cmd.Connection = CON;
                                     cmd.CommandType = System.Data.CommandType.Text;
@@ -1839,7 +1857,10 @@ namespace SecurityServer
                                 portcount = Convert.ToInt32(row1["count"].ToString());
                             }
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             for (int j = 0; j < portcount; j++)
                             {
                                 //Console.WriteLine("포트이름==========================  : " + portname[j]);
@@ -2027,7 +2048,10 @@ namespace SecurityServer
                                 percen = (Convert.ToDouble(used) / total) * 100;
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
@@ -2064,7 +2088,10 @@ namespace SecurityServer
                                 {
                                     Console.WriteLine("CPU : " + entry.Value.ToString() + "%");
                                     cpu = Convert.ToDouble(entry.Value.ToString());
-                                    CON.Open();
+                                    if (CON.State != ConnectionState.Open)
+                                    {
+                                        CON.Open();
+                                    }
                                     MySqlCommand cmd = new MySqlCommand();
                                     cmd.Connection = CON;
                                     cmd.CommandType = System.Data.CommandType.Text;
@@ -2298,7 +2325,10 @@ namespace SecurityServer
                                 portcount = Convert.ToInt32(row1["count"].ToString());
                             }
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             for (int j = 0; j < portcount; j++)
                             {
                                 //Console.WriteLine("포트이름==========================  : " + portname[j]);
@@ -2871,7 +2901,10 @@ namespace SecurityServer
                                 {
                                     Console.WriteLine("CPU : " + entry.Value.ToString() + "%");
                                     cpu = Convert.ToDouble(entry.Value.ToString());
-                                    CON.Open();
+                                    if (CON.State != ConnectionState.Open)
+                                    {
+                                        CON.Open();
+                                    }
                                     MySqlCommand cmd = new MySqlCommand();
                                     cmd.Connection = CON;
                                     cmd.CommandType = System.Data.CommandType.Text;
@@ -2927,7 +2960,10 @@ namespace SecurityServer
                                 percen = (Convert.ToDouble(used) / total) * 100;
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
@@ -2997,7 +3033,10 @@ namespace SecurityServer
                                 percen = (Convert.ToDouble(used) / Convert.ToDouble(total)) * 100;
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd5 = new MySqlCommand();
                                 cmd5.Connection = CON;
                                 cmd5.CommandType = System.Data.CommandType.Text;
@@ -3214,7 +3253,10 @@ namespace SecurityServer
                                 portcount = Convert.ToInt32(row1["count"].ToString());
                             }
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             for (int j = 0; j < portcount; j++)
                             {
                                 string state = "";
@@ -3428,7 +3470,10 @@ namespace SecurityServer
                         {
                             foreach (KeyValuePair<Oid, AsnType> entry in result)
                             {
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
                                 cmd.CommandType = System.Data.CommandType.Text;
@@ -3490,7 +3535,10 @@ namespace SecurityServer
                                 Console.WriteLine(hostname);
                             }
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             MySqlCommand cmd = new MySqlCommand();
                             cmd.Connection = CON;
                             cmd.CommandType = System.Data.CommandType.Text;
@@ -3506,7 +3554,10 @@ namespace SecurityServer
                     catch (Exception ex)
                     {
                         Console.WriteLine("Error: " + ex + Environment.NewLine + "-------------------------------------------------------");
-                        CON.Open();
+                        if (CON.State != ConnectionState.Open)
+                        {
+                            CON.Open();
+                        }
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
                         cmd.CommandType = System.Data.CommandType.Text;
@@ -3536,7 +3587,10 @@ namespace SecurityServer
 
                                 MySqlCommand cmd = new MySqlCommand();
                                 cmd.Connection = CON;
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 cmd.CommandType = System.Data.CommandType.Text;
                                 cmd.CommandText = "update service set uptime = @uptime where serverip = @serverip ";
                                 cmd.Parameters.Add("@uptime", MySqlDbType.VarChar, 100).Value = entry.Value.ToString();
@@ -3576,7 +3630,10 @@ namespace SecurityServer
                                 {
                                     Console.WriteLine("CPU : " + entry.Value.ToString() + "%");
                                     cpu = Convert.ToDouble(entry.Value.ToString());
-                                    CON.Open();
+                                    if (CON.State != ConnectionState.Open)
+                                    {
+                                        CON.Open();
+                                    }
                                     MySqlCommand cmd5 = new MySqlCommand();
                                     cmd5.Connection = CON;
                                     cmd5.CommandType = System.Data.CommandType.Text;
@@ -3648,7 +3705,10 @@ namespace SecurityServer
                                 percen = total / (total - cache);
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd5 = new MySqlCommand();
                                 cmd5.Connection = CON;
                                 cmd5.CommandType = System.Data.CommandType.Text;
@@ -3698,7 +3758,10 @@ namespace SecurityServer
                                 percen = (Convert.ToDouble(used) / Convert.ToDouble(total)) * 100;
                                 Console.WriteLine(percen.ToString("#.#") + "%");
 
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd5 = new MySqlCommand();
                                 cmd5.Connection = CON;
                                 cmd5.CommandType = System.Data.CommandType.Text;
@@ -3980,7 +4043,10 @@ namespace SecurityServer
                             //////cmd3 = null;
                             //////CON.Close();
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             MySqlCommand cmd4 = new MySqlCommand();
                             cmd4.Connection = CON;
                             cmd4.CommandType = System.Data.CommandType.Text;
@@ -4009,7 +4075,10 @@ namespace SecurityServer
                             }
                             if (state == "0")
                             {
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
                                 MySqlCommand cmd2 = new MySqlCommand();
                                 cmd2.Connection = CON;
                                 cmd2.CommandType = System.Data.CommandType.Text;
@@ -4022,14 +4091,20 @@ namespace SecurityServer
                                 CON.Close();
                             }
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             MySqlCommand cmd33 = new MySqlCommand("Add_System_Log_Cpu_Memory", CON);
                             cmd33.CommandType = CommandType.StoredProcedure;
                             cmd33.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
                             cmd33.ExecuteNonQuery();
                             CON.Close();
 
-                            CON.Open();
+                            if (CON.State != ConnectionState.Open)
+                            {
+                                CON.Open();
+                            }
                             MySqlCommand cmd44 = new MySqlCommand("Add_System_Log_Traffic", CON);
                             cmd44.CommandType = CommandType.StoredProcedure;
                             cmd44.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());

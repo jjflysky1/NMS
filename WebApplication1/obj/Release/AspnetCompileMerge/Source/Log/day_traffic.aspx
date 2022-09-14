@@ -302,14 +302,16 @@
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                
+                 async: true,
+                 cache: false,
                 success: OnSuccess,
                 failure: function (response) {
                     alert(response.d);
                 },
                 error: function (response) {
                     alert(response.d);
-                }
+             },
+             timeout: 60000
             });
         });
 
@@ -322,14 +324,17 @@
                 url: "day_traffic.aspx/chart1",
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
-                dataType: "json",
+                 dataType: "json",
+                 async: true,
+                 cache: false,
                 success: OnSuccess,
                 failure: function (response) {
                     alert(response.d);
                 },
                 error: function (response) {
                     alert(response.d);
-                }
+                 },
+                 timeout: 60000
             });
       
             $.ajax({
@@ -338,13 +343,16 @@
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
+                async: true,
+                cache: false,
                 success: OnSuccess2,
                 failure: function (response) {
                     //alert(response.d);
                 },
                 error: function (response) {
                     //alert(response.d);
-                }
+                },
+                timeout: 60000
             });
 
             $.ajax({
@@ -353,13 +361,16 @@
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
+                async: true,
+                cache: false,
                 success: OnSuccess3,
                 failure: function (response) {
                     //alert(response.d);
                 },
                 error: function (response) {
                     //alert(response.d);
-                }
+                },
+                timeout: 60000
             });
 
             $.ajax({
@@ -368,13 +379,16 @@
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
+                async: true,
+                cache: false,
                 success: OnSuccess4,
                 failure: function (response) {
                     //alert(response.d);
                 },
                 error: function (response) {
                     //alert(response.d);
-                }
+                },
+                timeout: 60000
             });
         },1 * 10 * 10000);
 
@@ -555,14 +569,17 @@ Chart.pluginService.register(randomColorPlugin);
                 url: "day_traffic.aspx/chart2",
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
-                dataType: "json",
+             dataType: "json",
+             async: true,
+             cache: false,
                 success: OnSuccess2,
                 failure: function (response) {
                     alert(response.d);
                 },
                 error: function (response) {
                     alert(response.d);
-                }
+             },
+             timeout: 60000
             });
         });
 
@@ -718,14 +735,16 @@ $(function () {
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                
+             async: true,
+             cache: false,
                 success: OnSuccess3,
                 failure: function (response) {
                     alert(response.d);
                 },
                 error: function (response) {
                     alert(response.d);
-                }
+             },
+             timeout: 60000
             });
         });
 
@@ -879,14 +898,16 @@ $(function () {
                 data: "{'serverip':'" + serverip + "', 'startdate':'" + startdate + "', 'enddate':'" + enddate + "'}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                
+                 async: true,
+                 cache: false,
                 success: OnSuccess4,
                 failure: function (response) {
                     alert(response.d);
                 },
                 error: function (response) {
                     alert(response.d);
-                }
+                },
+                timeout: 60000
             });
         });
 

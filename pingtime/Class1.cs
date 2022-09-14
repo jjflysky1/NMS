@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Renci.SshNet.Common;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,7 +20,7 @@ namespace pingtime
         /// 
         /// 라이센스 갯수
         /// </summary>
-        int sleep = 30000;
+        int sleep = 10000;
 
         public void pingthread()
         {
@@ -140,8 +141,8 @@ namespace pingtime
                         ///다운된 서버 메일보내기
                         if (row["status"].ToString().Contains("Disconnect") == true)
                         {
-
-                            Console.WriteLine("============================= " + serverip + " DOWN!!!");
+                            
+                            Console.WriteLine("★★★★★★★★★★" + serverip + " DOWN!!! (다운된 서버 메일보내기에 들어옴)");
 
                             ///열려있지 않으면 오픈
                             if (CON.State != ConnectionState.Open)
@@ -179,15 +180,29 @@ namespace pingtime
 
                     try
                     {
-
                         Ping ping = new Ping();
                         PingOptions options = new PingOptions();
                         options.DontFragment = true;
                         string data = "aaaaaaaaaaaaaaaaa";
                         byte[] buffer = ASCIIEncoding.ASCII.GetBytes(data);
-                        int timeout = 200;
+                        int timeout = 1000;
                         PingReply reply = ping.Send(row["serverip"].ToString(), timeout, buffer, options);
-                        if (reply.Status == IPStatus.Success) // 네트워크 사용 가능할 때~~
+                        int j = 0;
+                        for (int i = 0; i < 5; i++)
+                        {
+                            reply = ping.Send(row["serverip"].ToString(), timeout, buffer, options);
+                            Thread.Sleep(3000);
+                          
+                            if(reply.Status != IPStatus.Success)
+                            {
+                                j++;
+                                Console.WriteLine("★★★★★★★★★★" + row["serverip"].ToString()+ " 장비 " + j + " 번");
+                            }
+                        }
+                       
+                     
+                        //if (reply.Status == IPStatus.Success) // 네트워크 사용 가능할 때~~
+                        if (j != 5)
                         {
                             Process cmad = new Process();
                             cmad.StartInfo.FileName = "cmd.exe";
@@ -254,12 +269,12 @@ namespace pingtime
 
 
                         }
-                        else
+                        else if( j == 5)
                         {
 
 
-                            //Console.WriteLine("============================= " + serverip + " DOWN!!!");
-
+                            Console.WriteLine("============================= " + serverip + " DOWN!!!");
+                            Console.WriteLine(row["serverip"].ToString() + "번 아웃");
 
 
                             ///열려있지 않으면 오픈
@@ -286,21 +301,21 @@ namespace pingtime
                     }
                     catch (Exception e)
                     {
-                        ///열려있지 않으면 오픈
-                        if (CON.State != ConnectionState.Open)
-                        {
-                            CON.Open();
-                        }
-                        MySqlCommand cmd2 = new MySqlCommand();
-                        cmd2.Connection = CON;
-                        cmd2.CommandType = System.Data.CommandType.Text;
-                        cmd2.CommandText = "update service set  status = @status where serverip = @serverip ";
-                        cmd2.Parameters.Add("@status", MySqlDbType.VarChar, 100).Value = "Server Disconnect/ping";
-                        cmd2.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = row["serverip"].ToString();
-                        cmd2.ExecuteNonQuery();
-                        cmd2.Dispose();
-                        cmd2 = null;
-                        CON.Close();
+                        /////열려있지 않으면 오픈
+                        //if (CON.State != ConnectionState.Open)
+                        //{
+                        //    CON.Open();
+                        //}
+                        //MySqlCommand cmd2 = new MySqlCommand();
+                        //cmd2.Connection = CON;
+                        //cmd2.CommandType = System.Data.CommandType.Text;
+                        //cmd2.CommandText = "update service set  status = @status where serverip = @serverip ";
+                        //cmd2.Parameters.Add("@status", MySqlDbType.VarChar, 100).Value = "Server Disconnect/ping";
+                        //cmd2.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = row["serverip"].ToString();
+                        //cmd2.ExecuteNonQuery();
+                        //cmd2.Dispose();
+                        //cmd2 = null;
+                        //CON.Close();
 
                         Console.WriteLine("여기3" + e.Message);
 

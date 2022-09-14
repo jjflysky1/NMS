@@ -122,7 +122,7 @@
                    </li>
 
                     <li style="margin-top:5px;  margin-right:10px">
-                       <asp:Label ID="Label9" runat="server" Text="직책 : " CssClass="navbar-left"></asp:Label>
+                       <asp:Label ID="Label9" runat="server" Text="직위 : " CssClass="navbar-left"></asp:Label>
                    </li>
                     <li style="margin-right:10px">
                        <asp:TextBox ID="TextBox4" Height="30" Width="140" runat="server" Class="form-control"></asp:TextBox>

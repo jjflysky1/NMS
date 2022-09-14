@@ -42,7 +42,7 @@ namespace Service_reload
 
                         Console.WriteLine("Running");
                     }
-                    Thread.Sleep(60000);
+                    Thread.Sleep(10000);
                 }
                 catch (Exception ex)
                 {

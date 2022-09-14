@@ -80,7 +80,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
+                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -103,7 +103,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
+                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -126,7 +126,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
+                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -149,7 +149,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
+                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;

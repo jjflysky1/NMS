@@ -483,10 +483,7 @@
                                     timeArray3 = temp_time3.split(',');
                                     trafficArray3.reverse();
                                     timeArray3.reverse();
-
                                 }
-
-
 
                                 var temp_traffic2 = "";
                                 var serverip2 = "";

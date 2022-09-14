@@ -1494,7 +1494,7 @@ namespace WebApplication1
                 "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY INET_ATON(a.serverip)) " +
                 "UNION " +
                 "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model FROM " +
-                "service where flag = '1' and Category IS NOT null) ORDER BY INET_ATON(serverip)";
+                "service where flag = '1' and Category = '서버 장비') ORDER BY INET_ATON(serverip)";
             MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET4 = new DataSet();
             ADT4.Fill(DBSET4, "BD4");

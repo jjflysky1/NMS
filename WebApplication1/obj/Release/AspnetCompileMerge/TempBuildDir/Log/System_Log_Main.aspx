@@ -144,8 +144,8 @@
                     </li>
                     <li style=" margin-right:10px">
                         <asp:DropDownList ID="DropDownList1" runat="server" Height="30"  Class="form-control" Width="100px">
-                        <asp:ListItem>선택</asp:ListItem>
                         <asp:ListItem Value="1">아이피</asp:ListItem>
+                            <asp:ListItem>선택</asp:ListItem>
                         </asp:DropDownList>
                     </li>
 
