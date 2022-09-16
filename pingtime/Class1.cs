@@ -141,9 +141,7 @@ namespace pingtime
                         ///다운된 서버 메일보내기
                         if (row["status"].ToString().Contains("Disconnect") == true)
                         {
-                            
                             Console.WriteLine("★★★★★★★★★★" + serverip + " DOWN!!! (다운된 서버 메일보내기에 들어옴)");
-
                             ///열려있지 않으면 오픈
                             if (CON.State != ConnectionState.Open)
                             {
