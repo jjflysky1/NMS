@@ -648,7 +648,7 @@
                                                 displayColors: false,
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                                         return o.join(', ');
                                                     },
@@ -778,7 +778,7 @@
 
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                                         return o.join(', ');
                                                     },
@@ -908,7 +908,7 @@
 
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                                         return o.join(', ');
                                                     },
@@ -1378,7 +1378,7 @@
 
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                                         return o.join(', ');
                                                     },
@@ -1503,7 +1503,7 @@
 
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s");
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps");
 
                                                         return o.join(', ');
                                                     },
@@ -1629,7 +1629,7 @@
 
                                                 callbacks: {
                                                     title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                                         return o.join(', ');
                                                     },

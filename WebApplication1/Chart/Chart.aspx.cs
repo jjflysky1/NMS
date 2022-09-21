@@ -276,7 +276,7 @@ namespace WebApplication1
             st.Append("lineColors: ['#3c8dbc','#fc8710','#819C79'],");
             st.Append("pointSize: 0,");
             st.Append("hideHover:true,");
-            st.Append(" postUnits: ' Mb/s',");
+            st.Append(" postUnits: ' mbps',");
             st.Append("fillOpacity: .1,");
             st.Append("resize: true");
             st.Append("   });");

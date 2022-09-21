@@ -178,12 +178,12 @@
                     <li style="margin-top:5px; margin-right:10px">
                         <asp:Label ID="Label4" runat="server" Text="구분 : " CssClass="navbar-left" ></asp:Label>
                     </li>
-                    <li style=" margin-right:10px">
+                    <%--<li style=" margin-right:10px">
                         <asp:DropDownList ID="DropDownList1" runat="server" Height="30"  Class="form-control" Width="100px">
                         
                         <asp:ListItem Value="1">아이피</asp:ListItem>
                         </asp:DropDownList>
-                    </li>
+                    </li>--%>
 
 
                    <li style="margin-top:5px;  margin-right:10px">

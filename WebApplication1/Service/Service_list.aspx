@@ -559,7 +559,7 @@
 
                         callbacks: {
                             title: function (t, d) {
-                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " Mb/s")
+                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                 return o.join(', ');
                             },

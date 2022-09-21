@@ -51,7 +51,7 @@ namespace pingtime
                     }
 
 
-                    string SQL1 = "";
+                    
                     string[] serverip = { };
                     string tempip = "";
                     int count = 0;
@@ -263,9 +263,6 @@ namespace pingtime
                             cmd2.Dispose();
                             cmd2 = null;
                             CON.Close();
-
-
-
                         }
                         else if( j == 5)
                         {

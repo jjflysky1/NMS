@@ -26,7 +26,7 @@ namespace WebApplication1
             {
 
                 Search.Text = Request["search"];
-                DropDownList1.SelectedValue = Request["type"];
+                //DropDownList1.SelectedValue = Request["type"];
                 startdate.Text = Request["startdate"];
                 enddate.Text = Request["enddate"];
                 DropDownList2.SelectedValue = Request["type2"];
@@ -164,28 +164,28 @@ namespace WebApplication1
             }
 
 
-            string SQL2 = "select count(*) as count from  " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
-            if (DropDownList1.SelectedValue == "1")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where serverip = '" + Search.Text + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            string SQL2 = "select count(*) as count from " + view_type.Value + " where serverip = '" + serverip.Value + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //if (DropDownList1.SelectedValue == "1")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where serverip = '" + Search.Text + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
 
-            }
-            else if (DropDownList1.SelectedValue == "2")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "3")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "4")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else
-            {
-                SQL2 = "select count(*) as count from  " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
-            }
+            //}
+            //else if (DropDownList1.SelectedValue == "2")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "3")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "4")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else
+            //{
+            //    SQL2 = "select count(*) as count from  " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
+            //}
 
 
             DB.Open();
@@ -215,41 +215,47 @@ namespace WebApplication1
             ADT.SelectCommand.CommandType = CommandType.StoredProcedure;
 
 
-            if (DropDownList1.SelectedValue == "1")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip = '" + Search.Text + "' " +
-                   " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "2")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
-                    " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "3")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where time like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
-                    " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "4")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where status like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
-                    " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where time >= '" + startdate.Text + "' and time < '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'");
-                //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
+            ADT.SelectCommand.Parameters.AddWithValue("@search", "where time >= '" + startdate.Text + "' and time < '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'");
+            //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
+            ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
+            ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+
+            //if (DropDownList1.SelectedValue == "1")
+            //{
+            //    //ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip = '" + Search.Text + "' " +
+            //    //   " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end + "");
+            //    //ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+                
+            //}
+            //else if (DropDownList1.SelectedValue == "2")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
+            //        " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else if (DropDownList1.SelectedValue == "3")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where time like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
+            //        " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else if (DropDownList1.SelectedValue == "4")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where status like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end +
+            //        " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where time >= '" + startdate.Text + "' and time < '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'");
+            //    //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
 
             PAGEADD(Math.Ceiling(pagecount), nowpage);
             DataSet DBSET = new DataSet();
@@ -263,29 +269,31 @@ namespace WebApplication1
         }
         private void count()
         {
-            
 
-            if (DropDownList1.SelectedValue == "1")
-            {
-                SQL = "select count(*) as count from " + view_type.Value + " where serverip = '" + Search.Text + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
 
-            }
-            else if (DropDownList1.SelectedValue == "2")
-            {
-                SQL = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "3")
-            {
-                SQL = "select count(*) as count from  " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "4")
-            {
-                SQL = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else
-            {
-                SQL = "select count(*) as count from " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
-            }
+            //if (DropDownList1.SelectedValue == "1")
+            //{
+            //    SQL = "select count(*) as count from " + view_type.Value + " where serverip = '" + Search.Text + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+
+            //}
+            //else if (DropDownList1.SelectedValue == "2")
+            //{
+            //    SQL = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "3")
+            //{
+            //    SQL = "select count(*) as count from  " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "4")
+            //{
+            //    SQL = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else
+            //{
+            //    SQL = "select count(*) as count from " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
+            //}
+
+            SQL = "select count(*) as count from " + view_type.Value + " where serverip = '" + serverip.Value + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
 
             MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET = new DataSet();
@@ -381,7 +389,7 @@ namespace WebApplication1
             SB.Append("<nav>");
             SB.Append("<ul class='pagination'>");
             //SB.Append("<li>" + "<a href='System_Log.aspx?nowpage=" + 1 + "'>" + "<span aria-hidden='true'> &laquo;</span>" + "</a>" + "<li>");
-            SB.Append("<li>" + "<a href='Secure_Log.aspx?nowpage=" + 1 + "&search=" + Search.Text + "&type=" + DropDownList1.SelectedValue + "&startdate=" +
+            SB.Append("<li>" + "<a href='Secure_Log.aspx?nowpage=" + 1 + "&search=" + Search.Text + "&startdate=" +
                 "" + startdate.Text + "&enddate=" + enddate.Text + "&type2=" + DropDownList2.SelectedValue + "&serverip=" + serverip.Value + "&view_type=" + view_type.Value + "'>" + "<span aria-hidden='true'> &laquo;</span>" + "</a>" + "<li>");
             if (nowpage > 5)
             {
@@ -397,11 +405,11 @@ namespace WebApplication1
                 {
                     break;
                 }
-                SB.Append("<li> " + "<a href='Secure_Log.aspx?nowpage=" + i + "&search=" + Search.Text + "&type=" + DropDownList1.SelectedValue + "&startdate=" +
+                SB.Append("<li> " + "<a href='Secure_Log.aspx?nowpage=" + i + "&search=" + Search.Text + "&startdate=" +
                     "" + startdate.Text + "&enddate=" + enddate.Text + "&type2=" + DropDownList2.SelectedValue + "&serverip=" + serverip.Value + "&view_type=" + view_type.Value + "'>" + i + "</a>" + " <li>");
 
             }
-            SB.Append("<li>" + "<a href='Secure_Log.aspx?nowpage=" + (pagecount - 1) + "&search=" + Search.Text + "&type=" + DropDownList1.SelectedValue + "&startdate=" +
+            SB.Append("<li>" + "<a href='Secure_Log.aspx?nowpage=" + (pagecount - 1) + "&search=" + Search.Text + "&startdate=" +
                 "" + startdate.Text + "&enddate=" + enddate.Text + "&type2=" + DropDownList2.SelectedValue + "&serverip=" + serverip.Value + "&view_type=" + view_type.Value + "'>" + "<span aria-hidden='true'> &raquo;</span>" + "</a>" + "<li>");
             //SB.Append("<li>" + "<a href='webform2.aspx?nowpage=" + (pagecount-1) + "'>" + "<span aria-hidden='true'> &raquo;</span>" + "</a>" + "<li>");
             SB.Append("</ul>");
@@ -413,7 +421,7 @@ namespace WebApplication1
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Secure_Log.aspx?nowpage=" + 1 + "&search=" + Search.Text + "&type=" + DropDownList1.SelectedValue + "&startdate=" + startdate.Text + "&enddate=" + enddate.Text + "");
+            Response.Redirect("Secure_Log.aspx?nowpage=" + 1 + "&search=" + Search.Text + "&startdate=" + startdate.Text + "&enddate=" + enddate.Text + "");
         }
 
         protected void Button6_Click(object sender, EventArgs e)
@@ -425,24 +433,24 @@ namespace WebApplication1
             }
 
 
-            string SQL2 = "select count(*) as count from " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            if (DropDownList1.SelectedValue == "1")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            string SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + serverip.Value + "%' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //if (DropDownList1.SelectedValue == "1")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
 
-            }
-            else if (DropDownList1.SelectedValue == "2")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "3")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
-            else if (DropDownList1.SelectedValue == "4")
-            {
-                SQL2 = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
-            }
+            //}
+            //else if (DropDownList1.SelectedValue == "2")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "3")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where time like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
+            //else if (DropDownList1.SelectedValue == "4")
+            //{
+            //    SQL2 = "select count(*) as count from " + view_type.Value + " where status like '%" + Search.Text + "%'  and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            //}
 
 
 
@@ -473,38 +481,43 @@ namespace WebApplication1
             ADT.SelectCommand.CommandType = CommandType.StoredProcedure;
 
 
-            if (DropDownList1.SelectedValue == "1")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%' " +
+            ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + serverip.Value + "%' " +
                    " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "2")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "3")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where time like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else if (DropDownList1.SelectedValue == "4")
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where status like '%" + Search.Text + "%'");
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
-            else
-            {
-                ADT.SelectCommand.Parameters.AddWithValue("@search", "where time between '" + startdate.Text + "' and '" + enddate.Text + "'");
-                //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
-                ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
-                ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
-            }
+            ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+
+            //if (DropDownList1.SelectedValue == "1")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%' " +
+            //       " and time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else if (DropDownList1.SelectedValue == "2")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where serverip like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else if (DropDownList1.SelectedValue == "3")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where time like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else if (DropDownList1.SelectedValue == "4")
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where status like '%" + Search.Text + "%'");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
+            //else
+            //{
+            //    ADT.SelectCommand.Parameters.AddWithValue("@search", "where time between '" + startdate.Text + "' and '" + enddate.Text + "'");
+            //    //ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end);
+            //    ADT.SelectCommand.Parameters.AddWithValue("@where1", " no >= " + start + " and no <= " + end * pagecount + "");
+            //    ADT.SelectCommand.Parameters.AddWithValue("@view_type", view_type.Value);
+            //}
 
             //PAGEADD(pagecount, nowpage);
             System.Web.HttpResponse objResponse = System.Web.HttpContext.Current.Response;

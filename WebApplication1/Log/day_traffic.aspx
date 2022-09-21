@@ -474,7 +474,7 @@ function addData(chart, data) {
       
       callbacks: {
         title: function (t, d) {
-          const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+          const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
           
           return o.join(', ');
         },
@@ -519,7 +519,7 @@ function addData(chart, data) {
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
+                    <asp:Label ID="Label40" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">mbps</font><br />
                     
                     
                 </div>
@@ -667,7 +667,7 @@ Chart.pluginService.register(randomColorPlugin);
       
       callbacks: {
         title: function (t, d) {
-          const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+          const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
           
           return o.join(', ');
         },
@@ -712,7 +712,7 @@ Chart.pluginService.register(randomColorPlugin);
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
+                    <asp:Label ID="Label43" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">mbps</font><br />
                     
                 </div>
 
@@ -830,7 +830,7 @@ function addData(chart, data) {
       
       callbacks: {
         title: function (t, d) {
-          const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+          const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
           
           return o.join(', ');
         },
@@ -875,7 +875,7 @@ function addData(chart, data) {
         
     </script>
                     최대값<br />
-                    <asp:Label ID="Label46" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
+                    <asp:Label ID="Label46" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">mbps</font><br />
                     
                 </div>
 
@@ -993,7 +993,7 @@ $(function () {
 
                         callbacks: {
                             title: function (t, d) {
-                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " MB/s")
+                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
 
                                 return o.join(', ');
                             },
@@ -1038,7 +1038,7 @@ $(function () {
 
     </script>
                     최대값<br />
-                    <asp:Label ID="Label49" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">MB/s</font><br />
+                    <asp:Label ID="Label49" runat="server" Text="Label" Font-Size="Smaller"></asp:Label> <font size="2">mbps</font><br />
                     
                 </div>
 
