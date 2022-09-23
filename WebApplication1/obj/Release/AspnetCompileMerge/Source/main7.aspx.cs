@@ -1490,11 +1490,11 @@ namespace WebApplication1
         {
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where memory is not null and flag = '1' and Category like '%네트워크%'  ORDER BY INET_ATON(serverip) LIMIT 10 ";
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where flag = '1' and Category IS NOT null  ORDER BY INET_ATON(serverip)   ";
-            string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model " +
-                "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY INET_ATON(a.serverip)) " +
+            string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model, a.computer_name , a.network_name " +
+                "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY network_name asc, INET_ATON(a.serverip) desc) " +
                 "UNION " +
-                "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model FROM " +
-                "service where flag = '1' and Category = '서버 장비') ORDER BY INET_ATON(serverip)";
+                "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model, computer_name, network_name FROM " +
+                "service where flag = '1' and Category = '서버 장비') ORDER BY network_name asc, INET_ATON(serverip) desc";
             MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET4 = new DataSet();
             ADT4.Fill(DBSET4, "BD4");
@@ -1516,6 +1516,7 @@ namespace WebApplication1
                     status = row1["status"].ToString();
                     os = row1["os"].ToString();
                     model = row1["model"].ToString();
+                    
 
                     //라벨 추가
                     Label label = new Label();
@@ -1575,7 +1576,9 @@ namespace WebApplication1
                             st.Append("<img src='Dash_image/server2.png' width='100' height='50'>");
                         }
                     }
-                    st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
+                    //st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
+                    st.Append("<p><font size='2' color='#d4d4d4' >" + row1["network_name"].ToString() + "</font></a></p>");
+                    st.Append("<p><font size='1.5' color='#d4d4d4' >" + row1["computer_name"].ToString() + "</font></a></center></p>");
                     st.Append("</div>");
                     label.Text = st.ToString();
 

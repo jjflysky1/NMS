@@ -108,19 +108,19 @@ namespace autoadd
                                     if (reply.Status == IPStatus.Success)
                                     {
                                         Console.WriteLine(reply.Address.ToString() + " 검사");
-                                        CON.Open();
+                                        if (CON.State != ConnectionState.Open)
+                                        {
+                                            CON.Open();
+                                        }
                                         MySqlCommand cmd = new MySqlCommand("Auto_add_server", CON);
                                         cmd.CommandType = CommandType.StoredProcedure;
                                         cmd.Parameters.AddWithValue("@serverip1", reply.Address.ToString());
-                                        cmd.Parameters.AddWithValue("@network_name", network_name);
+                                        cmd.Parameters.AddWithValue("@network_name1", network_name);
                                         cmd.ExecuteNonQuery();
                                         cmd.Dispose();
                                         cmd = null;
                                         CON.Close();
-
                                     }
-
-
 
                                 }
 

@@ -251,18 +251,25 @@ namespace pingtime
                             cmd = null;
                             CON.Close();
 
-                            if (CON.State != ConnectionState.Open)
+                            string SQL2 = "select * from service_range WHERE  (INET_ATON('" + row["serverip"].ToString() + "') BETWEEN INET_ATON(startip) AND INET_ATON(endip))";
+                            MySqlDataAdapter ADT3 = new MySqlDataAdapter(SQL2, CON);
+                            DataSet DBSET3 = new DataSet();
+                            ADT3.Fill(DBSET3, "BD");
+                            foreach (DataRow row2 in DBSET3.Tables["BD"].Rows)
                             {
-                                CON.Open();
+                                if (CON.State != ConnectionState.Open)
+                                {
+                                    CON.Open();
+                                }
+                                MySqlCommand cmd2 = new MySqlCommand("Auto_add_server", CON);
+                                cmd2.CommandType = CommandType.StoredProcedure;
+                                cmd2.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                                cmd2.Parameters.AddWithValue("@network_name1", row2["name"].ToString());
+                                cmd2.ExecuteNonQuery();
+                                cmd2.Dispose();
+                                cmd2 = null;
+                                CON.Close();
                             }
-                            MySqlCommand cmd2 = new MySqlCommand("Auto_add_server", CON);
-                            cmd2.CommandType = CommandType.StoredProcedure;
-                            cmd2.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
-                            cmd2.Parameters.AddWithValue("@network_name", "");
-                            cmd2.ExecuteNonQuery();
-                            cmd2.Dispose();
-                            cmd2 = null;
-                            CON.Close();
                         }
                         else if( j == 5)
                         {

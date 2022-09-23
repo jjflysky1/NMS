@@ -49,3 +49,13 @@ D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.C
 D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\AutoAdd\obj\Release\AutoAdd.pdb
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\bin\Release\AutoAdd.dll
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\bin\Release\AutoAdd.pdb
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\obj\Release\AutoAdd.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\obj\Release\AutoAdd.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\obj\Release\AutoAdd.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\obj\Release\AutoAdd.dll
+D:\c#\c# 소스\source\repos\NMS\AutoAdd\obj\Release\AutoAdd.pdb

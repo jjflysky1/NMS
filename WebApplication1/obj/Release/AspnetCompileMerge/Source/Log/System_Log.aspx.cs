@@ -448,11 +448,11 @@ namespace WebApplication1
             MySqlCommand comm = new MySqlCommand(SQL2, DB);
             //MySqlCommand comm = new MySqlCommand("SELECT COUNT(*) as count FROM down_log", DB);
 
-            Int32 count = (Int32)comm.ExecuteScalar();
+            Int64 count = (Int64)comm.ExecuteScalar();
 
             DB.Close();
 
-            int pagecount = count / 15 + 1;
+            Int64 pagecount = count / 15 + 1;
 
             if (count / 15 > 0)
             {

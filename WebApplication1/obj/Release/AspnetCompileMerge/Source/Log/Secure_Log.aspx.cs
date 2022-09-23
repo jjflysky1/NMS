@@ -459,11 +459,11 @@ namespace WebApplication1
             MySqlCommand comm = new MySqlCommand(SQL2, DB);
             //MySqlCommand comm = new MySqlCommand("SELECT COUNT(*) as count FROM down_log", DB);
 
-            Int32 count = (Int32)comm.ExecuteScalar();
+            Int64 count = (Int64)comm.ExecuteScalar();
             int pagenum = Convert.ToInt32(DropDownList2.SelectedValue);
             DB.Close();
 
-            int pagecount = count / pagenum + 1;
+            Int64 pagecount = count / pagenum + 1;
 
             if (count / pagenum > 0)
             {
@@ -535,8 +535,6 @@ namespace WebApplication1
             sep = ",";
             Response.Write("번호");
             Response.Write(sep + "서버 아이피");
-            Response.Write(sep + "CPU");
-            Response.Write(sep + "메모리");
             Response.Write(sep + "트래픽");
             Response.Write(sep + "시간");
             sep = "\n";
@@ -547,8 +545,6 @@ namespace WebApplication1
                 sep = ",";
                 Response.Write(row["NO"].ToString());
                 Response.Write(sep + row["Serverip"].ToString());
-                Response.Write(sep + row["cpu"].ToString() + "%");
-                Response.Write(sep + row["memory"].ToString() + "%");
                 Response.Write(sep + row["traffic"].ToString() + "KB/S");
                 Response.Write(sep + row["time"].ToString());
                 sep = "\n";

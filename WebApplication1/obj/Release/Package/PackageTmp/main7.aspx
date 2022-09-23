@@ -28,6 +28,7 @@
     <script src="Scripts/export-data.js"></script>
     <script src="Scripts/jschart.js"></script>
     <link href="Scripts/Allcss.css" rel="stylesheet" />
+    <a href="App.ico">App.ico</a>
     <title></title>
     <script type="text/javascript">
 
