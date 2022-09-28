@@ -22,11 +22,14 @@ using System.IO;
 using System.Net.Sockets;
 using MySql.Data.MySqlClient;
 using MySql.Data;
+using iTextSharp.text;
+using Tamir.SharpSsh.jsch;
 
 namespace WebApplication1
 {
-    public partial class main7 : System.Web.UI.Page
+    public partial class main8 : System.Web.UI.Page
     {
+        
         private MySqlConnection DB = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
         string SQL = "";
         soapchart.chart jsonchart = new soapchart.chart();
@@ -35,7 +38,7 @@ namespace WebApplication1
 
 
             UISET();
-            javascript2();
+            //javascript2();
 
             if (Request.Cookies["userinfo"] == null)
             {
@@ -1483,11 +1486,27 @@ namespace WebApplication1
             TBLLIST1.Rows.Add(TR);
 
         }
+        [WebMethod]
+        public static void delete()
+        {
+
+        }
+        public class Customer
+        {
+            public string product { get; set; }
+       
+        }
         /// <summary>
         /// 네트워크/보안
         /// </summary>
-        private void javascript2()
+        [WebMethod] 
+        public static List<Customer> javascript2()
         {
+            MySqlConnection DB = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
+            List<Customer> Parts = new List<Customer>();
+            Parts.Clear();
+
+            
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where memory is not null and flag = '1' and Category like '%네트워크%'  ORDER BY INET_ATON(serverip) LIMIT 10 ";
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where flag = '1' and Category IS NOT null  ORDER BY INET_ATON(serverip)   ";
             string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model, a.computer_name , a.network_name " +
@@ -1500,7 +1519,6 @@ namespace WebApplication1
             ADT4.Fill(DBSET4, "BD4");
             string cpu, memory, serverip, category, status, os, model = "";
             int i = 100;
-            int rote = 1;
             List<string> list = new List<string>();
             list.Clear();
             foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
@@ -1522,24 +1540,27 @@ namespace WebApplication1
                     Label label = new Label();
                     label.ID = "Label" + i;
                     //string roatetion = "";
-                    div3.Controls.Add(label);
+
+                    //main7_ d = new main7_();
+                    //d.div3.Controls.Add(label);
+                    
                     StringBuilder st = new StringBuilder();
                     //if (i == 100)
                     //{
 
                     //}
-                    st.Append("<div style='width:130px; height:110px; float:left;  margin:0 auto; '>");
+                    
+                    st.Append("<div id='txt"+ i + "'  style='width:130px; height:110px; float:left; margin:0 auto;'>");
                     st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
-
                     if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='50'>");
+                            st.Append("<img src='Dash_image/switch_error.png' width='100' height='50' >");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/switch.png' width='100' height='50'>");
+                            st.Append("<img src='Dash_image/switch.png' width='100' height='50' >");
                         }
                     }
                     if (model.Contains("SECUI") == true)
@@ -1550,7 +1571,7 @@ namespace WebApplication1
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/security.png' width='100' height='50'>");
+                            st.Append("<img src='Dash_image/security.png' width='100' height='50' >");
                         }
                     }
                     if (model.Contains("AXGATE") == true)
@@ -1568,27 +1589,33 @@ namespace WebApplication1
                     {
                         if (status.Contains("Disconnect") == true)
                         {
-                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='50'>");
+                            st.Append("<img src='Dash_image/server2_error.png' width='100' height='50' >");
                         }
                         else
                         {
-                            st.Append("<img src='Dash_image/server2.png' width='100' height='50'>");
+                            st.Append("<img src='Dash_image/server2.png' width='100' height='50' >");
                         }
                     }
                     //st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
-                    st.Append("<p><font size='2' color='#d4d4d4' >" + row1["network_name"].ToString() + "</font></a></p>");
-                    st.Append("<p><font size='1.5' color='#d4d4d4' >" + row1["computer_name"].ToString() + "</font></a></center></p>");
+                    st.Append("<div style='margin-top:-5px'><font size='2' color='#d4d4d4' >" + row1["network_name"].ToString() + "</font></a></div>");
+                    st.Append("<div style='margin-top:-5px'><font size='1.5' color='#d4d4d4' >" + row1["computer_name"].ToString() + "</font></a></center></div>");
                     st.Append("</div>");
+                    
                     label.Text = st.ToString();
 
+                    Parts.Add(new Customer
+                    {
+                        product = label.Text
+
+                    });
                     st = null;
                     i++;
 
+                 
+
                 }
-
-
-
             }
+            return Parts;
         }
 
     }
