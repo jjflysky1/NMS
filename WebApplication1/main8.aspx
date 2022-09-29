@@ -147,11 +147,11 @@
     </style>
     <style>
         body {
-            overflow: overlay;
+            overflow:overlay;
+           
         }
-
-        ::-webkit-scrollbar {
-            width: 12px;
+        body::-webkit-scrollbar {
+          display: none;
         }
 
         ::-webkit-scrollbar-track {
@@ -162,40 +162,22 @@
             background-image: url("img/enterprise.jpg");
             /*background-color:#1e1b1e;*/
             /*            background: linear-gradient(to top, #2f323a 0%, #2f323a 100%);*/
-            background-repeat: no-repeat;
+            background-repeat:repeat;
             background-size: 100% 100%;
             /* opacity: 0.5;*/
         }
 
         html {
-            height: 100%
+            height: 100%;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
     </style>
     
 </head>
 <body id="contain">
-
-
-    <form id="form1" runat="server" style="height: 100%;">
+    <form id="form1" runat="server" style="height:100%;">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-
-        <%--  <uc1:uc_menu ID="uc_menu" runat="server" />--%>
-
-
-        <div>
-
-            <%--     <section class="content-header">
-              <h1>
-                Dashboard
-                <small>Version 2.0</small>
-              </h1>
-              <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active"><a href="#">Dashboard</a></li>
-              </ol>
-            </section>--%>
-
-
             <section class="content">
                 <div class="row">
                     <table style="width: 100%; margin-top: 10px;">
@@ -207,7 +189,7 @@
                                         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                             <ContentTemplate>
                                                 <asp:Timer ID="Timer1" runat="server" Interval="5700"></asp:Timer>
-                                                <%--<span style=" color:white; " class="glyphicon glyphicon-time" aria-hidden="true"></span>   <font size="3"> <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></font>--%>
+                                                
                                             </ContentTemplate>
                                         </asp:UpdatePanel>
                                     </div>
@@ -227,12 +209,11 @@
                                     </asp:UpdatePanel>
                                 </div>
 
-                                <%--<div id="allchart" runat="server" style="margin-left:30px; margin-top:30px; width:98.5%; margin-right:0; vertical-align:middle; "></div>--%>
+                                
                             </td>
                         </tr>
                     </table>
-                    <%--  </div>
-      </div>--%>
+     
                     <div style="width: 100%; height: 100%; margin-top: -20px;">
                         <div style="float: left; width: 20%; margin-left: 0px; height: 100%; vertical-align: middle;">
                             <div class="card card0 border" style="margin-left: 30px; height: 260px; margin-left: 3%; background-color: rgba(0, 0, 0, 0.3);">
@@ -248,32 +229,7 @@
                                 </asp:UpdatePanel>
                             </div>
 
-                            <%--    <div class="" style="width:100%; text-align:center; margin-top:-30px; margin-left:20px; margin-bottom:-40px;">
-                      <section class="content-header">
-                      <font color="white">
-                          <h3>
-                      Secure State
-                      </h3>
-                          </font>
-                     </section>
-                </div>
-                <br /><br />
-                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                    <ContentTemplate>
-                          <div class="cssload-loader"  runat="server" id="inner1" style="  margin-left:20px;">
-	<div class="cssload-inner cssload-one" runat="server" id="inner1_1"></div>
-	<div class="cssload-inner cssload-two" runat="server" id="inner1_2"></div>
-	<div class="cssload-inner cssload-three" runat="server" id="inner1_3"></div>
-</div>
-                            <div class="cssload-loader1"  runat="server" id="Div3" style=" margin-top:-62px; margin-left:20px;">
-	<div class="cssload-inner1 cssload-one" runat="server" id="Div4"></div>
-	<div class="cssload-inner1 cssload-two" runat="server" id="Div5"></div>
-	<div class="cssload-inner1 cssload-three" runat="server" id="Div6"></div>
-</div>
-                    </ContentTemplate>
-                </asp:UpdatePanel>--%>
-
-
+                    
 
                             <div class="card card0 border" style="margin-left: 3%; margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
                                 <div style="margin-left: 2%">
@@ -682,23 +638,6 @@
                     </script>
 
 
-
-                    <%--   <div id="div100" style="position:absolute; margin-left:47%; ">
-                <img src="Img/browser-g33732ce31_1280.png" width="100px" />
-            </div>
-            <div div="div101" style="position:absolute; margin-left:47%; margin-top:20%; ">
-                <img src="switch.png" width="100px" />
-            </div>--%>
-
-                    <%--  <div id="div200" runat="server" class="card card0 border" style=" height:625px; width:59%; position:absolute; margin-left:20.8%; padding-left:20px; margin-top:auto;  z-index:99; background-color:rgba(0, 0, 0, 0.3); ">
-             <div>
-                      <h4>
-                        <span style=" color:#d4d4d4;" class="glyphicon glyphicon-tasks" aria-hidden="true"></span><font color="#d4d4d4"> 메인 장비</font>
-                      </h4>
-                </div>
-                </div>
-                    --%>
-
                     <div style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
                         <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
@@ -738,42 +677,7 @@
                         </div>
 
 
-                        <%--<div class="" style="width:100%; text-align:center; margin-top:-30px;  margin-bottom:-40px; ">
-                      <section class="content-header">
-                      <font color="white">
-                          <h3>
-                      Server State
-                      </h3>
-                          </font>
-                     </section>
-                </div>
-                <br /><br />
-                <asp:UpdatePanel ID="UpdatePanel8" runat="server">
-                    <ContentTemplate>
-                            <div class="cssload-loader"  runat="server" id="inner2" style=" ">
-	<div class="cssload-inner cssload-one" runat="server" id="inner2_1"></div>
-	<div class="cssload-inner cssload-two" runat="server" id="inner2_2"></div>
-	<div class="cssload-inner cssload-three" runat="server" id="inner2_3"></div>
-                                </div>
-                                     <div class="cssload-loader1"  runat="server" id="Div7" style="  margin-top:-62px;">
-	<div class="cssload-inner1 cssload-one" runat="server" id="Div8"></div>
-	<div class="cssload-inner1 cssload-two" runat="server" id="Div9"></div>
-	<div class="cssload-inner1 cssload-three" runat="server" id="Div10"></div>
-                                         </div>
-                    </ContentTemplate>
-                </asp:UpdatePanel>--%>
-
-
-
-
-
-                        <%--  <div class="cssload-thecube" runat="server" id="cube2" style="float:left;  margin-left:50%;">
-	<div class="cssload-cube cssload-c1"></div>
-	<div class="cssload-cube cssload-c2"></div>
-	<div class="cssload-cube cssload-c4"></div>
-	<div class="cssload-cube cssload-c3"></div>
-</div>--%>
-
+                
 
                         <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
                             <div style="margin-left: 2%">
@@ -1107,25 +1011,25 @@
                                 </ContentTemplate>
                             </asp:UpdatePanel>
                         </div>
-
                     </div>
+
                     <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                         <ContentTemplate>
-                            <div id="div4" class="card card0 border" runat="server" style="float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 9%; background-color: rgba(0, 0, 0, 0.3);">
+                            <div id="div4" class="card card0 border" runat="server" style=" float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 9%; background-color: rgba(0, 0, 0, 0.3);">
                                 <div style="margin-left: 0.5%;">
                                     <h4>
                                         <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">이벤트 로그</font>
                                     </h4>
-                                    <asp:Table ID="TBLLIST1" runat="server" CssClass="table no-border " Width="100%"></asp:Table>
+                                    <asp:Table ID="TBLLIST1" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
                                 </div>
                             </div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
 
-
                 </div>
-        </div>
-        </section >
+        </section>
+
+        
             
 
             <%-- <uc2:uc_bottom ID="uc_bottom" runat="server" />     --%>
@@ -1406,11 +1310,11 @@
         <asp:Button ID="Button4" runat="server" Text="Button" Visible="false" OnClick="Button4_Click" />
         <asp:Button ID="Button5" runat="server" Text="Button" Visible="false" OnClick="Button5_Click" />
         <asp:Button ID="Button3" runat="server" Text="Button" Visible="false" OnClick="Button3_Click" />
-
         <asp:Button ID="Button1" Visible="false" runat="server" Text="Button" OnClick="Button1_Click" />
 
         <asp:Label ID="Label3" runat="server"></asp:Label>
         <asp:HiddenField ID="TextBox5" runat="server" />
+
     </form>
     <script src="Scripts/jquery.min.js"></script>
     <script src="Scripts/jquery-ui.min.js"></script>
