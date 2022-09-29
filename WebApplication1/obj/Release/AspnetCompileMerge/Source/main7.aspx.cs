@@ -1531,7 +1531,6 @@ namespace WebApplication1
                     st.Append("<div style='width:130px; height:110px; float:left;  margin:0 auto; '>");
                     st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
 
-
                     if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {
                         if (status.Contains("Disconnect") == true)

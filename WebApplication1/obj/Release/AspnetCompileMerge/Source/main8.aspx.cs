@@ -1518,7 +1518,7 @@ namespace WebApplication1
             DataSet DBSET4 = new DataSet();
             ADT4.Fill(DBSET4, "BD4");
             string cpu, memory, serverip, category, status, os, model = "";
-            int i = 0;
+            int i = 100;
             List<string> list = new List<string>();
             list.Clear();
             foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
@@ -1545,9 +1545,12 @@ namespace WebApplication1
                     //d.div3.Controls.Add(label);
                     
                     StringBuilder st = new StringBuilder();
-                  
+                    //if (i == 100)
+                    //{
+
+                    //}
                     
-                    st.Append("<div id='product" + i + "'  style='width:130px; height:110px; float:left; margin:0 auto;'>");
+                    st.Append("<div id='txt"+ i + "'  style='width:130px; height:110px; float:left; margin:0 auto;'>");
                     st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
                     if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {

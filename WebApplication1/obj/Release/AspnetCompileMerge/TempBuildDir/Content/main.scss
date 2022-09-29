@@ -1,0 +1,20 @@
+﻿body {
+}
+
+#txt100 {
+    left: 100px;
+}
+
+#txt101 {
+    left: 100px;
+}
+
+#txt102 {
+    left: 100px;
+}
+
+@for $i from 0 to 5 {
+    #txt10#{$i} {
+        left:($i * +200px);
+    }
+}

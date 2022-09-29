@@ -173,7 +173,7 @@
     </style>
     
 </head>
-<body id="contain">
+<body id="contain" >
 
 
     <form id="form1" runat="server" style="height: 100%;">
@@ -700,25 +700,21 @@
                     --%>
 
                     <div style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
-                        <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
+                       <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
-                        <div id="div3" runat="server" style="float:left; width:100%; margin-top:auto; ">
-                            <div style="float:right;">
-                                <font color="white"><input type="button" name="reset" value="RESET" onclick="RESET()" style="background:transparent; border:none; " /></font>
-                            </div>
-                            <div class="box-header" style="margin-left: 0%; width:80%; ">
-                                <i style="color: #d4d4d4;" class="glyphicon glyphicon-tasks"></i>
-                                <h4 class="box-title"><font color="#d4d4d4">메인 장비</font></h4>
-                            </div>
-                            
-
+                        <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto; margin-left: 3%; z-index: 99;"><
+                                
+                                    <div class="box-header" style="margin-left: 0%;">
+                                        <i style="color: #d4d4d4;" class="glyphicon glyphicon-tasks"></i>
+                                        <h4 class="box-title"><font color="#d4d4d4">메인 장비</font></h4>
+                                    </div>
                             <div id="div33">
-                            </div>
+                                </div>
 
-                        </div>
+                                </div>
 
 
-                        <%--                            </ContentTemplate>
+<%--                            </ContentTemplate>
                         </asp:UpdatePanel>--%>
                     </div>
 
