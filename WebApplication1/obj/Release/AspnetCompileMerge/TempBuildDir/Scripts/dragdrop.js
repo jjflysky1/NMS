@@ -11,13 +11,12 @@
             var product = "";
             var productarray = "";
             $(customers).each(function () {
-                product += this.product + ',';
+                product += this.product ;
             });
             productarray = product.split(',');
 
             const element = document.getElementById('div33');
-            //element.innerHTML = "";
-            element.innerHTML = product;
+            element.innerHTML = product
 
             var sPositions = localStorage.positions || "{}",
                 positions = JSON.parse(sPositions);
@@ -26,7 +25,7 @@
             })
 
             for (var i = 0; i < 100; i++) {
-                $("#txt10" + i).draggable({
+                $("#product" + i).draggable({
                     containment: "#contain",
                     scroll: false,
                     stop: function (event, ui) {
@@ -57,7 +56,7 @@ setInterval((function () {
             var product = "";
             var productarray = "";
             $(customers).each(function () {
-                product += this.product + ',';
+                product += this.product;
             });
             productarray = product.split(',');
 
@@ -72,7 +71,7 @@ setInterval((function () {
             })
 
             for (var i = 0; i < 100; i++) {
-                $("#txt10"+i).draggable({
+                $("#product"+i).draggable({
                     containment: "#contain",
                     scroll: false,
                     stop: function (event, ui) {
@@ -91,3 +90,8 @@ setInterval((function () {
         }
     });
 }), 10000);
+
+function RESET() {
+    localStorage.clear();
+    window.location.reload();
+}
