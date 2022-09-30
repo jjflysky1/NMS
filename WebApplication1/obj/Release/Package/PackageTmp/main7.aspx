@@ -1064,7 +1064,7 @@
                         </div>
                         <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                             <ContentTemplate>
-                                <div id="div4" class="card card0 border" runat="server" style="float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 9%; background-color: rgba(0, 0, 0, 0.3);">
+                                <div id="div4" class="card card0 border" runat="server" style="float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 2%; background-color: rgba(0, 0, 0, 0.3);">
                                     <div style="margin-left: 0.5%;">
                                         <h4>
                                             <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">이벤트 로그</font>
@@ -1077,12 +1077,14 @@
 
 
                     </div>
+                </section>
             </div>
-            </section >
+
         </div>
 
-        <%-- <uc2:uc_bottom ID="uc_bottom" runat="server" />     --%>
-        </div >
+        <%--<uc2:uc_bottom ID="uc_bottom" runat="server" />--%>
+        
+        
             
 
         <style>

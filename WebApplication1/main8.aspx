@@ -84,7 +84,6 @@
                                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                         <ContentTemplate>
                                             <asp:Timer ID="Timer1" runat="server" Interval="5700"></asp:Timer>
-
                                         </ContentTemplate>
                                     </asp:UpdatePanel>
                                 </div>

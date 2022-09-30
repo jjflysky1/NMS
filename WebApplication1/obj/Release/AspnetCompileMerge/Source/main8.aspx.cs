@@ -1486,12 +1486,8 @@ namespace WebApplication1
             TBLLIST1.Rows.Add(TR);
 
         }
-        [WebMethod]
-        public static void delete()
-        {
-
-        }
-        public class Customer
+     
+        public class network
         {
             public string product { get; set; }
        
@@ -1500,10 +1496,10 @@ namespace WebApplication1
         /// 네트워크/보안
         /// </summary>
         [WebMethod] 
-        public static List<Customer> javascript2()
+        public static List<network> javascript2()
         {
             MySqlConnection DB = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
-            List<Customer> Parts = new List<Customer>();
+            List<network> Parts = new List<network>();
             Parts.Clear();
 
             
@@ -1600,7 +1596,7 @@ namespace WebApplication1
                     
                     label.Text = st.ToString();
 
-                    Parts.Add(new Customer
+                    Parts.Add(new network
                     {
                         product = label.Text
 

@@ -80,9 +80,6 @@ setInterval((function () {
                     }
                 });
             }
-
-
-         
             //alert(serverip);
         },
         error: function (e) {
