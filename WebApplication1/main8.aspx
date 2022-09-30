@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="Content/ionicons.min.css" />
     <link rel="stylesheet" href="Content/bootstrap.min2.css" />
     <%--<link rel="stylesheet" href="Content/style.css" />--%>
-  
+
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Content/JavaScript.js"></script>
     <script src="Scripts/AdminLTE.css"></script>
-    
+
 
     <script src="Scripts/highcharts.js"></script>
     <script src="Scripts/highcharts-3d.js"></script>
@@ -69,244 +69,211 @@
        <%= Page.GetPostBackEventReference(Button4) %>
 
         }
-    </script>    
+    </script>
 </head>
 <body id="contain">
-    <form id="form1" runat="server" style="height:100%;">
+    <form id="form1" runat="server" style="height: 100%;">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <section class="content">
-                <div class="row">
-                    <table style="width: 100%; margin-top: 10px;">
-                        <tr>
-                            <td>
-                                <div class="box-header " style="width: 100%; margin-left: 10px; margin-bottom: -50px; margin-top: 20px; z-index: 99;">
-
-                                    <div style="float: right; margin-top: 0px; margin-right: 30px; margin-bottom: -20px;">
-                                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                                            <ContentTemplate>
-                                                <asp:Timer ID="Timer1" runat="server" Interval="5700"></asp:Timer>
-                                                
-                                            </ContentTemplate>
-                                        </asp:UpdatePanel>
-                                    </div>
-
-                                </div>
-
-                                <div style="margin-left: 30px; margin-bottom: 0px; margin-top: 0px; width: 97.5%; height: 200px;">
-                                    <div style="margin-left: 1%">
-                                        <h4>
-                                            <span style="color: #d4d4d4;" class="glyphicon glyphicon-hdd" aria-hidden="true"></span><<font color="#d4d4d4"> 장비 수량</font>
-                                        </h4>
-                                    </div>
-                                    <asp:UpdatePanel ID="UpdatePanel5" runat="server" UpdateMode="Always">
+        <section class="content">
+            <div class="row">
+                <table style="width: 100%; margin-top: 10px;">
+                    <tr>
+                        <td>
+                            <div class="box-header " style="width: 100%; margin-left: 10px; margin-bottom: -50px; margin-top: 20px; z-index: 99;">
+                                <div style="float: right; margin-top: 0px; margin-right: 30px; margin-bottom: -20px;">
+                                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                         <ContentTemplate>
-                                            <asp:Table ID="TBLLIST0" BackColor="Transparent" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
+                                            <asp:Timer ID="Timer1" runat="server" Interval="5700"></asp:Timer>
+
                                         </ContentTemplate>
                                     </asp:UpdatePanel>
                                 </div>
+                            </div>
 
-                                
-                            </td>
-                        </tr>
-                    </table>
-     
-                    <div style="width: 100%; height: 100%; margin-top: -20px;">
-                        <div style="float: left; width: 20%; margin-left: 0px; height: 100%; vertical-align: middle;">
-                            <div class="card card0 border" style="margin-left: 30px; height: 260px; margin-left: 3%; background-color: rgba(0, 0, 0, 0.3);">
-                                <div style="margin-left: 2%">
+                            <div style="margin-left: 30px; margin-bottom: 0px; margin-top: 0px; width: 97.5%; height: 200px;">
+                                <div style="margin-left: 1%">
                                     <h4>
-                                        <span style="color: #d4d4d4;" class="glyphicon glyphicon-tasks" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 자원 List</font>
+                                        <span style="color: #d4d4d4;" class="glyphicon glyphicon-hdd" aria-hidden="true"></span><<font color="#d4d4d4"> 장비 수량</font>
                                     </h4>
                                 </div>
-                                <asp:UpdatePanel ID="UpdatePanel6" runat="server" UpdateMode="Always">
+                                <asp:UpdatePanel ID="UpdatePanel5" runat="server" UpdateMode="Always">
                                     <ContentTemplate>
-                                        <asp:Table ID="TBLLIST3_1" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
+                                        <asp:Table ID="TBLLIST0" BackColor="Transparent" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
                                     </ContentTemplate>
                                 </asp:UpdatePanel>
                             </div>
+                        </td>
+                    </tr>
+                </table>
 
-                    
-
-                            <div class="card card0 border" style="margin-left: 3%; margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
-                                <div style="margin-left: 2%">
-                                    <h4>
-                                        <span style="color: #d4d4d4;" class="glyphicon glyphicon-stats" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 차트</font>
-                                    </h4>
-                                </div>
-                                <div id="div1" style="width: 100%; height: 210px; margin-top: 0px;">
-                                    <canvas id="myChart" style="z-index: 200; width: 100%; height: 100%; color: #d4d4d4;"></canvas>
-                                </div>
-                            </div>
-                            <%--<script src='../Scripts/chart.min.js'></script>--%>
-                            <script>
-                                
-
-
-                            </script>
-
-
-                            <div class="card card0 border" style="margin-left: 3%; margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
-                                <div style="margin-left: 2%;">
-                                    <h4>
-                                        <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 다운 장비</font>
-                                    </h4>
-                                </div>
-                                <asp:UpdatePanel ID="UpdatePanel7" runat="server" UpdateMode="Always">
-                                    <ContentTemplate>
-                                        <asp:Table ID="TBLLIST2" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
-                                    </ContentTemplate>
-                                </asp:UpdatePanel>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <style>
-                        #line {
-                            position: absolute;
-                            width: 2px;
-                            margin-top: -1px;
-                            background-color: red;
-                        }
-                    </style>
-                    <script>
-                        function adjustLine(from, to, line) {
-
-                            var fT = from.offsetTop + from.offsetHeight / 2;
-                            var tT = to.offsetTop + to.offsetHeight / 2;
-                            var fL = from.offsetLeft + from.offsetWidth / 2;
-                            var tL = to.offsetLeft + to.offsetWidth / 2;
-
-                            var CA = Math.abs(tT - fT);
-                            var CO = Math.abs(tL - fL);
-                            var H = Math.sqrt(CA * CA + CO * CO);
-                            var ANG = 180 / Math.PI * Math.acos(CA / H);
-
-                            if (tT > fT) {
-                                var top = (tT - fT) / 2 + fT;
-                            } else {
-                                var top = (fT - tT) / 2 + tT;
-                            }
-                            if (tL > fL) {
-                                var left = (tL - fL) / 2 + fL;
-                            } else {
-                                var left = (fL - tL) / 2 + tL;
-                            }
-
-                            if ((fT < tT && fL < tL) || (tT < fT && tL < fL) || (fT > tT && fL > tL) || (tT > fT && tL > fL)) {
-                                ANG *= -1;
-                            }
-                            top -= H / 2;
-
-                            line.style["-webkit-transform"] = 'rotate(' + ANG + 'deg)';
-                            line.style["-moz-transform"] = 'rotate(' + ANG + 'deg)';
-                            line.style["-ms-transform"] = 'rotate(' + ANG + 'deg)';
-                            line.style["-o-transform"] = 'rotate(' + ANG + 'deg)';
-                            line.style["-transform"] = 'rotate(' + ANG + 'deg)';
-                            line.style.top = top + 'px';
-                            line.style.left = left + 'px';
-                            line.style.height = H + 'px';
-                        }
-                        adjustLine(
-                            document.getElementById('div100'),
-                            document.getElementById('div101'),
-                            document.getElementById('line')
-                        );
-
-                    </script>
-
-
-                    <div style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
-                        <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
-                            <ContentTemplate>--%>
-                        <div id="div3" runat="server" style="float:left; width:100%; margin-top:auto; ">
-                            <div style="float:right;">
-                                <font color="white"><input type="button" name="reset" value="RESET" onclick="RESET()" style="background:transparent; border:none; " /></font>
-                            </div>
-                            <div class="box-header" style="margin-left: 0%; width:80%; ">
-                                <i style="color: #d4d4d4;" class="glyphicon glyphicon-tasks"></i>
-                                <h4 class="box-title"><font color="#d4d4d4">메인 장비</font></h4>
-                            </div>
-                            
-
-                            <div id="div33">
-                            </div>
-
-                        </div>
-
-
-                        <%--                            </ContentTemplate>
-                        </asp:UpdatePanel>--%>
-                    </div>
-
-
-                    <div style="padding-left: 30px; float: right; width: 20%; height: auto; margin-right: 1%; margin-bottom: 40px; vertical-align: middle;">
-                        <div class="card card0 border" style="height: 260px; background-color: rgba(0, 0, 0, 0.3);">
-                            <div style="margin-left: 2%;">
-                                <h4>
-                                    <span style="color: #d4d4d4;" class="glyphicon glyphicon-tasks" aria-hidden="true"></span><font color="#d4d4d4">서버 자원 List </font>
-                                </h4>
-                            </div>
-                            <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Always">
-                                <ContentTemplate>
-                                    <asp:Table ID="TBLLIST3" runat="server" CssClass="table no-border " Width="100%"></asp:Table>
-                                </ContentTemplate>
-                            </asp:UpdatePanel>
-                        </div>
-
-
-                
-
-                        <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
+                <div style="width: 100%; height: 100%; margin-top: -20px;">
+                    <div style="float: left; width: 20%; margin-left: 0px; height: 100%; vertical-align: middle;">
+                        <div class="card card0 border" style="margin-left: 30px; height: 260px; margin-left: 3%; background-color: rgba(0, 0, 0, 0.3);">
                             <div style="margin-left: 2%">
                                 <h4>
-                                    <span style="color: #d4d4d4;" class="glyphicon glyphicon-stats" aria-hidden="true"></span><font color="#d4d4d4">서버 차트 </font>
+                                    <span style="color: #d4d4d4;" class="glyphicon glyphicon-tasks" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 자원 List</font>
                                 </h4>
                             </div>
-
-                            <div id="div2" style="width: 100%; height: 210px; margin-top: 0px;">
-                                <canvas id="myChart2" style="width: 100%;"></canvas>
+                            <asp:UpdatePanel ID="UpdatePanel6" runat="server" UpdateMode="Always">
+                                <ContentTemplate>
+                                    <asp:Table ID="TBLLIST3_1" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <div class="card card0 border" style="margin-left: 3%; margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
+                            <div style="margin-left: 2%">
+                                <h4>
+                                    <span style="color: #d4d4d4;" class="glyphicon glyphicon-stats" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 차트</font>
+                                </h4>
+                            </div>
+                            <div id="div1" style="width: 100%; height: 210px; margin-top: 0px;">
+                                <canvas id="myChart" style="z-index: 200; width: 100%; height: 100%; color: #d4d4d4;"></canvas>
                             </div>
                         </div>
-                        <script>
-                            
-
-                        </script>
-                        <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
+                        <div class="card card0 border" style="margin-left: 3%; margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
                             <div style="margin-left: 2%;">
                                 <h4>
-                                    <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">서버 다운 장비</font>
+                                    <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">네트워크/보안 다운 장비</font>
                                 </h4>
                             </div>
-                            <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Always">
+                            <asp:UpdatePanel ID="UpdatePanel7" runat="server" UpdateMode="Always">
                                 <ContentTemplate>
-                                    <asp:Table ID="TBLLIST" runat="server" CssClass="table no-border " Width="100%"></asp:Table>
+                                    <asp:Table ID="TBLLIST2" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
                                 </ContentTemplate>
                             </asp:UpdatePanel>
                         </div>
                     </div>
-
-                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                        <ContentTemplate>
-                            <div id="div4" class="card card0 border" runat="server" style=" float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 2%; background-color: rgba(0, 0, 0, 0.3);">
-                                <div style="margin-left: 0.5%;">
-                                    <h4>
-                                        <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">이벤트 로그</font>
-                                    </h4>
-                                    <asp:Table ID="TBLLIST1" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
-                                </div>
-                            </div>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
-
                 </div>
+
+                <style>
+                    #line {
+                        position: absolute;
+                        width: 2px;
+                        margin-top: -1px;
+                        background-color: red;
+                    }
+                </style>
+                <script>
+                    function adjustLine(from, to, line) {
+
+                        var fT = from.offsetTop + from.offsetHeight / 2;
+                        var tT = to.offsetTop + to.offsetHeight / 2;
+                        var fL = from.offsetLeft + from.offsetWidth / 2;
+                        var tL = to.offsetLeft + to.offsetWidth / 2;
+
+                        var CA = Math.abs(tT - fT);
+                        var CO = Math.abs(tL - fL);
+                        var H = Math.sqrt(CA * CA + CO * CO);
+                        var ANG = 180 / Math.PI * Math.acos(CA / H);
+
+                        if (tT > fT) {
+                            var top = (tT - fT) / 2 + fT;
+                        } else {
+                            var top = (fT - tT) / 2 + tT;
+                        }
+                        if (tL > fL) {
+                            var left = (tL - fL) / 2 + fL;
+                        } else {
+                            var left = (fL - tL) / 2 + tL;
+                        }
+
+                        if ((fT < tT && fL < tL) || (tT < fT && tL < fL) || (fT > tT && fL > tL) || (tT > fT && tL > fL)) {
+                            ANG *= -1;
+                        }
+                        top -= H / 2;
+
+                        line.style["-webkit-transform"] = 'rotate(' + ANG + 'deg)';
+                        line.style["-moz-transform"] = 'rotate(' + ANG + 'deg)';
+                        line.style["-ms-transform"] = 'rotate(' + ANG + 'deg)';
+                        line.style["-o-transform"] = 'rotate(' + ANG + 'deg)';
+                        line.style["-transform"] = 'rotate(' + ANG + 'deg)';
+                        line.style.top = top + 'px';
+                        line.style.left = left + 'px';
+                        line.style.height = H + 'px';
+                    }
+                    adjustLine(
+                        document.getElementById('div100'),
+                        document.getElementById('div101'),
+                        document.getElementById('line')
+                    );
+
+                </script>
+
+
+                <div style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
+                    <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
+                            <ContentTemplate>--%>
+                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
+                        <div style="float: right;">
+                            <font color="white">
+                                <input type="button" name="reset" value="RESET" onclick="RESET()" style="background: transparent; border: none;" /></font>
+                        </div>
+                        <div class="box-header" style="margin-left: 0%; width: 80%;">
+                            <i style="color: #d4d4d4;" class="glyphicon glyphicon-tasks"></i>
+                            <h4 class="box-title"><font color="#d4d4d4">메인 장비</font></h4>
+                        </div>
+                        <div id="div33">
+                        </div>
+                    </div>
+                    <%--                            </ContentTemplate>
+                        </asp:UpdatePanel>--%>
+                </div>
+
+                <div style="padding-left: 30px; float: right; width: 20%; height: auto; margin-right: 1%; margin-bottom: 40px; vertical-align: middle;">
+                    <div class="card card0 border" style="height: 260px; background-color: rgba(0, 0, 0, 0.3);">
+                        <div style="margin-left: 2%;">
+                            <h4>
+                                <span style="color: #d4d4d4;" class="glyphicon glyphicon-tasks" aria-hidden="true"></span><font color="#d4d4d4">서버 자원 List </font>
+                            </h4>
+                        </div>
+                        <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Always">
+                            <ContentTemplate>
+                                <asp:Table ID="TBLLIST3" runat="server" CssClass="table no-border " Width="100%"></asp:Table>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+
+                    <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
+                        <div style="margin-left: 2%">
+                            <h4>
+                                <span style="color: #d4d4d4;" class="glyphicon glyphicon-stats" aria-hidden="true"></span><font color="#d4d4d4">서버 차트 </font>
+                            </h4>
+                        </div>
+
+                        <div id="div2" style="width: 100%; height: 210px; margin-top: 0px;">
+                            <canvas id="myChart2" style="width: 100%;"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card card0 border" style="margin-top: 5px; background-color: rgba(0, 0, 0, 0.3);">
+                        <div style="margin-left: 2%;">
+                            <h4>
+                                <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">서버 다운 장비</font>
+                            </h4>
+                        </div>
+                        <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Always">
+                            <ContentTemplate>
+                                <asp:Table ID="TBLLIST" runat="server" CssClass="table no-border " Width="100%"></asp:Table>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                    <ContentTemplate>
+                        <div id="div4" class="card card0 border" runat="server" style="float: left; width: 98.3%; margin-left: 0.7%; z-index: 99; margin-top: 2%; background-color: rgba(0, 0, 0, 0.3);">
+                            <div style="margin-left: 0.5%;">
+                                <h4>
+                                    <span style="transform: rotate(180deg); color: #d4d4d4;" class="glyphicon glyphicon-tag" aria-hidden="true"></span><font color="#d4d4d4">이벤트 로그</font>
+                                </h4>
+                                <asp:Table ID="TBLLIST1" runat="server" CssClass="table no-border" Width="100%"></asp:Table>
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+
+            </div>
         </section>
-
-        
-
-
 
         <style>
             .grad {
@@ -575,60 +542,61 @@
                     margin-bottom: -1px
                 }
 
-                    .progress {
-            height: 12px;
-            background: #ebedef;
-            border-radius: 32px;
-            box-shadow: none
-        }
+            .progress {
+                height: 12px;
+                background: #ebedef;
+                border-radius: 32px;
+                box-shadow: none
+            }
 
-        .progress-bar {
-            line-height: 12px;
-            background: #1abc9c;
-            box-shadow: none
-        }
+            .progress-bar {
+                line-height: 12px;
+                background: #1abc9c;
+                box-shadow: none
+            }
 
-        .progress-bar-success {
-            background-color: #2ecc71
-        }
+            .progress-bar-success {
+                background-color: #2ecc71
+            }
 
-        .progress-bar-warning {
-            background-color: #f1c40f
-        }
+            .progress-bar-warning {
+                background-color: #f1c40f
+            }
 
-        .progress-bar-danger {
-            background-color: #e74c3c
-        }
+            .progress-bar-danger {
+                background-color: #e74c3c
+            }
 
-        .progress-bar-info {
-            background-color: #3498db
-        }
-          body {
-            overflow:overlay;
-           
-        }
-        body::-webkit-scrollbar {
-          display: none;
-        }
+            .progress-bar-info {
+                background-color: #3498db
+            }
 
-        ::-webkit-scrollbar-track {
-            display: none;
-        }
+            body {
+                overflow: overlay;
+            }
 
-        body {
-            background-image: url("img/enterprise.jpg");
-            /*background-color:#1e1b1e;*/
-            /*            background: linear-gradient(to top, #2f323a 0%, #2f323a 100%);*/
-            background-repeat:repeat;
-            background-size: 100% 100%;
-            /* opacity: 0.5;*/
-        }
+                body::-webkit-scrollbar {
+                    display: none;
+                }
 
-        html {
-            height: 100%;
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
+            ::-webkit-scrollbar-track {
+                display: none;
+            }
+
+            body {
+                background-image: url("img/enterprise.jpg");
+                /*background-color:#1e1b1e;*/
+                /*            background: linear-gradient(to top, #2f323a 0%, #2f323a 100%);*/
+                background-repeat: repeat;
+                background-size: 100% 100%;
+                /* opacity: 0.5;*/
+            }
+
+            html {
+                height: 100%;
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+            }
         </style>
 
         <asp:HiddenField ID="HiddenField1" runat="server" />
