@@ -260,6 +260,7 @@
     <Content Include="Scripts\jquery.min2.js" />
     <Content Include="Scripts\jschart.js" />
     <Content Include="Scripts\kr-all.js" />
+    <Content Include="Scripts\leader-line.min.js" />
     <Content Include="Scripts\leftmenu.js" />
     <Content Include="Scripts\morris.css" />
     <Content Include="Scripts\morris.min.js" />

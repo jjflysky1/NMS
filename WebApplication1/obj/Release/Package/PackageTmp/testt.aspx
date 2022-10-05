@@ -36,69 +36,94 @@
         //    return false;
         //}
 
-        $(document).ready(function () {
-       
-            var sPositions = localStorage.positions || "{}",
-                positions = JSON.parse(sPositions);
-            $.each(positions, function (id, pos) {
-                $("#" + id).css(pos)
-            })
-            $("#test").draggable({
-                containment: "#contain",
-                scroll: false,
-                stop: function (event, ui) {
-                    positions[this.id] = ui.position
-                    localStorage.positions = JSON.stringify(positions)
-                }
-            });
-        });
+        //$(document).ready(function () {
 
-  
+        //    var sPositions = localStorage.positions || "{}",
+        //        positions = JSON.parse(sPositions);
+        //    $.each(positions, function (id, pos) {
+        //        $("#" + id).css(pos)
+        //    })
+        //    $("#test").draggable({
+        //        containment: "#contain",
+        //        scroll: false,
+        //        stop: function (event, ui) {
+        //            positions[this.id] = ui.position
+        //            localStorage.positions = JSON.stringify(positions)
+        //        }
+        //    });
+        //});
+
+
+
     </script>
 
-    <style>
-        .draggable {
-            width: 90px;
-            height: 90px;
-            padding: 0.5em;
-            float: left;
-            margin: 0 10px 10px 0;
-        }
 
-        #draggable, #draggable2 {
-            margin-bottom: 20px;
-        }
-
-        #draggable {
-            cursor: n-resize;
-        }
-
-        #draggable3 {
-            cursor: move;
-        }
-
-        #containment-wrapper {
-            width: 700px;
-            height: 500px;
-            border: 1px solid #000;
-            padding: 5px;
-        }
-
- 
-    </style>
-    
 
 </head>
 <body id="contain">
+    <script src="Scripts/leader-line.min.js"></script>
+  
+<div id="start">Start</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="destination">Destination</div>
     
-   <div id="containment-wrapper">
-    <div id="test">
-        <p>DRAG ME</p>
-    
-    </div>
-       </div>
+      <script>
+          var myLine = new LeaderLine(
+              document.getElementById('start'),
+              document.getElementById('destination'),
+              { dash: { animation: true } }
+          );
 
 
+          window.addEventListener("load", function () {
+              "use strict";
+
+
+              // Drag Nodes
+
+              // Drag Nodes and redraw lines
+              new PlainDraggable(start, {
+                  onMove: function () {
+                      myLine.position();
+                  },
+                  // onMoveStart: function() { line.dash = {animation: true}; },
+                  onDragEnd: function () {
+                      line.dash = false;
+                  }
+              });
+
+              new PlainDraggable(destination, {
+                  onMove: function () {
+                      myLine.position();
+                  },
+                  // onMoveStart: function() { line.dash = {animation: true}; },
+                  onDragEnd: function () {
+                      line.dash = false;
+                  }
+              });
+
+              new PlainDraggable(learningTask, {
+                  onMove: function () {
+                      learningtask1.position();
+                  },
+                  // onMoveStart: function() { line.dash = {animation: true}; },
+                  onDragEnd: function () {
+                      line.dash = false;
+                  }
+              });
+              new PlainDraggable(math);
+              new PlainDraggable(logic);
+              new PlainDraggable(date);
+
+              var myLine = new LeaderLine(
+                  document.getElementById('product0'),
+                  document.getElementById('product1'),
+                  {
+                      dash: { animation: true }
+                  }
+              );
+          });
+      </script>
 
 </body>
 </html>

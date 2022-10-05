@@ -1543,8 +1543,8 @@ namespace WebApplication1
                     StringBuilder st = new StringBuilder();
                   
                     
-                    st.Append("<div id='product" + i + "'  style='width:130px; height:110px; float:left; margin:0 auto;'>");
-                    st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
+                    st.Append("<div class='product' id='product" + i + "'  style='width:130px; height:90px; float:left; margin:0 auto;'><center>");
+                    //st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
                     if (model.Contains("CISCO") == true || model.Contains("＃") == true)
                     {
                         if (status.Contains("Disconnect") == true)
@@ -1590,8 +1590,8 @@ namespace WebApplication1
                         }
                     }
                     //st.Append("<font size='2' color='#d4d4d4' >" + row1["serverip"].ToString() + "</font></a></center>");
-                    st.Append("<div style='margin-top:-5px'><font size='2' color='#d4d4d4' >" + row1["network_name"].ToString() + "</font></a></div>");
-                    st.Append("<div style='margin-top:-5px'><font size='1.5' color='#d4d4d4' >" + row1["computer_name"].ToString() + "</font></a></center></div>");
+                    st.Append("<div style='margin-top:-5px'><font size='2' color='#d4d4d4' >" + row1["network_name"].ToString() + "</font></div>");
+                    st.Append("<div style='margin-top:-5px'><font size='1.5' color='#d4d4d4' >" + row1["computer_name"].ToString() + "</font></center></div>");
                     st.Append("</div>");
                     
                     label.Text = st.ToString();

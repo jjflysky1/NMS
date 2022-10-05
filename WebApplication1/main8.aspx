@@ -36,7 +36,7 @@
     <script src="Scripts/dragdrop.js"></script>
 
     <script src="Scripts/dash_chart.js"></script>
-
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <title></title>
     <script type="text/javascript">
 
@@ -205,7 +205,11 @@
                     <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
                         <div style="float: right;">
                             <font color="white">
-                                <input type="button" name="reset" value="RESET" onclick="RESET()" style="background: transparent; border: none;" /></font>
+                                <input type="button" name="전체초기화" value="전체초기화" onclick="RESET()" style="background: transparent; border: none;" /></font>
+
+                            <font color="white">
+                                <input type="button" name="라인초기화" value="라인초기화" onclick="LINE()" style="background: transparent; border: none;" /></font>
+
                         </div>
                         <div class="box-header" style="margin-left: 0%; width: 80%;">
                             <i style="color: #d4d4d4;" class="glyphicon glyphicon-tasks"></i>
@@ -613,6 +617,20 @@
     <script src="Scripts/jquery.min.js"></script>
     <script src="Scripts/jquery-ui.min.js"></script>
     <script src="Scripts/adminlte.min.js"></script>
+
+
+    <script src="Scripts/leader-line.min.js"></script>
+    <script>
+
+
+        window.onload = function () {
+         
+        }
+        
+
+     
+      
+    </script>
 
 </body>
 </html>
