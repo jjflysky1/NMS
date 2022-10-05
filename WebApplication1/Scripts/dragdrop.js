@@ -87,9 +87,12 @@ $(document).ready(function () {
                         {
                             dash: { animation: true },
                             //path: "grid"
-                            color: '#20de07',
+                            //color: '#20de07',
+                            startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
+                            //startLabel: 'start label',
+                            //endLabel: 'end label'
                         }
                     );
                     if (arr.indexOf(output[i]) !== null) {

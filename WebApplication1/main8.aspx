@@ -204,10 +204,10 @@
                             <ContentTemplate>--%>
                     <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
                         <div style="float: right;">
-                            <font color="white">
+                            <font color="white" size="1">
                                 <input type="button" name="전체초기화" value="전체초기화" onclick="RESET()" style="background: transparent; border: none;" /></font>
 
-                            <font color="white">
+                            <font color="white" size="1">
                                 <input type="button" name="라인초기화" value="라인초기화" onclick="LINE()" style="background: transparent; border: none;" /></font>
 
                         </div>
