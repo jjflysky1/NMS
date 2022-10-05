@@ -1,0 +1,121 @@
+﻿<html>
+<head>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.2.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Content/JavaScript.js"></script>
+    <script src="../Content/JavaScript.js"></script>
+    <link href="../Content/icon.css" rel="stylesheet" />
+    <script src="../Scripts/morris.min.js"></script>
+    <link href="../Scripts/morris.css" rel="stylesheet" />
+    <script src="../Scripts/Raphael-min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://rawgithub.com/DmitryBaranovskiy/raphael/300aa589f5a0ba7fce667cd62c7cdda0bd5ad904/raphael-min.js"></script>
+    <script src="https://rawgithub.com/dshapira/morris.js/ds-morris-rounded-bars/morris.min.js"></script>
+</head>
+
+<body>
+    <div id="graph"></div>
+    <div id="graph_rounded"></div>
+    <div id="graph_rect"></div>
+    <style>
+        body {
+            background: #222;
+            color: #eaeaea;
+        }
+
+        #graph {
+            display: inline-block;
+            height: 200px;
+            width: 30%;
+        }
+
+        #graph_rounded {
+            display: inline-block;
+            height: 200px;
+            width: 30%;
+        }
+
+        #graph_rect {
+            display: inline-block;
+            height: 300px;
+            width: 20%;
+        }
+
+        .morris-hover {
+            position: absolute;
+            z-index: 1000;
+        }
+
+            .morris-hover.morris-default-style {
+                border-radius: 10px;
+                padding: 6px;
+                color: #666;
+                background: rgba(255, 255, 255, 0.8);
+                border: solid 2px rgba(230, 230, 230, 0.8);
+                font-family: sans-serif;
+                font-size: 12px;
+                text-align: center;
+            }
+
+                .morris-hover.morris-default-style .morris-hover-row-label {
+                    font-weight: bold;
+                    margin: 0.25em 0;
+                }
+
+                .morris-hover.morris-default-style .morris-hover-point {
+                    white-space: nowrap;
+                    margin: 0.1em 0;
+                }
+    </style>
+    <script>
+        Morris.Bar({
+            element: 'graph',
+            data: [
+                { x: '1', y: 0 },
+                { x: '2', y: 1 },
+                { x: '3', y: 2 },
+                { x: '4', y: 3 },
+                { x: '5', y: 4 },
+                { x: '6', y: 5 },
+                { x: '7', y: 6 },
+                { x: '8', y: 7 },
+                { x: '9', y: 8 }
+            ],
+            xkey: 'x',
+            ykeys: ['y'],
+            labels: ['Y'],
+            xLabelMargin: 0
+        });
+
+        Morris.Bar({
+            element: 'graph_rounded',
+            data: [
+                { x: '1', y: 0 },
+                { x: '2', y: 1 },
+                { x: '3', y: 2 },
+                { x: '4', y: 3 },
+                { x: '5', y: 4 },
+                { x: '6', y: 5 },
+                { x: '7', y: 6 },
+                { x: '8', y: 7 },
+                { x: '9', y: 8 }
+            ],
+            xkey: 'x',
+            ykeys: ['y'],
+            labels: ['Y'],
+            xLabelMargin: 0,
+            barShape: 'soft'
+        });
+
+        var paper = new Raphael('graph_rect', 200, 200);
+        var rect = paper.rect(100, 10, 30, 150).attr({ 'fill': '#005588' });
+        rect.attr({ 'r': 3 });
+
+    </script>
+
+</body>
+
+</html>
