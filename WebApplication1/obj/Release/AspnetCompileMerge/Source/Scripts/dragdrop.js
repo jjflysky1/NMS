@@ -12,7 +12,7 @@ $(document).ready(function () {
             var product = "";
             var productarray = "";
             $(customers).each(function () {
-                product += this.product ;
+                product += this.product;
             });
             productarray = product.split(',');
 
@@ -54,16 +54,16 @@ $(document).ready(function () {
                                         //size : 5
                                     }
                                 );
-                                
-                               
-                                
+
+
+
                             }
                         }
                         catch {
 
                         }
-                        
-                        
+
+
                     }
                 });
             }
@@ -72,13 +72,13 @@ $(document).ready(function () {
             var two = "";
             var arr = new Array();
             var arr2 = new Array();
-           
+
             //var output = localStorage.getItem("value");
             //var output1 = localStorage.getItem("value1");
             var output = JSON.parse(localStorage.getItem('value') || "{}")
             var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
 
-           
+
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
                     var myLine = new LeaderLine(
@@ -86,10 +86,13 @@ $(document).ready(function () {
                         document.getElementById(output1[i]),
                         {
                             dash: { animation: true },
-                            //path: "grid"
+                            //path: "grid",
                             color: '#20de07',
+                            //startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
+                            //startLabel: 'start label',
+                            //endLabel: 'end label'
                         }
                     );
                     if (arr.indexOf(output[i]) !== null) {
@@ -104,6 +107,7 @@ $(document).ready(function () {
 
             }
 
+
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
@@ -113,14 +117,14 @@ $(document).ready(function () {
                     one = $(this).attr("id")
                     alert("첫번재 장비 선택완료.")
                     arr.push(one);
-                    
+
                 }
                 else if (two.length == 0) {
                     two = $(this).attr("id")
                     alert("두번재 장비 선택완료.")
                     arr2.push(two);
-                    
-                }    
+
+                }
                 //alert("id : " + one + " // " + "id : " + two);
                 var myLine = new LeaderLine(
                     document.getElementById(one),
@@ -141,9 +145,8 @@ $(document).ready(function () {
 
                 //alert(localStorage.getItem('value'));
                 //alert(localStorage.getItem('value1'));
-                
-
             });
+
         },
         error: function (e) {
             alert("error" + e);
@@ -181,7 +184,7 @@ setInterval((function () {
             })
 
             for (var i = 0; i < 100; i++) {
-                $("#product"+i).draggable({
+                $("#product" + i).draggable({
                     containment: "#contain",
                     scroll: false,
                     stop: function (event, ui) {
@@ -190,7 +193,7 @@ setInterval((function () {
 
                         var output = JSON.parse(localStorage.getItem('value') || "{}")
                         var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
-                    
+
                         $('.leader-line').remove();
                         try {
                             for (var i = 0; i < 100; i++) {
@@ -219,13 +222,89 @@ setInterval((function () {
                     }
                 });
             }
-            //alert(serverip);
-        },
-        error: function (e) {
-            alert("error" + e);
+            var one = "";
+            var two = "";
+            var arr = new Array();
+            var arr2 = new Array();
+
+            //var output = localStorage.getItem("value");
+            //var output1 = localStorage.getItem("value1");
+            var output = JSON.parse(localStorage.getItem('value') || "{}")
+            var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
+
+            $('.leader-line').remove();
+            try {
+                for (var i = 0; i < localStorage.getItem('value').length; i++) {
+                    var myLine = new LeaderLine(
+                        document.getElementById(output[i]),
+                        document.getElementById(output1[i]),
+                        {
+                            dash: { animation: true },
+                            //path: "grid",
+                            color: '#20de07',
+                            //startPlug:'arrow1',
+                            //endPlug: 'behind'
+                            //size : 5
+                            //startLabel: 'start label',
+                            //endLabel: 'end label'
+                        }
+                    );
+                    if (arr.indexOf(output[i]) !== null) {
+                        arr.push(output[i]);
+                    }
+                    if (arr2.indexOf(output1[i]) !== null) {
+                        arr2.push(output1[i]);
+                    }
+                }
+            }
+            catch {
+
+            }
+
+
+            $(".product").click(function () {
+                if (one.length != 0 && two.length != 0) {
+                    one = "";
+                    two = "";
+                }
+                if (one.length == 0) {
+                    one = $(this).attr("id")
+                    alert("첫번재 장비 선택완료.")
+                    arr.push(one);
+
+                }
+                else if (two.length == 0) {
+                    two = $(this).attr("id")
+                    alert("두번재 장비 선택완료.")
+                    arr2.push(two);
+
+                }
+                //alert("id : " + one + " // " + "id : " + two);
+                var myLine = new LeaderLine(
+                    document.getElementById(one),
+                    document.getElementById(two),
+                    {
+                        dash: { animation: true },
+                        color: '#20de07',
+                        //size : 5
+                    }
+
+                );
+
+                localStorage.setItem("value", JSON.stringify(arr));
+                localStorage.setItem("value1", JSON.stringify(arr2));
+
+                //localStorage.setItem("value", one);
+                //localStorage.setItem("value1", two);
+
+                //alert(localStorage.getItem('value'));
+                //alert(localStorage.getItem('value1'));
+            });
         }
     });
 }), 10000);
+
+
 
 
 function RESET() {
@@ -234,18 +313,8 @@ function RESET() {
 }
 
 function LINE() {
-    //var myLine = new LeaderLine(
-    //    document.getElementById('product0'),
-    //    document.getElementById('product1'),
-    //    {
-    //        dash: { animation: true }
-    //    }
-    //);
     localStorage.removeItem('value');
     localStorage.removeItem('value1');
     window.location.reload();
-
-    
-    
 }
 
