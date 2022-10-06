@@ -39,6 +39,9 @@ $(document).ready(function () {
 
                         var output = JSON.parse(localStorage.getItem('value') || "{}")
                         var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
+                        var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
+                        var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
+
                         //for (var i = 0; i < localStorage.getItem('value').length; i++) {
                         //    myLine.hide();
                         //}
@@ -52,11 +55,10 @@ $(document).ready(function () {
                                         dash: { animation: true },
                                         color: '#20de07',
                                         //size : 5
+                                        startLabel: output2[i],
+                                        endLabel: output3[i],
                                     }
                                 );
-
-
-
                             }
                         }
                         catch {
@@ -70,13 +72,19 @@ $(document).ready(function () {
 
             var one = "";
             var two = "";
+            var three = "";
+            var four = "";
             var arr = new Array();
             var arr2 = new Array();
+            var arrport = new Array();
+            var arrport2 = new Array();
 
             //var output = localStorage.getItem("value");
             //var output1 = localStorage.getItem("value1");
             var output = JSON.parse(localStorage.getItem('value') || "{}")
             var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
+            var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
+            var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
 
 
             try {
@@ -91,8 +99,9 @@ $(document).ready(function () {
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
-                            //startLabel: 'start label',
-                            //endLabel: 'end label'
+                            //startLabel: LeaderLine.captionLabel(output2[i], { color: 'red' }),
+                            startLabel: output2[i],
+                            endLabel: output3[i],
                         }
                     );
                     if (arr.indexOf(output[i]) !== null) {
@@ -100,6 +109,12 @@ $(document).ready(function () {
                     }
                     if (arr2.indexOf(output1[i]) !== null) {
                         arr2.push(output1[i]);
+                    }
+                    if (arrport.indexOf(output2[i]) !== null) {
+                        arrport.push(output2[i]);
+                    }
+                    if (arrport2.indexOf(output3[i]) !== null) {
+                        arrport2.push(output3[i]);
                     }
                 }
             }
@@ -112,18 +127,22 @@ $(document).ready(function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
                     two = "";
+                    three = "";
+                    four = "";
                 }
                 if (one.length == 0) {
                     one = $(this).attr("id")
+                    three = prompt("포트이름을 입력하세요.", "Text");
                     alert("첫번재 장비 선택완료.")
                     arr.push(one);
-
+                    arrport.push(three);
                 }
                 else if (two.length == 0) {
                     two = $(this).attr("id")
+                    four = prompt("포트이름을 입력하세요.", "Text");
                     alert("두번재 장비 선택완료.")
                     arr2.push(two);
-
+                    arrport2.push(four);
                 }
                 //alert("id : " + one + " // " + "id : " + two);
                 var myLine = new LeaderLine(
@@ -133,18 +152,24 @@ $(document).ready(function () {
                         dash: { animation: true },
                         color: '#20de07',
                         //size : 5
+                        startLabel: three,
+                        endLabel: four,
                     }
 
                 );
 
                 localStorage.setItem("value", JSON.stringify(arr));
                 localStorage.setItem("value1", JSON.stringify(arr2));
+                localStorage.setItem("port1", JSON.stringify(arrport));
+                localStorage.setItem("port2", JSON.stringify(arrport2));
 
                 //localStorage.setItem("value", one);
                 //localStorage.setItem("value1", two);
 
                 //alert(localStorage.getItem('value'));
                 //alert(localStorage.getItem('value1'));
+                //alert(localStorage.getItem('port1'));
+                //alert(localStorage.getItem('port2'));
             });
 
         },
@@ -193,6 +218,8 @@ setInterval((function () {
 
                         var output = JSON.parse(localStorage.getItem('value') || "{}")
                         var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
+                        var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
+                        var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
 
                         $('.leader-line').remove();
                         try {
@@ -204,6 +231,8 @@ setInterval((function () {
                                         dash: { animation: true },
                                         color: '#20de07',
                                         //size : 5
+                                        startLabel: output2[i],
+                                        endLabel: output3[i]
                                     }
                                 );
 
@@ -224,13 +253,20 @@ setInterval((function () {
             }
             var one = "";
             var two = "";
+            var three = "";
+            var four = "";
             var arr = new Array();
             var arr2 = new Array();
+            var arrport = new Array();
+            var arrport2 = new Array();
 
             //var output = localStorage.getItem("value");
             //var output1 = localStorage.getItem("value1");
             var output = JSON.parse(localStorage.getItem('value') || "{}")
             var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
+            var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
+            var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
+
 
             $('.leader-line').remove();
             try {
@@ -245,8 +281,8 @@ setInterval((function () {
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
-                            //startLabel: 'start label',
-                            //endLabel: 'end label'
+                            startLabel: output2[i],
+                            endLabel: output3[i]
                         }
                     );
                     if (arr.indexOf(output[i]) !== null) {
@@ -254,6 +290,12 @@ setInterval((function () {
                     }
                     if (arr2.indexOf(output1[i]) !== null) {
                         arr2.push(output1[i]);
+                    }
+                    if (arrport.indexOf(output2[i]) !== null) {
+                        arrport.push(output2[i]);
+                    }
+                    if (arrport2.indexOf(output3[i]) !== null) {
+                        arrport2.push(output3[i]);
                     }
                 }
             }
@@ -266,18 +308,22 @@ setInterval((function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
                     two = "";
+                    three = "";
+                    four = "";
                 }
                 if (one.length == 0) {
                     one = $(this).attr("id")
+                    three = prompt("포트이름을 입력하세요.", "Text");
                     alert("첫번재 장비 선택완료.")
                     arr.push(one);
-
+                    arrport.push(three);
                 }
                 else if (two.length == 0) {
                     two = $(this).attr("id")
+                    four = prompt("포트이름을 입력하세요.", "Text");
                     alert("두번재 장비 선택완료.")
                     arr2.push(two);
-
+                    arrport2.push(four);
                 }
                 //alert("id : " + one + " // " + "id : " + two);
                 var myLine = new LeaderLine(
@@ -293,6 +339,8 @@ setInterval((function () {
 
                 localStorage.setItem("value", JSON.stringify(arr));
                 localStorage.setItem("value1", JSON.stringify(arr2));
+                localStorage.setItem("port1", JSON.stringify(arrport));
+                localStorage.setItem("port2", JSON.stringify(arrport2));
 
                 //localStorage.setItem("value", one);
                 //localStorage.setItem("value1", two);
@@ -315,6 +363,8 @@ function RESET() {
 function LINE() {
     localStorage.removeItem('value');
     localStorage.removeItem('value1');
+    localStorage.removeItem('port1');
+    localStorage.removeItem('port2');
     window.location.reload();
 }
 
