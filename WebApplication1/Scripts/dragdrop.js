@@ -99,7 +99,7 @@ $(document).ready(function () {
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
-                            //startLabel: LeaderLine.captionLabel(output2[i], { color: 'red' }),
+                            //startLabel: LeaderLine.captionLabel(output2[i], { color: 'white', outlineColor:'red' }),
                             startLabel: output2[i],
                             endLabel: output3[i],
                         }
