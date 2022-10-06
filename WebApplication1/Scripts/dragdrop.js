@@ -94,6 +94,7 @@ $(document).ready(function () {
                         document.getElementById(output1[i]),
                         {
                             dash: { animation: true },
+                            //size:3,
                             //path: "grid",
                             color: '#20de07',
                             //startPlug:'arrow1',
@@ -367,8 +368,6 @@ setInterval((function () {
         }
     });
 }), 10000);
-
-
 
 
 function RESET() {
