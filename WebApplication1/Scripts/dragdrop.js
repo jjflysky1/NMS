@@ -130,16 +130,24 @@ $(document).ready(function () {
                     three = "";
                     four = "";
                 }
-                if (one.length == 0) {
+                if (one.length == 0 || three.length == 0) {
                     one = $(this).attr("id")
                     three = prompt("포트이름을 입력하세요.", "Text");
+                    if (three === null) {
+                        one = "";
+                        return; //break out of the function early
+                    }
                     alert("첫번재 장비 선택완료.")
                     arr.push(one);
                     arrport.push(three);
                 }
-                else if (two.length == 0) {
+                else if (two.length == 0 || four.length == 0) {
                     two = $(this).attr("id")
                     four = prompt("포트이름을 입력하세요.", "Text");
+                    if (four === null) {
+                        two = "";
+                        return; //break out of the function early
+                    }
                     alert("두번재 장비 선택완료.")
                     arr2.push(two);
                     arrport2.push(four);
@@ -314,6 +322,10 @@ setInterval((function () {
                 if (one.length == 0) {
                     one = $(this).attr("id")
                     three = prompt("포트이름을 입력하세요.", "Text");
+                    if (three === null) {
+                        one = "";
+                        return; //break out of the function early
+                    }
                     alert("첫번재 장비 선택완료.")
                     arr.push(one);
                     arrport.push(three);
@@ -321,6 +333,10 @@ setInterval((function () {
                 else if (two.length == 0) {
                     two = $(this).attr("id")
                     four = prompt("포트이름을 입력하세요.", "Text");
+                    if (four === null) {
+                        two = "";
+                        return; //break out of the function early
+                    }
                     alert("두번재 장비 선택완료.")
                     arr2.push(two);
                     arrport2.push(four);
