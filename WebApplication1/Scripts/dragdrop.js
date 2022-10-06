@@ -53,6 +53,8 @@ $(document).ready(function () {
                                     document.getElementById(output1[i]),
                                     {
                                         dash: { animation: true },
+                                        path: "grid",
+                                        endPlug: 'behind',
                                         color: '#20de07',
                                         //size : 5
                                         startLabel: output2[i],
@@ -95,10 +97,10 @@ $(document).ready(function () {
                         {
                             dash: { animation: true },
                             //size:3,
-                            //path: "grid",
+                            path: "grid",
+                            endPlug: 'behind',
                             color: '#20de07',
                             //startPlug:'arrow1',
-                            //endPlug: 'behind'
                             //size : 5
                             //startLabel: LeaderLine.captionLabel(output2[i], { color: 'white', outlineColor:'red' }),
                             startLabel: output2[i],
@@ -238,6 +240,8 @@ setInterval((function () {
                                     document.getElementById(output1[i]),
                                     {
                                         dash: { animation: true },
+                                        path: "grid",
+                                        endPlug: 'behind',
                                         color: '#20de07',
                                         //size : 5
                                         startLabel: output2[i],
@@ -285,7 +289,8 @@ setInterval((function () {
                         document.getElementById(output1[i]),
                         {
                             dash: { animation: true },
-                            //path: "grid",
+                            path: "grid",
+                            endPlug: 'behind',
                             color: '#20de07',
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
@@ -348,6 +353,8 @@ setInterval((function () {
                     document.getElementById(two),
                     {
                         dash: { animation: true },
+                        path: "grid",
+                        endPlug: 'behind',
                         color: '#20de07',
                         //size : 5
                     }
