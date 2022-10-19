@@ -3,13 +3,8 @@ using SnmpSharpNet;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Net.NetworkInformation;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -214,8 +209,8 @@ namespace SecurityServer
                     };
                     Parallel.For(0, count, options, i =>
                    {
-                        //Linux(serverip[i]);
-                        var task1 = Task.Run(() => Linux(serverip[i]));
+                       //Linux(serverip[i]);
+                       var task1 = Task.Run(() => Linux(serverip[i]));
 
                    });
                     //for (int i = 0; i < count; i++)
@@ -255,7 +250,7 @@ namespace SecurityServer
                 //{
                 SQL = "select DISTINCT a.serverip, os, serverid , log_time, trafficlimit , cpulimit, memorylimit, ifnull (Community, 'public') as community, d.Model from service a , " +
                     "Log_Time_Config b, mail_info c , server_oid_list d where a.flag = '1'  and category = N'네트워크/보안 장비' and status = 'Server Connect' " +
-                    "AND a.serverip='"+ serverip + "' AND a.serverip = d.serverip";
+                    "AND a.serverip='" + serverip + "' AND a.serverip = d.serverip";
                 MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
                 DataSet DBSET = new DataSet();
                 ADT.Fill(DBSET, "BD");
@@ -1336,8 +1331,8 @@ namespace SecurityServer
                                 }
 
                                 traffic1 = traffic1 - traffic;
-                               //로그확인용
-                               //Console.WriteLine(traffic1.ToString());
+                                //로그확인용
+                                //Console.WriteLine(traffic1.ToString());
                                 temp += traffic1.ToString() + ",";
                             }
                             sum = temp.Split(',');
@@ -1483,7 +1478,7 @@ namespace SecurityServer
                         }
                         catch (Exception ex)
                         {
-                            
+
                             Console.WriteLine("★★★★★★★SNMP 에러 :  " + row["serverip"].ToString() + " 확인!!");
                         }
                     }
@@ -2546,14 +2541,14 @@ namespace SecurityServer
                         {
                             SimpleSnmp snmp = new SimpleSnmp(row["serverip"].ToString(), row["Community"].ToString());
                             Pdu pdu = new Pdu();
-                            Dictionary<Oid, AsnType> result = snmp.Walk(SnmpVersion.Ver2, ".1.3.6.1.4.1.9560.1.10.4.3.1.1.6"); 
+                            Dictionary<Oid, AsnType> result = snmp.Walk(SnmpVersion.Ver2, ".1.3.6.1.4.1.9560.1.10.4.3.1.1.6");
                             if (result == null)
                             {
                                 Console.WriteLine("Request failed.");
                             }
                             else
                             {
-                               
+
                                 int count = 0;
                                 foreach (KeyValuePair<Oid, AsnType> entry in result)
                                 {
