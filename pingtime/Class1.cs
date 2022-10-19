@@ -1,16 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
-using Renci.SshNet.Common;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace pingtime
 {
@@ -51,7 +46,7 @@ namespace pingtime
                     }
 
 
-                    
+
                     string[] serverip = { };
                     string tempip = "";
                     int count = 0;
@@ -167,9 +162,9 @@ namespace pingtime
                             }
 
                         }
-                    
 
-                        
+
+
                     }
                     catch (Exception e)
                     {
@@ -190,15 +185,15 @@ namespace pingtime
                         {
                             reply = ping.Send(row["serverip"].ToString(), timeout, buffer, options);
                             Thread.Sleep(3000);
-                          
-                            if(reply.Status != IPStatus.Success)
+
+                            if (reply.Status != IPStatus.Success)
                             {
                                 j++;
-                                Console.WriteLine("★★★★★★★★★★" + row["serverip"].ToString()+ " 장비 " + j + " 번");
+                                Console.WriteLine("★★★★★★★★★★" + row["serverip"].ToString() + " 장비 " + j + " 번");
                             }
                         }
-                       
-                     
+
+
                         //if (reply.Status == IPStatus.Success) // 네트워크 사용 가능할 때~~
                         if (j != 5)
                         {
@@ -271,7 +266,7 @@ namespace pingtime
                                 CON.Close();
                             }
                         }
-                        else if( j == 5)
+                        else if (j == 5)
                         {
 
 

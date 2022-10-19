@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace LNM_TRA
 {
@@ -42,7 +37,7 @@ namespace LNM_TRA
                 //    Console.WriteLine("라이선스가 틀립니다");
                 //}
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 //Console.WriteLine("에러");
 
@@ -58,7 +53,7 @@ namespace LNM_TRA
                 //string txt = e.Message + "\n";
                 //File.AppendAllText(path, txt);
             }
-            
+
         }
     }
 }

@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Net.NetworkInformation;
-
 using System.Threading;
-
-using System.Diagnostics;
-using System.Text.RegularExpressions;
-
-using System.Management;
-using MySql.Data.MySqlClient;
 
 namespace autoadd
 {
@@ -40,9 +30,9 @@ namespace autoadd
                     foreach (DataRow row in DBSET2.Tables["BD"].Rows)
                     {
                         count = Convert.ToInt32(row["count"].ToString());
-                        
+
                     }
-                    if (DBCON.Liesence+1 > count)
+                    if (DBCON.Liesence + 1 > count)
                     {
                         Console.WriteLine("서비스 숫자 : " + count);
                         Thread.Sleep(5000);
@@ -63,7 +53,7 @@ namespace autoadd
                                 string endipDB = row["endip"].ToString();
                                 string network_name = row["name"].ToString();
 
-                               
+
 
                                 startipsplit = startipDB.ToString().Split('.');
                                 for (int i = 0; i < 3; i++)
@@ -75,7 +65,7 @@ namespace autoadd
                                 startipsplit = startipDB.ToString().Split('.');
                                 for (int i = 0; i < 4; i++)
                                 {
-                                    startip_right = startipsplit[i] ;
+                                    startip_right = startipsplit[i];
                                 }
                                 endipsplit = endipDB.ToString().Split('.');
                                 for (int i = 0; i < 4; i++)
@@ -97,14 +87,14 @@ namespace autoadd
                                 //catch(Exception E) {
                                 //    Console.WriteLine (E.Message);
                                 //}
-                               
+
 
                                 for (int i = Convert.ToInt32(startip_right); i <= Convert.ToInt32(endip); i++)
                                 {
                                     ip = network + i.ToString();
                                     //Console.WriteLine("반복문 들어온 아이피 " + ip);
                                     var reply = new Ping().Send(ip, 120);
-                                    
+
                                     if (reply.Status == IPStatus.Success)
                                     {
                                         Console.WriteLine(reply.Address.ToString() + " 검사");
@@ -140,11 +130,11 @@ namespace autoadd
 
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
-            
+
 
 
 

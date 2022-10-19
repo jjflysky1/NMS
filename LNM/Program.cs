@@ -1,16 +1,9 @@
-﻿using Renci.SshNet;
-using SnmpSharpNet;
+﻿using SnmpSharpNet;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Net.NetworkInformation;
-using System.Management;
-using System.Diagnostics;
 using System.IO;
-using MySql.Data.MySqlClient;
-using System.Data;
+using System.Management;
+using System.Threading;
 
 namespace LNM
 {
@@ -59,7 +52,7 @@ namespace LNM
                 ///윈도우서비스
                 Thread thread1 = new Thread(cls.service_window_thread);
                 thread1.Start();
-                
+
                 /////핑 확인
                 Thread thread2 = new Thread(cls4.pingthread);
                 thread2.Start();

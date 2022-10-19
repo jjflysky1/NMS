@@ -1,26 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Management;
-using System.Threading;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace Client
 {
     class Class1
     {
-        public  void SYSTEMINFO()
+        public void SYSTEMINFO()
         {
-            
+
             try
             {
                 while (true)
                 {
-                   
+
                     SOAP.Systeminfo soapclient = new SOAP.Systeminfo();
-                    
+
                     IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
                     string IPAddress = string.Empty;
                     foreach (IPAddress ip in host.AddressList)
@@ -101,7 +98,7 @@ namespace Client
                     {
 
                     }
-                    
+
                     ///MEMORY 
                     double real = 0;
                     try
@@ -178,14 +175,14 @@ namespace Client
                     {
                         Console.WriteLine(e.Message);
                     }
-                    
+
                     try
                     {
-                        
+
                         Console.WriteLine(soapclient.create_log(IPAddress, sumcpu.ToString(), real.ToString("N1"), traffic.ToString()));
                         //soapclient.create_log(IPAddress, sumcpu.ToString(), real.ToString("N1"), traffic);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                     }
@@ -195,16 +192,16 @@ namespace Client
                     Thread.Sleep(5000);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
 
 
-            
 
 
-            
+
+
         }
     }
 }

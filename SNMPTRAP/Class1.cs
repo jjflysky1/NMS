@@ -1,15 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using SnmpSharpNet;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SNMPTRAP
@@ -99,7 +93,7 @@ namespace SNMPTRAP
                                     {
                                         Console.WriteLine(row["name"].ToString() + " 이벤트 발견");
 
-                                      
+
                                         MySqlCommand cmd1 = new MySqlCommand();
                                         cmd1.Connection = CON;
                                         cmd1.CommandType = System.Data.CommandType.Text;
@@ -109,7 +103,7 @@ namespace SNMPTRAP
                                         cmd1.ExecuteNonQuery();
                                         cmd1.Dispose();
                                         cmd1 = null;
-                                        
+
 
                                         mail mail = new mail();
                                         Console.WriteLine("진짜 값 : " + v.Value.ToString());
@@ -240,7 +234,7 @@ namespace SNMPTRAP
             {
                 Console.WriteLine(e.Message);
             }
-            
+
         }
     }
 }
