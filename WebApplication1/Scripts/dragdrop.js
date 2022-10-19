@@ -27,7 +27,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < 100; i++) {
                 $("#product" + i).draggable({
-                    containment: "#contain",
+                    containment: "#pan",
                     scroll: false,
                     stop: function (event, ui) {
                         positions[this.id] = ui.position
@@ -66,8 +66,6 @@ $(document).ready(function () {
                         catch {
 
                         }
-
-
                     }
                 });
             }
@@ -190,8 +188,6 @@ $(document).ready(function () {
     });
 });
 
-
-
 setInterval((function () {
     $.ajax({
         type: "POST",
@@ -221,7 +217,7 @@ setInterval((function () {
 
             for (var i = 0; i < 100; i++) {
                 $("#product" + i).draggable({
-                    containment: "#contain",
+                    containment: "#pan",
                     scroll: false,
                     stop: function (event, ui) {
                         positions[this.id] = ui.position
@@ -280,7 +276,6 @@ setInterval((function () {
             var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
             var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
 
-
             $('.leader-line').remove();
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
@@ -316,7 +311,6 @@ setInterval((function () {
             catch {
 
             }
-
 
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
