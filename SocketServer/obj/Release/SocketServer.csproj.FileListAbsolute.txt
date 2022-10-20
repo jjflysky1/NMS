@@ -18,3 +18,11 @@ D:\c#\c# 소스\source\repos\Process(mysql)\SocketServer\obj\Release\SocketServe
 D:\c#\c# 소스\source\repos\Process(mysql)\SocketServer\obj\Release\SocketServer.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\SocketServer\obj\Release\SocketServer.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\SocketServer\obj\Release\SocketServer.pdb
+D:\c#\c# 소스\source\repos\NMS\SocketServer\bin\Release\SocketServer.exe.config
+D:\c#\c# 소스\source\repos\NMS\SocketServer\bin\Release\SocketServer.exe
+D:\c#\c# 소스\source\repos\NMS\SocketServer\bin\Release\SocketServer.pdb
+D:\c#\c# 소스\source\repos\NMS\SocketServer\obj\Release\SocketServer.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\SocketServer\obj\Release\SocketServer.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\SocketServer\obj\Release\SocketServer.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\SocketServer\obj\Release\SocketServer.exe
+D:\c#\c# 소스\source\repos\NMS\SocketServer\obj\Release\SocketServer.pdb

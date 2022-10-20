@@ -1,2 +1,0 @@
-[0305/101317.415:INFO:CONSOLE(12)] "Uncaught SyntaxError: Unexpected token '{'", source: http://192.168.0.190:75/Scripts/AdminLTE.css (12)
-[0305/101317.526:INFO:CONSOLE(2252)] "Uncaught SyntaxError: Unexpected identifier", source: http://192.168.0.190:75/main4.aspx?id=admin (2252)

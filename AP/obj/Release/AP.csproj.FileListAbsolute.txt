@@ -21,3 +21,14 @@ D:\c#\c# 소스\source\repos\Process(mysql)\AP\bin\Release\MySql.Data.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\AP\bin\Release\SnmpSharpNet.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\AP\bin\Release\DBCON.pdb
 D:\c#\c# 소스\source\repos\Process(mysql)\AP\obj\Release\AP.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\AP.dll
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\AP.pdb
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\NMS\AP\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\AP\obj\Release\AP.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\AP\obj\Release\AP.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\AP\obj\Release\AP.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\AP\obj\Release\AP.dll
+D:\c#\c# 소스\source\repos\NMS\AP\obj\Release\AP.pdb

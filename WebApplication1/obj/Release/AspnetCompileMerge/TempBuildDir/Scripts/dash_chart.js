@@ -190,6 +190,22 @@ function OnSuccess(response) {
     $('#div1').html(''); //remove canvas from container
     $('#div1').html('<canvas id="myChart" style="z-index:200; position:relative;  width:100%;  height: 100%;  "></canvas>'); //add it back to the container
     ctx = document.getElementById("myChart").getContext("2d");
+    var gradientFill = ctx.createLinearGradient(0, 0, 0, 450);
+    gradientFill.addColorStop(0, 'rgba(22, 183, 250, 0.3)');
+    gradientFill.addColorStop(0.5, 'rgba(22, 183, 250, 0.1)');
+    gradientFill.addColorStop(1, 'rgba(22, 183, 250, 0)');
+
+    var gradientFill2 = ctx.createLinearGradient(0, 0, 0, 450);
+    gradientFill2.addColorStop(0, 'rgba(241, 191, 51, 0.3)');
+    gradientFill2.addColorStop(0.5, 'rgba(241, 191, 51, 0.1)');
+    gradientFill2.addColorStop(1, 'rgba(241, 191, 51, 0)');
+
+    var gradientFill3 = ctx.createLinearGradient(0, 0, 0, 450);
+    gradientFill3.addColorStop(0, 'rgba(61, 210, 48, 0.3)');
+    gradientFill3.addColorStop(0.5, 'rgba(61, 210, 48, 0.1)');
+    gradientFill3.addColorStop(1, 'rgba(61, 210, 48, 0)');
+
+
     myChart = new Chart(ctx, {
         type: "line",
         data: {
@@ -198,8 +214,10 @@ function OnSuccess(response) {
                 {
                     label: serverip,
                     data: trafficArray,
-                    backgroundColor: ["rgba(113, 88, 203, .15)"],
-                    borderColor: ["rgba(113, 88, 203, 1)"],
+                    //backgroundColor: ["rgba(113, 88, 203, .15)"],
+                    //borderColor: ["rgba(113, 88, 203, 1)"],
+                    backgroundColor: gradientFill,
+                    borderColor: ["rgba(3, 169, 244, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
@@ -208,8 +226,10 @@ function OnSuccess(response) {
                 , {
                     label: serverip2,
                     data: trafficArray2,
-                    backgroundColor: ["rgba(161, 201, 249, .15)"],
-                    borderColor: ["rgba(161, 201, 249, 1)"],
+                    //backgroundColor: ["rgba(161, 201, 249, .15)"],
+                    //borderColor: ["rgba(161, 201, 249, 1)"],
+                    backgroundColor: gradientFill2,
+                    borderColor: ["rgba(255, 152, 0, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
@@ -218,8 +238,10 @@ function OnSuccess(response) {
                 , {
                     label: serverip3,
                     data: trafficArray3,
-                    backgroundColor: ["rgba(192, 161, 249, .15)"],
-                    borderColor: ["rgba(192, 161, 249, 1)"],
+                    //backgroundColor: ["rgba(192, 161, 249, .15)"],
+                    //borderColor: ["rgba(192, 161, 249, 1)"],
+                    backgroundColor: gradientFill3,
+                    borderColor: ["rgba(29, 233, 182, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
@@ -506,6 +528,20 @@ function OnSuccess4(response) {
     $('#div2').html(''); //remove canvas from container
     $('#div2').html('<canvas id="myChart2" style="z-index:200; position:relative;  width:100%;  height: 100%;  "></canvas>'); //add it back to the container
     ctx2 = document.getElementById("myChart2").getContext("2d");
+    var gradientFill = ctx2.createLinearGradient(0, 0, 0, 450);
+    gradientFill.addColorStop(0, 'rgba(22, 183, 250, 0.3)');
+    gradientFill.addColorStop(0.5, 'rgba(22, 183, 250, 0.1)');
+    gradientFill.addColorStop(1, 'rgba(22, 183, 250, 0)');
+
+    var gradientFill2 = ctx2.createLinearGradient(0, 0, 0, 450);
+    gradientFill2.addColorStop(0, 'rgba(241, 191, 51, 0.3)');
+    gradientFill2.addColorStop(0.5, 'rgba(241, 191, 51, 0.1)');
+    gradientFill2.addColorStop(1, 'rgba(241, 191, 51, 0)');
+
+    var gradientFill3 = ctx2.createLinearGradient(0, 0, 0, 450);
+    gradientFill3.addColorStop(0, 'rgba(61, 210, 48, 0.3)');
+    gradientFill3.addColorStop(0.5, 'rgba(61, 210, 48, 0.1)');
+    gradientFill3.addColorStop(1, 'rgba(61, 210, 48, 0)');
     myChart2 = new Chart(ctx2, {
         type: "line",
         data: {
@@ -514,8 +550,10 @@ function OnSuccess4(response) {
                 {
                     label: serverip4,
                     data: trafficArray4,
-                    backgroundColor: ["rgba(113, 88, 203, .15)"],
-                    borderColor: ["rgba(113, 88, 203, 1)"],
+                    //backgroundColor: ["rgba(113, 88, 203, .15)"],
+                    //borderColor: ["rgba(113, 88, 203, 1)"],
+                    backgroundColor: gradientFill,
+                    borderColor: ["rgba(3, 169, 244, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
@@ -524,8 +562,10 @@ function OnSuccess4(response) {
                 , {
                     label: serverip5,
                     data: trafficArray5,
-                    backgroundColor: ["rgba(161, 201, 249, .15)"],
-                    borderColor: ["rgba(161, 201, 249, 1)"],
+                    //backgroundColor: ["rgba(161, 201, 249, .15)"],
+                    //borderColor: ["rgba(161, 201, 249, 1)"],
+                    backgroundColor: gradientFill2,
+                    borderColor: ["rgba(255, 152, 0, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
@@ -534,8 +574,10 @@ function OnSuccess4(response) {
                 , {
                     label: serverip6,
                     data: trafficArray6,
-                    backgroundColor: ["rgba(192, 161, 249, .15)"],
-                    borderColor: ["rgba(192, 161, 249, 1)"],
+                    //backgroundColor: ["rgba(192, 161, 249, .15)"],
+                    //borderColor: ["rgba(192, 161, 249, 1)"],
+                    backgroundColor: gradientFill3,
+                    borderColor: ["rgba(29, 233, 182, 1)"],
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,

@@ -47,3 +47,13 @@ D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj
 D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\SSNMS\obj\Release\SSNMService.pdb
+D:\c#\c# 소스\source\repos\NMS\SSNMS\bin\Release\SSNMService.exe.config
+D:\c#\c# 소스\source\repos\NMS\SSNMS\bin\Release\SSNMService.exe
+D:\c#\c# 소스\source\repos\NMS\SSNMS\bin\Release\SSNMService.pdb
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMS.ProjectInstaller.resources
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.exe
+D:\c#\c# 소스\source\repos\NMS\SSNMS\obj\Release\SSNMService.pdb

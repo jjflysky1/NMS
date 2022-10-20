@@ -44,3 +44,13 @@ D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivc
 D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\SSIMCSerivce\obj\Release\SSIMCService.pdb
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\bin\Release\SSIMCService.exe.config
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\bin\Release\SSIMCService.exe
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\bin\Release\SSIMCService.pdb
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCSerivce.ProjectInstaller.resources
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCSerivce.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCService.exe
+D:\c#\c# 소스\source\repos\NMS\SSIMCSerivce\obj\Release\SSIMCService.pdb

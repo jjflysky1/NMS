@@ -29,3 +29,14 @@ D:\c#\c# 소스\source\repos\Process(mysql)\SNMPTRAP\obj\Release\SNMPTRAP.csproj
 D:\c#\c# 소스\source\repos\Process(mysql)\SNMPTRAP\obj\Release\SNMPTRAP.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\Process(mysql)\SNMPTRAP\obj\Release\SNMPTRAP.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\SNMPTRAP\obj\Release\SNMPTRAP.pdb
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\SNMPTRAP.dll
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\SNMPTRAP.pdb
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\obj\Release\SNMPTRAP.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\obj\Release\SNMPTRAP.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\obj\Release\SNMPTRAP.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\obj\Release\SNMPTRAP.dll
+D:\c#\c# 소스\source\repos\NMS\SNMPTRAP\obj\Release\SNMPTRAP.pdb

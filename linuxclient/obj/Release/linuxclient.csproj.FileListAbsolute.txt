@@ -12,3 +12,12 @@ D:\c#\c# 소스\source\repos\Process(mysql)\linuxclient\bin\Release\DBCON.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\linuxclient\bin\Release\MySql.Data.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\linuxclient\bin\Release\DBCON.pdb
 D:\c#\c# 소스\source\repos\Process(mysql)\linuxclient\obj\Release\linuxclient.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.exe
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.pdb
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.XmlSerializers.dll

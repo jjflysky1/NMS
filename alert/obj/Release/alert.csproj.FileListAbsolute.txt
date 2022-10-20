@@ -43,3 +43,13 @@ D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.Gener
 D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\alert\obj\Release\alert.pdb
+D:\c#\c# 소스\source\repos\NMS\alert\bin\Release\alert.exe.config
+D:\c#\c# 소스\source\repos\NMS\alert\bin\Release\alert.exe
+D:\c#\c# 소스\source\repos\NMS\alert\bin\Release\alert.pdb
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.Properties.Resources.resources
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.csproj.GenerateResource.cache
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.exe
+D:\c#\c# 소스\source\repos\NMS\alert\obj\Release\alert.pdb

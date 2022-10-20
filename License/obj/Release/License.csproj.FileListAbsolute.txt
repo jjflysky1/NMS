@@ -8,3 +8,9 @@ D:\c#\c# 소스\source\repos\Process(mysql)\License\bin\Release\License.pdb
 D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\License\obj\Release\License.pdb
+D:\c#\c# 소스\source\repos\NMS\License\bin\Release\License.dll
+D:\c#\c# 소스\source\repos\NMS\License\bin\Release\License.pdb
+D:\c#\c# 소스\source\repos\NMS\License\obj\Release\License.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\License\obj\Release\License.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\License\obj\Release\License.dll
+D:\c#\c# 소스\source\repos\NMS\License\obj\Release\License.pdb

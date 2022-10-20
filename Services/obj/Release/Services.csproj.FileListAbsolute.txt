@@ -57,3 +57,17 @@ D:\c#\c# 소스\source\repos\Process(mysql)\Services\obj\Release\Services.csproj
 D:\c#\c# 소스\source\repos\Process(mysql)\Services\obj\Release\Services.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\Process(mysql)\Services\obj\Release\Services.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\Services\obj\Release\Services.pdb
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Services.dll
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Services.pdb
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Renci.SshNet.Async.dll
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Renci.SshNet.dll
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Renci.SshNet.xml
+D:\c#\c# 소스\source\repos\NMS\Services\bin\Release\Renci.SshNet.Async.xml
+D:\c#\c# 소스\source\repos\NMS\Services\obj\Release\Services.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\Services\obj\Release\Services.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\Services\obj\Release\Services.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\Services\obj\Release\Services.dll
+D:\c#\c# 소스\source\repos\NMS\Services\obj\Release\Services.pdb

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "iku4Almy/0REmtH5Edbg87yn16u3ZeFaVqiH9S8UCIB/aVSb1O/dqccjP8Y9EsIBCF11N36ffPgzgUpyDfEXRw==",
+  "success": true,
+  "projectFilePath": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jun\\.nuget\\packages\\cef.redist.x64\\88.2.9\\cef.redist.x64.88.2.9.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cef.redist.x86\\88.2.9\\cef.redist.x86.88.2.9.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cefsharp.common\\88.2.90\\cefsharp.common.88.2.90.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\cefsharp.winforms\\88.2.90\\cefsharp.winforms.88.2.90.nupkg.sha512"
+  ],
+  "logs": []
+}

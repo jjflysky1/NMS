@@ -1,5 +1,4 @@
-﻿
-$(document).ready(function () {
+﻿$(document).ready(function () {
     $.ajax({
         type: "POST",
         url: 'main8.aspx/javascript2',
@@ -27,7 +26,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < 100; i++) {
                 $("#product" + i).draggable({
-                    containment: "#contain",
+                    containment: "#pan",
                     scroll: false,
                     stop: function (event, ui) {
                         positions[this.id] = ui.position
@@ -53,6 +52,8 @@ $(document).ready(function () {
                                     document.getElementById(output1[i]),
                                     {
                                         dash: { animation: true },
+                                        path: "grid",
+                                        endPlug: 'behind',
                                         color: '#20de07',
                                         //size : 5
                                         startLabel: output2[i],
@@ -64,8 +65,6 @@ $(document).ready(function () {
                         catch {
 
                         }
-
-
                     }
                 });
             }
@@ -94,10 +93,11 @@ $(document).ready(function () {
                         document.getElementById(output1[i]),
                         {
                             dash: { animation: true },
-                            //path: "grid",
+                            //size:3,
+                            path: "grid",
+                            endPlug: 'behind',
                             color: '#20de07',
                             //startPlug:'arrow1',
-                            //endPlug: 'behind'
                             //size : 5
                             //startLabel: LeaderLine.captionLabel(output2[i], { color: 'white', outlineColor:'red' }),
                             startLabel: output2[i],
@@ -121,7 +121,6 @@ $(document).ready(function () {
             catch {
 
             }
-
 
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
@@ -187,8 +186,6 @@ $(document).ready(function () {
     });
 });
 
-
-
 setInterval((function () {
     $.ajax({
         type: "POST",
@@ -218,7 +215,7 @@ setInterval((function () {
 
             for (var i = 0; i < 100; i++) {
                 $("#product" + i).draggable({
-                    containment: "#contain",
+                    containment: "#pan",
                     scroll: false,
                     stop: function (event, ui) {
                         positions[this.id] = ui.position
@@ -237,6 +234,8 @@ setInterval((function () {
                                     document.getElementById(output1[i]),
                                     {
                                         dash: { animation: true },
+                                        path: "grid",
+                                        endPlug: 'behind',
                                         color: '#20de07',
                                         //size : 5
                                         startLabel: output2[i],
@@ -275,7 +274,6 @@ setInterval((function () {
             var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
             var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
 
-
             $('.leader-line').remove();
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
@@ -284,7 +282,8 @@ setInterval((function () {
                         document.getElementById(output1[i]),
                         {
                             dash: { animation: true },
-                            //path: "grid",
+                            path: "grid",
+                            endPlug: 'behind',
                             color: '#20de07',
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
@@ -310,7 +309,6 @@ setInterval((function () {
             catch {
 
             }
-
 
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
@@ -347,6 +345,8 @@ setInterval((function () {
                     document.getElementById(two),
                     {
                         dash: { animation: true },
+                        path: "grid",
+                        endPlug: 'behind',
                         color: '#20de07',
                         //size : 5
                     }
@@ -367,8 +367,6 @@ setInterval((function () {
         }
     });
 }), 10000);
-
-
 
 
 function RESET() {

@@ -48,3 +48,13 @@ D:\c#\c# 소스\source\repos\Process(mysql)\Dashbord_resource\obj\Release\Dashbo
 D:\c#\c# 소스\source\repos\Process(mysql)\Dashbord_resource\obj\Release\Dashbord_resource.dll
 D:\c#\c# 소스\source\repos\Process(mysql)\Dashbord_resource\obj\Release\Dashbord_resource.pdb
 D:\c#\c# 소스\source\repos\Process(mysql)\Dashbord_resource\obj\Release\Dashbord_resource.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\bin\Release\Dashbord_resource.dll
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\bin\Release\Dashbord_resource.pdb
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\bin\Release\MySql.Data.dll
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\obj\Release\Dashbord_resource.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\obj\Release\Dashbord_resource.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\obj\Release\Dashbord_resource.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\obj\Release\Dashbord_resource.dll
+D:\c#\c# 소스\source\repos\NMS\Dashbord_resource\obj\Release\Dashbord_resource.pdb

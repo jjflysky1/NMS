@@ -23,3 +23,15 @@ C:\Users\jjfly\Desktop\c# 소스\source\repos\Process(mysql)\test5\obj\Release\t
 D:\c#\c# 소스\source\repos\Process(mysql)\test5\obj\Release\test5.csproj.AssemblyReference.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\test5\obj\Release\test5.csproj.SuggestedBindingRedirects.cache
 D:\c#\c# 소스\source\repos\Process(mysql)\test5\obj\Release\test5.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\test5.exe.config
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\test5.exe
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\test5.pdb
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\DBCON.dll
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\SnmpSharpNet.dll
+D:\c#\c# 소스\source\repos\NMS\test5\bin\Release\DBCON.pdb
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.csproj.CopyComplete
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.exe
+D:\c#\c# 소스\source\repos\NMS\test5\obj\Release\test5.pdb

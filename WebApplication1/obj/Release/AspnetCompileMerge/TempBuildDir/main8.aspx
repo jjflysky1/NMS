@@ -36,7 +36,7 @@
     <script src="Scripts/dragdrop.js"></script>
 
     <script src="Scripts/dash_chart.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <%--<script src="https://d3js.org/d3.v4.min.js"></script>--%>
     <title></title>
     <script type="text/javascript">
 
@@ -199,10 +199,10 @@
                 </script>
 
 
-                <div style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
+                <div id="pan" style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3); ">
                     <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
-                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
+                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto; ">
                         <div style="float: right;">
                             <font color="white" size="1">
                                 <input type="button" name="전체초기화" value="전체초기화" onclick="RESET()" style="background: transparent; border: none;" /></font>
@@ -554,12 +554,12 @@
 
             .progress-bar {
                 line-height: 12px;
-                background: #1abc9c;
+                background: #38cff4;
                 box-shadow: none
             }
 
             .progress-bar-success {
-                background-color: #2ecc71
+                background-color: #58bc50
             }
 
             .progress-bar-warning {
@@ -572,6 +572,10 @@
 
             .progress-bar-info {
                 background-color: #3498db
+            }
+
+            .progress-bar-primary {
+                background-color: #38cff4
             }
 
             body {

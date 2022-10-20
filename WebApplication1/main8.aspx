@@ -36,7 +36,7 @@
     <script src="Scripts/dragdrop.js"></script>
 
     <script src="Scripts/dash_chart.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <%--<script src="https://d3js.org/d3.v4.min.js"></script>--%>
     <title></title>
     <script type="text/javascript">
 
@@ -546,7 +546,7 @@
                 }
 
             .progress {
-                height: 12px;
+                height: 15px;
                 background: #ebedef;
                 border-radius: 32px;
                 box-shadow: none
@@ -554,12 +554,12 @@
 
             .progress-bar {
                 line-height: 12px;
-                background: #1abc9c;
+                background: #38cff4;
                 box-shadow: none
             }
 
             .progress-bar-success {
-                background-color: #2ecc71
+                background-color: #58bc50
             }
 
             .progress-bar-warning {
@@ -572,6 +572,10 @@
 
             .progress-bar-info {
                 background-color: #3498db
+            }
+
+            .progress-bar-primary {
+                background-color: #38cff4
             }
 
             body {
@@ -587,6 +591,7 @@
             }
 
             body {
+                /*background-image: url("img/international.jpg");*/
                 background-image: url("img/enterprise.jpg");
                 /*background-color:#1e1b1e;*/
                 /*            background: linear-gradient(to top, #2f323a 0%, #2f323a 100%);*/

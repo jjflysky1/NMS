@@ -13,3 +13,11 @@ D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj
 D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.exe
 D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\License.pdb
 D:\c#\c# 소스\source\repos\Process(mysql)\test3\obj\Release\Licensemake.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\test3\bin\Release\License.exe.config
+D:\c#\c# 소스\source\repos\NMS\test3\bin\Release\License.exe
+D:\c#\c# 소스\source\repos\NMS\test3\bin\Release\License.pdb
+D:\c#\c# 소스\source\repos\NMS\test3\obj\Release\Licensemake.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\test3\obj\Release\Licensemake.csproj.SuggestedBindingRedirects.cache
+D:\c#\c# 소스\source\repos\NMS\test3\obj\Release\Licensemake.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test3\obj\Release\License.exe
+D:\c#\c# 소스\source\repos\NMS\test3\obj\Release\License.pdb
