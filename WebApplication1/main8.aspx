@@ -199,10 +199,10 @@
                 </script>
 
 
-                <div id="pan" style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3); ">
+                <div id="pan" style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3);">
                     <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
-                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto; ">
+                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
                         <div style="float: right;">
                             <font color="white" size="1">
                                 <input type="button" name="전체초기화" value="전체초기화" onclick="RESET()" style="background: transparent; border: none;" /></font>
@@ -625,17 +625,7 @@
 
 
     <script src="Scripts/leader-line.min.js"></script>
-    <script>
 
-
-        window.onload = function () {
-         
-        }
-        
-
-     
-      
-    </script>
 
 </body>
 </html>

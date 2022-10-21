@@ -14,6 +14,7 @@ namespace oid_insert
     public partial class Form1 : Form
     {
         DBCON.Class1 DBCON = new DBCON.Class1();
+        string db = "Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd";
         public Form1()
         {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
+                        MySqlConnection CON = new MySqlConnection(db);
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -103,7 +104,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
+                        MySqlConnection CON = new MySqlConnection(db);
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -126,7 +127,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
+                        MySqlConnection CON = new MySqlConnection(db);
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;
@@ -149,7 +150,7 @@ namespace oid_insert
                         //MessageBox.Show(gu1[i].ToString());   
                         //MessageBox.Show(gu2[0].ToString());
                         //Server=192.168.0.190; Database=cs; User id=nms; Password=P@ssw0rd
-                        MySqlConnection CON = new MySqlConnection("Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd");
+                        MySqlConnection CON = new MySqlConnection(db);
                         CON.Open();
                         MySqlCommand cmd = new MySqlCommand();
                         cmd.Connection = CON;

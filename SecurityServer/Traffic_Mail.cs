@@ -90,7 +90,7 @@ namespace SecurityServer
                         //}
 
                         MAIL.Subject = "트래픽 알림";
-                        MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + nowtraffic + " 입니다. ";
+                        MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
                         MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                         MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
 
