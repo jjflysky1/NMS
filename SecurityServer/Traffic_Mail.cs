@@ -128,8 +128,6 @@ namespace SecurityServer
                         //        cmd.Parameters.Add("@title", SqlDbType.NVarChar, 100).Value = TITLE.Text;
                         //        cmd.Parameters.Add("@body", SqlDbType.NVarChar, 1000).Value = BODY.Text;
 
-
-
                         //        cmd.CommandType = System.Data.CommandType.Text;
                         //        cmd.CommandText = "insert into send_mail (receiver, cc, file_name, title ,body) " +
                         //        "values(@reciver,@cc,@file_name,@title,@body)";
