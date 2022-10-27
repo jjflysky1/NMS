@@ -1490,6 +1490,7 @@ namespace WebApplication1
         public class network
         {
             public string product { get; set; }
+            public string status { get; set; }
        
         }
         /// <summary>
@@ -1598,7 +1599,8 @@ namespace WebApplication1
 
                     Parts.Add(new network
                     {
-                        product = label.Text
+                        product = label.Text,
+                        status = status
 
                     });
                     st = null;

@@ -199,10 +199,10 @@
                 </script>
 
 
-                <div id="pan" style="width: 59%; height: 820px; position: absolute; margin-left: 20.8%; padding-left: 0px; background-color: rgba(0, 0, 0, 0.3); ">
+                <div id="pan" style="width:58%; display: inline-block; height: 820px; float:left; margin-left:0.5%; background-color: rgba(0, 0, 0, 0.3);">
                     <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
-                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto; ">
+                    <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
                         <div style="float: right;">
                             <font color="white" size="1">
                                 <input type="button" name="전체초기화" value="전체초기화" onclick="RESET()" style="background: transparent; border: none;" /></font>
@@ -222,7 +222,7 @@
                         </asp:UpdatePanel>--%>
                 </div>
 
-                <div style="padding-left: 30px; float: right; width: 20%; height: auto; margin-right: 1%; margin-bottom: 40px; vertical-align: middle;">
+                <div style="padding-left:0.5%; float:right; width: 20%;  margin-right: 1%; margin-bottom: 40px; vertical-align: middle;">
                     <div class="card card0 border" style="height: 260px; background-color: rgba(0, 0, 0, 0.3);">
                         <div style="margin-left: 2%;">
                             <h4>
@@ -546,7 +546,7 @@
                 }
 
             .progress {
-                height: 12px;
+                height: 15px;
                 background: #ebedef;
                 border-radius: 32px;
                 box-shadow: none
@@ -591,6 +591,7 @@
             }
 
             body {
+                /*background-image: url("img/international.jpg");*/
                 background-image: url("img/enterprise.jpg");
                 /*background-color:#1e1b1e;*/
                 /*            background: linear-gradient(to top, #2f323a 0%, #2f323a 100%);*/
@@ -624,17 +625,7 @@
 
 
     <script src="Scripts/leader-line.min.js"></script>
-    <script>
 
-
-        window.onload = function () {
-         
-        }
-        
-
-     
-      
-    </script>
 
 </body>
 </html>
