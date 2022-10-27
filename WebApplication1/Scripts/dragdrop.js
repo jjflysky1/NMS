@@ -10,10 +10,14 @@
             var customers = response.d;
             var product = "";
             var productarray = "";
+            var status = "";
+            var statusarray = "";
             $(customers).each(function () {
                 product += this.product;
+                status += this.status+',';
             });
             productarray = product.split(',');
+            statusarray = status.split(',');
 
             const element = document.getElementById('div33');
             element.innerHTML = product
@@ -47,6 +51,12 @@
                         $('.leader-line').remove();
                         try {
                             for (var i = 0; i < localStorage.getItem('value').length; i++) {
+                                if (statusarray[i + 1] == "Server Connect") {
+                                    col = '#20de07'
+                                }
+                                if (statusarray[i + 1] == "Server Disconnect/ping") {
+                                    col = '#de0707'
+                                }
                                 myLine = new LeaderLine(
                                     document.getElementById(output[i]),
                                     document.getElementById(output1[i]),
@@ -54,7 +64,7 @@
                                         dash: { animation: true },
                                         path: "grid",
                                         endPlug: 'behind',
-                                        color: '#20de07',
+                                        color: col,
                                         //size : 5
                                         startLabel: output2[i],
                                         endLabel: output3[i],
@@ -84,10 +94,15 @@
             var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
             var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
             var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
-
-
+         
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
+                    if (statusarray[i+1] == "Server Connect") {
+                        col = '#20de07'
+                    }
+                    if (statusarray[i+1] == "Server Disconnect/ping") {
+                        col = '#de0707'    
+                    }
                     var myLine = new LeaderLine(
                         document.getElementById(output[i]),
                         document.getElementById(output1[i]),
@@ -96,7 +111,7 @@
                             //size:3,
                             path: "grid",
                             endPlug: 'behind',
-                            color: '#20de07',
+                            color: col,
                             //startPlug:'arrow1',
                             //size : 5
                             //startLabel: LeaderLine.captionLabel(output2[i], { color: 'white', outlineColor:'red' }),
@@ -104,6 +119,8 @@
                             endLabel: output3[i],
                         }
                     );
+                   
+                    
                     if (arr.indexOf(output[i]) !== null) {
                         arr.push(output[i]);
                     }
@@ -157,6 +174,8 @@
                     document.getElementById(two),
                     {
                         dash: { animation: true },
+                        path: "grid",
+                        endPlug: 'behind',
                         color: '#20de07',
                         //size : 5
                         startLabel: three,
@@ -198,10 +217,14 @@ setInterval((function () {
             var customers = response.d;
             var product = "";
             var productarray = "";
+            var status = "";
+            var statusarray = "";
             $(customers).each(function () {
                 product += this.product;
+                status += this.status + ',';
             });
             productarray = product.split(',');
+            statusarray = status.split(',');
 
             const element = document.getElementById('div33');
             //element.innerHTML = "";
@@ -229,6 +252,12 @@ setInterval((function () {
                         $('.leader-line').remove();
                         try {
                             for (var i = 0; i < 100; i++) {
+                                if (statusarray[i + 1] == "Server Connect") {
+                                    col = '#20de07'
+                                }
+                                if (statusarray[i + 1] == "Server Disconnect/ping") {
+                                    col = '#de0707'
+                                }
                                 myLine = new LeaderLine(
                                     document.getElementById(output[i]),
                                     document.getElementById(output1[i]),
@@ -236,7 +265,7 @@ setInterval((function () {
                                         dash: { animation: true },
                                         path: "grid",
                                         endPlug: 'behind',
-                                        color: '#20de07',
+                                        color: col,
                                         //size : 5
                                         startLabel: output2[i],
                                         endLabel: output3[i]
@@ -277,6 +306,12 @@ setInterval((function () {
             $('.leader-line').remove();
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
+                    if (statusarray[i + 1] == "Server Connect") {
+                        col = '#20de07'
+                    }
+                    if (statusarray[i + 1] == "Server Disconnect/ping") {
+                        col = '#de0707'
+                    }
                     var myLine = new LeaderLine(
                         document.getElementById(output[i]),
                         document.getElementById(output1[i]),
@@ -284,7 +319,7 @@ setInterval((function () {
                             dash: { animation: true },
                             path: "grid",
                             endPlug: 'behind',
-                            color: '#20de07',
+                            color: col,
                             //startPlug:'arrow1',
                             //endPlug: 'behind'
                             //size : 5
@@ -349,6 +384,8 @@ setInterval((function () {
                         endPlug: 'behind',
                         color: '#20de07',
                         //size : 5
+                        startLabel: three,
+                        endLabel: four,
                     }
 
                 );
