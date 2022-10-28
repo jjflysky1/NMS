@@ -14,7 +14,7 @@
             var statusarray = "";
             $(customers).each(function () {
                 product += this.product;
-                status += this.status+',';
+                status += this.status + ',';
             });
             productarray = product.split(',');
             statusarray = status.split(',');
@@ -51,12 +51,16 @@
                         $('.leader-line').remove();
                         try {
                             for (var i = 0; i < localStorage.getItem('value').length; i++) {
-                                if (statusarray[i + 1] == "Server Connect") {
-                                    col = '#20de07'
-                                }
-                                if (statusarray[i + 1] == "Server Disconnect/ping") {
+                                var str = $('#' + output1[i]).find('img').attr('src').indexOf('error');
+                                var str2 = $('#' + output[i]).find('img').attr('src').indexOf('error');
+                                //-1 : 정상
+                                if (str != '-1' || str2 != '-1') {
                                     col = '#de0707'
                                 }
+                                else {
+                                    col = '#20de07'
+                                }
+
                                 myLine = new LeaderLine(
                                     document.getElementById(output[i]),
                                     document.getElementById(output1[i]),
@@ -79,6 +83,7 @@
                 });
             }
 
+            
             var one = "";
             var two = "";
             var three = "";
@@ -97,12 +102,16 @@
          
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
-                    if (statusarray[i+1] == "Server Connect") {
+                    var str = $('#' + output1[i]).find('img').attr('src').indexOf('error');
+                    var str2 = $('#' + output[i]).find('img').attr('src').indexOf('error');
+                    //-1 : 정상
+                    if (str != '-1' || str2 != '-1') {
+                        col = '#de0707'
+                    }
+                    else {
                         col = '#20de07'
                     }
-                    if (statusarray[i+1] == "Server Disconnect/ping") {
-                        col = '#de0707'    
-                    }
+                
                     var myLine = new LeaderLine(
                         document.getElementById(output[i]),
                         document.getElementById(output1[i]),
@@ -120,7 +129,6 @@
                         }
                     );
                    
-                    
                     if (arr.indexOf(output[i]) !== null) {
                         arr.push(output[i]);
                     }
@@ -138,7 +146,7 @@
             catch {
 
             }
-
+         
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
@@ -169,6 +177,15 @@
                     arrport2.push(four);
                 }
                 //alert("id : " + one + " // " + "id : " + two);
+                var str = $('#' + one).find('img').attr('src').indexOf('error');
+                var str2 = $('#' + two).find('img').attr('src').indexOf('error');
+                //-1 : 정상
+                if (str != '-1' || str2 != '-1') {
+                    col = '#de0707'
+                }
+                else {
+                    col = '#20de07'
+                }
                 var myLine = new LeaderLine(
                     document.getElementById(one),
                     document.getElementById(two),
@@ -176,7 +193,7 @@
                         dash: { animation: true },
                         path: "grid",
                         endPlug: 'behind',
-                        color: '#20de07',
+                        color: col,
                         //size : 5
                         startLabel: three,
                         endLabel: four,
@@ -251,13 +268,17 @@ setInterval((function () {
 
                         $('.leader-line').remove();
                         try {
-                            for (var i = 0; i < 100; i++) {
-                                if (statusarray[i + 1] == "Server Connect") {
-                                    col = '#20de07'
-                                }
-                                if (statusarray[i + 1] == "Server Disconnect/ping") {
+                            for (var i = 0; i < localStorage.getItem('value').length; i++) {
+                                var str = $('#' + output1[i]).find('img').attr('src').indexOf('error');
+                                var str2 = $('#' + output[i]).find('img').attr('src').indexOf('error');
+                                //-1 : 정상
+                                if (str != '-1' || str2 != '-1') {
                                     col = '#de0707'
                                 }
+                                else {
+                                    col = '#20de07'
+                                }
+
                                 myLine = new LeaderLine(
                                     document.getElementById(output[i]),
                                     document.getElementById(output1[i]),
@@ -306,12 +327,16 @@ setInterval((function () {
             $('.leader-line').remove();
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
-                    if (statusarray[i + 1] == "Server Connect") {
-                        col = '#20de07'
-                    }
-                    if (statusarray[i + 1] == "Server Disconnect/ping") {
+                    var str = $('#' + output1[i]).find('img').attr('src').indexOf('error');
+                    var str2 = $('#' + output[i]).find('img').attr('src').indexOf('error');
+                    //-1 : 정상
+                    if (str != '-1' || str2 != '-1') {
                         col = '#de0707'
                     }
+                    else {
+                        col = '#20de07'
+                    }
+
                     var myLine = new LeaderLine(
                         document.getElementById(output[i]),
                         document.getElementById(output1[i]),
