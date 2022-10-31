@@ -191,6 +191,7 @@
     <Content Include="Log\Secure_Log_Main.aspx" />
     <Content Include="Log\Secure_Log.aspx" />
     <Content Include="Log\Event_log.aspx" />
+    <Content Include="main9.aspx" />
     <Content Include="main8.aspx" />
     <Content Include="main7.aspx" />
     <Content Include="main6.aspx" />
@@ -240,6 +241,7 @@
     <Content Include="Scripts\dash_chart.js" />
     <Content Include="Scripts\datepicker3.min.css" />
     <Content Include="Scripts\demo.js" />
+    <Content Include="Scripts\dragdrop2.js" />
     <Content Include="Scripts\dragdrop.js" />
     <Content Include="Scripts\export-data.js" />
     <Content Include="Scripts\exporting.js" />
@@ -477,6 +479,13 @@
     </Compile>
     <Compile Include="Log\Event_log.aspx.designer.cs">
       <DependentUpon>Event_log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main9.aspx.cs">
+      <DependentUpon>main9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main9.aspx.designer.cs">
+      <DependentUpon>main9.aspx</DependentUpon>
     </Compile>
     <Compile Include="main8.aspx.cs">
       <DependentUpon>main8.aspx</DependentUpon>

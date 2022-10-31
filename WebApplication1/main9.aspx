@@ -1,4 +1,4 @@
-﻿<%@ Page MaintainScrollPositionOnPostback="true" EnableEventValidation="false" Language="C#" AutoEventWireup="true" CodeBehind="main8.aspx.cs" Inherits="WebApplication1.main8" %>
+﻿<%@ Page MaintainScrollPositionOnPostback="true" EnableEventValidation="false" Language="C#" AutoEventWireup="true" CodeBehind="main9.aspx.cs" Inherits="WebApplication1.main9" %>
 
 <%@ Register Src="~/Common/leftmenu.ascx" TagName="uc_menu" TagPrefix="uc1" %>
 <%@ Register Src="~/Common/bottom.ascx" TagName="uc_bottom" TagPrefix="uc2" %>
@@ -33,7 +33,7 @@
     <script src="Scripts/jquery-3.2.1.min.js"></script>
     <script src="Scripts/jquery-ui.min.js"></script>
 
-    <script src="Scripts/dragdrop.js"></script>
+    <script src="Scripts/dragdrop2.js"></script>
 
     <script src="Scripts/dash_chart.js"></script>
     <%--<script src="https://d3js.org/d3.v4.min.js"></script>--%>
@@ -199,7 +199,7 @@
                 </script>
 
 
-                <div id="pan" style="width:58%; display: inline-block; height: 820px; float:left; margin-left:0.5%; background-color:rgba(0, 0, 0, 0.3);">
+                <div id="pan" style="width:58%; display: inline-block; height: 820px; float:left; margin-left:0.5%; background-color:rgba(0, 0, 0, 0.3); background-image:url('img/korea.png'); background-size:80% 100%; background-repeat:no-repeat; background-position: center;">
                     <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
                     <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">
