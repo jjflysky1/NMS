@@ -13,7 +13,7 @@ namespace SecurityServer
             DBCON.Class1 DBCON = new DBCON.Class1();
             MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
             string SQL = "";
-            SQL = "select distinct a.email, a.mailno, c.phone , c.mailip, c.trafficlimit, mail_sender from mail_target a , service b ,  mail_info c where  c.flag=1 and  DATE_ADD(b.trafficmail, INTERVAL 10 MINUTE) < now() and a.serverip = b.ServerIP " +
+            SQL = "select distinct a.email, a.mailno, c.phone , c.mailip, fORMAT(c.trafficlimit, 0) AS trafficlimit , mail_sender from mail_target a , service b ,  mail_info c where  c.flag=1 and  DATE_ADD(b.trafficmail, INTERVAL 10 MINUTE) < now() and a.serverip = b.ServerIP " +
                 " and b.serverip = '" + serverip + "'";
             MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
             DataSet DBSET = new DataSet();
@@ -90,7 +90,7 @@ namespace SecurityServer
                         //}
 
                         MAIL.Subject = "트래픽 알림";
-                        MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
+                        MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " +  row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
                         MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                         MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
 

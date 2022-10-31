@@ -83,7 +83,6 @@
                 });
             }
 
-
             var one = "";
             var two = "";
             var three = "";
@@ -293,7 +292,6 @@ setInterval((function () {
                                         endLabel: output3[i]
                                     }
                                 );
-
                                 //if (arr.indexOf(output[i]) !== null) {
                                 //    arr.push(output[i]);
                                 //}
@@ -401,6 +399,15 @@ setInterval((function () {
                     arrport2.push(four);
                 }
                 //alert("id : " + one + " // " + "id : " + two);
+                var str = $('#' + one).find('img').attr('src').indexOf('error');
+                var str2 = $('#' + two).find('img').attr('src').indexOf('error');
+                //-1 : 정상
+                if (str != '-1' || str2 != '-1') {
+                    col = '#de0707'
+                }
+                else {
+                    col = '#20de07'
+                }
                 var myLine = new LeaderLine(
                     document.getElementById(one),
                     document.getElementById(two),
@@ -430,7 +437,6 @@ setInterval((function () {
         }
     });
 }), 100000);
-
 
 function RESET() {
     localStorage.clear();
