@@ -54,3 +54,16 @@ D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.CoreCompileInput
 D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.exe
 D:\c#\c# 소스\source\repos\NMS\test6\obj\Release\test6.pdb
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Buffers.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Memory.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Numerics.Vectors.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Buffers.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Memory.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Numerics.Vectors.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\c#\c# 소스\source\repos\NMS\test6\bin\Release\MySql.Data.dll

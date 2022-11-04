@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 using ManagedNativeWifi;
 using NativeWifi;
 using System.Threading;
+using System.Data;
+using System.Net.Mail;
+using MySql.Data.MySqlClient;
 
 namespace test6
 {
@@ -98,30 +101,85 @@ namespace test6
 
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Wlan.WlanAvailableNetwork[] wlanAvailaleNetworkArray = wlanClient.Interfaces[0].GetAvailableNetworkList(0);
 
-                try
+            MySqlConnection CON = new MySqlConnection("Server = 192.168.1.174; Database = cs; User id = nms; Password = P@ssw0rd");
+            //MySqlConnection CON = new MySqlConnection("Server = 192.168.0.190; Database = cs; User id = nms; Password = P@ssw0rd");
+            string SQL = "";
+            SQL = "select distinct a.email, a.mailno, c.phone , c.mailip, fORMAT(c.trafficlimit, 0) AS trafficlimit , mail_sender from mail_target a , service b ,  mail_info c where  c.flag=1 and  DATE_ADD(b.trafficmail, INTERVAL 10 MINUTE) < now() and a.serverip = b.ServerIP " +
+                " and b.serverip = '192.168.53.234' limit 1";
+            ///192.168.53.234
+            MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
+            DataSet DBSET = new DataSet();
+            ADT.Fill(DBSET, "BD");
+            foreach (DataRow row in DBSET.Tables["BD"].Rows)
+            {
+                if (row["email"].ToString() != "")
                 {
-                    foreach (Wlan.WlanAvailableNetwork wlanAvailableNetwork in wlanAvailaleNetworkArray)
+                    try
                     {
-                        Console.WriteLine("S  S  I  D   : " + GetSSIDString(wlanAvailableNetwork));
-                        Console.WriteLine("신 호 강 도  : " + wlanAvailableNetwork.wlanSignalQuality.ToString());
-                        Console.WriteLine("암   호   화 : " + wlanAvailableNetwork.securityEnabled.ToString());
-                        Console.WriteLine("채        널 : " + GetChannel(wlanAvailableNetwork).ToString());
-                        Console.WriteLine("암 호 방 식  : " + wlanAvailableNetwork.dot11DefaultCipherAlgorithm.ToString());
-                        Console.WriteLine("암호알고리즘 : " + wlanAvailableNetwork.dot11DefaultAuthAlgorithm.ToString());
-                        Console.WriteLine("맥   주   소 : " + GetMACAddress(wlanAvailableNetwork));
-                        Console.WriteLine("------------------------------------------------------------------------");
+                        //Response.Write("TEST");
+
+                        MailMessage MAIL = new MailMessage();
+                        SmtpClient SMTPMAIL = new SmtpClient(row["mailip"].ToString());
+                        //MAIL.From = new MailAddress(row["mail_sender"].ToString());
+                        MAIL.From = new MailAddress("noreply@jusung.com");
+                        SMTPMAIL.Port = 25;
+                        //MAIL.To.Add(Recever.Text.ToString());
+                        //MAIL.To.Add(row["email"].ToString());
+                        MAIL.To.Add("it@jusung.com");
+                        //if (CC.Text.ToString() != "")
+                        //{
+                        //    MAIL.CC.Add(CC.Text.ToString());
+                        //}
+
+                        MAIL.Subject = "메일 테스트 입니다";
+                        //MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
+                        MAIL.Body = "메일 테스트 입니다";
+                        MAIL.BodyEncoding = System.Text.Encoding.UTF8;
+                        MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
+
+
+                        SMTPMAIL.Send(MAIL);
+
+
+                        Console.WriteLine("메일보냄");
+                        Console.ReadLine();
+
+                    }
+                    catch(Exception e)
+                    {
+                       Console.WriteLine(e.Message);
+                       Console.ReadLine();
                     }
                 }
-                catch (Exception E)
-                {
-                    Console.WriteLine(E.Message);
-                }
-                Thread.Sleep(5000);
+
             }
+
+
+            //while (true)
+            //{
+            //    Wlan.WlanAvailableNetwork[] wlanAvailaleNetworkArray = wlanClient.Interfaces[0].GetAvailableNetworkList(0);
+
+            //    try
+            //    {
+            //        foreach (Wlan.WlanAvailableNetwork wlanAvailableNetwork in wlanAvailaleNetworkArray)
+            //        {
+            //            Console.WriteLine("S  S  I  D   : " + GetSSIDString(wlanAvailableNetwork));
+            //            Console.WriteLine("신 호 강 도  : " + wlanAvailableNetwork.wlanSignalQuality.ToString());
+            //            Console.WriteLine("암   호   화 : " + wlanAvailableNetwork.securityEnabled.ToString());
+            //            Console.WriteLine("채        널 : " + GetChannel(wlanAvailableNetwork).ToString());
+            //            Console.WriteLine("암 호 방 식  : " + wlanAvailableNetwork.dot11DefaultCipherAlgorithm.ToString());
+            //            Console.WriteLine("암호알고리즘 : " + wlanAvailableNetwork.dot11DefaultAuthAlgorithm.ToString());
+            //            Console.WriteLine("맥   주   소 : " + GetMACAddress(wlanAvailableNetwork));
+            //            Console.WriteLine("------------------------------------------------------------------------");
+            //        }
+            //    }
+            //    catch (Exception E)
+            //    {
+            //        Console.WriteLine(E.Message);
+            //    }
+            //    Thread.Sleep(5000);
+            //}
 
 
 

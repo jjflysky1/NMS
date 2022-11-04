@@ -57,7 +57,7 @@ namespace WebApplication1
 
             TD = new TableHeaderCell();
             TD.Width = 30;
-            TD.Text = "받는 사람";
+            TD.Text = "보내는 사람";
             TD.Attributes["style"] = "text-align : center";
             TR.Cells.Add(TD);
 

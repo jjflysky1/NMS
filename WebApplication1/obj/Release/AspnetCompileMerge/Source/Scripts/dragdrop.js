@@ -61,7 +61,7 @@
                                     col = '#20de07'
                                 }
 
-                                myLine = new LeaderLine(
+                                var myLine = new LeaderLine(
                                     document.getElementById(output[i]),
                                     document.getElementById(output1[i]),
                                     {
@@ -83,7 +83,6 @@
                 });
             }
 
-            
             var one = "";
             var two = "";
             var three = "";
@@ -99,7 +98,7 @@
             var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
             var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
             var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
-         
+
             try {
                 for (var i = 0; i < localStorage.getItem('value').length; i++) {
                     var str = $('#' + output1[i]).find('img').attr('src').indexOf('error');
@@ -111,7 +110,7 @@
                     else {
                         col = '#20de07'
                     }
-                
+
                     var myLine = new LeaderLine(
                         document.getElementById(output[i]),
                         document.getElementById(output1[i]),
@@ -126,9 +125,10 @@
                             //startLabel: LeaderLine.captionLabel(output2[i], { color: 'white', outlineColor:'red' }),
                             startLabel: output2[i],
                             endLabel: output3[i],
+                            
                         }
                     );
-                   
+
                     if (arr.indexOf(output[i]) !== null) {
                         arr.push(output[i]);
                     }
@@ -146,7 +146,7 @@
             catch {
 
             }
-         
+
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
@@ -292,7 +292,6 @@ setInterval((function () {
                                         endLabel: output3[i]
                                     }
                                 );
-
                                 //if (arr.indexOf(output[i]) !== null) {
                                 //    arr.push(output[i]);
                                 //}
@@ -369,7 +368,7 @@ setInterval((function () {
             catch {
 
             }
-
+           
             $(".product").click(function () {
                 if (one.length != 0 && two.length != 0) {
                     one = "";
@@ -400,6 +399,15 @@ setInterval((function () {
                     arrport2.push(four);
                 }
                 //alert("id : " + one + " // " + "id : " + two);
+                var str = $('#' + one).find('img').attr('src').indexOf('error');
+                var str2 = $('#' + two).find('img').attr('src').indexOf('error');
+                //-1 : 정상
+                if (str != '-1' || str2 != '-1') {
+                    col = '#de0707'
+                }
+                else {
+                    col = '#20de07'
+                }
                 var myLine = new LeaderLine(
                     document.getElementById(one),
                     document.getElementById(two),
@@ -429,7 +437,6 @@ setInterval((function () {
         }
     });
 }), 10000);
-
 
 function RESET() {
     localStorage.clear();

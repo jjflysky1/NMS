@@ -199,7 +199,7 @@
                 </script>
 
 
-                <div id="pan" style="width:58%; display: inline-block; height: 820px; float:left; margin-left:0.5%; background-color: rgba(0, 0, 0, 0.3);">
+                <div id="pan" style="width:58%; display: inline-block; height: 820px; float:left; margin-left:0.5%; background-color:rgba(0, 0, 0, 0.3);">
                     <%-- <asp:UpdatePanel ID="UpdatePanel10" runat="server">
                             <ContentTemplate>--%>
                     <div id="div3" runat="server" style="float: left; width: 100%; margin-top: auto;">

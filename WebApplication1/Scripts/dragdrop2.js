@@ -439,7 +439,12 @@ setInterval((function () {
 }), 100000);
 
 function RESET() {
-    localStorage.clear();
+    //localStorage.clear();
+    localStorage.removeItem('ppositions');
+    localStorage.removeItem('vvalue');
+    localStorage.removeItem('vvalue1');
+    localStorage.removeItem('pport1');
+    localStorage.removeItem('pport2');
     window.location.reload();
 }
 
