@@ -436,10 +436,11 @@ setInterval((function () {
             });
         }
     });
-}), 100000);
+}), 10000);
 
 function RESET() {
     //localStorage.clear();
+
     localStorage.removeItem('ppositions');
     localStorage.removeItem('vvalue');
     localStorage.removeItem('vvalue1');
