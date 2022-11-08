@@ -92,13 +92,6 @@ namespace test6
             return null;
         }
 
-   
-
-
-
-
-
-
         static void Main(string[] args)
         {
 
@@ -138,9 +131,7 @@ namespace test6
                         MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                         MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
 
-
                         SMTPMAIL.Send(MAIL);
-
 
                         Console.WriteLine("메일보냄");
                         Console.ReadLine();
