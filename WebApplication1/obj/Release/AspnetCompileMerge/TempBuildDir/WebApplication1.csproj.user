@@ -8,7 +8,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NameOfLastUsedPublishProfile>D:\c#\c# 소스\source\repos\NMS\WebApplication1\Properties\PublishProfiles\FolderProfile6.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\c#\c# 소스\source\repos\NMS\WebApplication1\Properties\PublishProfiles\FolderProfile5.pubxml</NameOfLastUsedPublishProfile>
     <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
   </PropertyGroup>
   <ProjectExtensions>

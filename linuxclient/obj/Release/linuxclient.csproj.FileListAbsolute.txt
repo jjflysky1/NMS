@@ -16,8 +16,12 @@ D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\DBCON.dll
 D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\MySql.Data.dll
 D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\DBCON.pdb
 D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.AssemblyReference.cache
-D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.SuggestedBindingRedirects.cache
 D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.csproj.CoreCompileInputs.cache
 D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.exe
 D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.pdb
 D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxclient.XmlSerializers.dll
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\linuxclient.exe.config
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\linuxclient.exe
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\linuxclient.XmlSerializers.dll
+D:\c#\c# 소스\source\repos\NMS\linuxclient\bin\Release\linuxclient.pdb
+D:\c#\c# 소스\source\repos\NMS\linuxclient\obj\Release\linuxcli.1A7777AF.Up2Date

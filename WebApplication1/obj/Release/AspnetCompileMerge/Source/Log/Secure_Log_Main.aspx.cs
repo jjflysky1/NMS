@@ -358,7 +358,17 @@ namespace WebApplication1
             MySqlCommand comm = new MySqlCommand(SQL2, DB);
             //MySqlCommand comm = new MySqlCommand("SELECT COUNT(*) as count FROM down_log", DB);
 
-            Int32 count = (Int32)comm.ExecuteScalar();
+            object result = comm.ExecuteScalar();
+            int count = 0;
+            if (result != DBNull.Value)  // null 또는 DBNull 체크
+            {
+                count = Convert.ToInt32(result);  // 적절하게 타입 변환
+            }
+            else
+            {
+                // DB에서 반환된 값이 null일 경우의 처리
+                count = 0;  // 예시: null일 경우 0으로 초기화
+            }
 
             DB.Close();
 

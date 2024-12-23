@@ -1,0 +1,563 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{579E7B67-EDB0-4E11-8043-B514224E3A06}|SecurityServer\\SecurityServer.csproj|d:\\c#\\c# \uC18C\uC2A4\\source\\repos\\nms\\securityserver\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{579E7B67-EDB0-4E11-8043-B514224E3A06}|SecurityServer\\SecurityServer.csproj|solutionrelative:securityserver\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D3DA816-B215-4D6D-BEA9-1C6FB0FF5762}|LNM_TRA\\LNM_TRA.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\lnm_tra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D3DA816-B215-4D6D-BEA9-1C6FB0FF5762}|LNM_TRA\\LNM_TRA.csproj|solutionrelative:lnm_tra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\secure_log.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\secure_log.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\system_log_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\system_log_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\secure_log_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\secure_log_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\secure_log_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\secure_log_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\period_traffic_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\period_traffic_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\period_traffic_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\period_traffic_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\day_traffic_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\day_traffic_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\day_traffic_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\day_traffic_main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\day_traffic.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\day_traffic.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\secure_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\secure_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\system_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\system_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\system_log_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\system_log_main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\service_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\service_log.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\service_log.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\service_log.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\service\\service.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\service.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AD1B79-A1B2-420D-8568-10654713F0E2}|pingtime\\pingtime.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\pingtime\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AD1B79-A1B2-420D-8568-10654713F0E2}|pingtime\\pingtime.csproj|solutionrelative:pingtime\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\main8.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\main8.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\main8.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\main8.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9861281C-549A-4EA1-AB4B-A7FB3394B556}|linuxclient\\linuxclient.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\linuxclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9861281C-549A-4EA1-AB4B-A7FB3394B556}|linuxclient\\linuxclient.csproj|solutionrelative:linuxclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\common\\bottom.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\common\\bottom.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\perioid_traffic.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\perioid_traffic.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\192.168.0.190\\\uAE40\uD615\uC900\\\uBC31\uC5C5\\c# \uC18C\uC2A4\\2024.10.02\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\day_traffic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\day_traffic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{289BDD1D-D4AC-4896-8F49-1EFE9C4174A2}|Client\\Client.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{289BDD1D-D4AC-4896-8F49-1EFE9C4174A2}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\log\\perioid_traffic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\log\\perioid_traffic.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{579E7B67-EDB0-4E11-8043-B514224E3A06}|SecurityServer\\SecurityServer.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\securityserver\\cpu_mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{579E7B67-EDB0-4E11-8043-B514224E3A06}|SecurityServer\\SecurityServer.csproj|solutionrelative:securityserver\\cpu_mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\scripts\\dragdrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\scripts\\dragdrop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343FAF6B-79E9-4F81-9BCA-EC439BDE4AE5}|test8\\test8.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\test8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343FAF6B-79E9-4F81-9BCA-EC439BDE4AE5}|test8\\test8.csproj|solutionrelative:test8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50895147-0983-4FF1-97DE-6938230E7D50}|LNM\\LNM.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\lnm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50895147-0983-4FF1-97DE-6938230E7D50}|LNM\\LNM.csproj|solutionrelative:lnm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\webapplication1\\soap\\systeminfo.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF48A707-4BF9-491B-8254-423DCA97A051}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\soap\\systeminfo.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{289BDD1D-D4AC-4896-8F49-1EFE9C4174A2}|Client\\Client.csproj|D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\client\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{289BDD1D-D4AC-4896-8F49-1EFE9C4174A2}|Client\\Client.csproj|solutionrelative:client\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Secure_Log.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Secure_Log.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\Secure_Log.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:58:53.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Secure_Log_Main.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log_Main.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Secure_Log_Main.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log_Main.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\Secure_Log_Main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:53:06.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "period_traffic_main.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\period_traffic_main.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\period_traffic_main.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\period_traffic_main.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\period_traffic_main.aspx.cs",
+              "ViewState": "AQIAAMUBAAAAAAAAAAAswN8BAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:52:05.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "period_traffic_main.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\period_traffic_main.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\period_traffic_main.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\period_traffic_main.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\period_traffic_main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:51:49.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Secure_Log_Main.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log_Main.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Secure_Log_Main.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log_Main.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\Secure_Log_Main.aspx.cs",
+              "ViewState": "AQIAADQBAAAAAAAAAAAawEwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:49:24.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "System_Log_Main.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log_Main.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\System_Log_Main.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log_Main.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\System_Log_Main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:48:26.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\SecurityServer\\Class1.cs",
+              "RelativeDocumentMoniker": "SecurityServer\\Class1.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\SecurityServer\\Class1.cs",
+              "RelativeToolTip": "SecurityServer\\Class1.cs",
+              "ViewState": "AQIAABECAAAAAAAAAAAAACwCAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:51:32.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\LNM_TRA\\Program.cs",
+              "RelativeDocumentMoniker": "LNM_TRA\\Program.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\LNM_TRA\\Program.cs",
+              "RelativeToolTip": "LNM_TRA\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:47:54.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "day_traffic_main.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic_main.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\day_traffic_main.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic_main.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\day_traffic_main.aspx.cs",
+              "ViewState": "AQIAAOMBAAAAAAAAAAArwPIBAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:51:25.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "day_traffic_main.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic_main.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\day_traffic_main.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic_main.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\day_traffic_main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:51:05.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Secure_Log.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Secure_Log.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Secure_Log.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\Secure_Log.aspx.cs",
+              "ViewState": "AQIAAMIBAAAAAAAAAAAAANgBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:49:43.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "System_Log_Main.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log_Main.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\System_Log_Main.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log_Main.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\System_Log_Main.aspx.cs",
+              "ViewState": "AQIAAFMBAAAAAAAAAAAewHIBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:48:29.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "System_Log.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\System_Log.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\System_Log.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\System_Log.aspx.cs",
+              "ViewState": "AQIAALABAAAAAAAAAAAlwMwBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:47:56.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Service_Log.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Service_Log.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Service_Log.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Service_Log.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\Service_Log.aspx.cs",
+              "ViewState": "AQIAAHEBAAAAAAAAAAAewJMBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:44:31.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Service_Log.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Service_Log.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\Service_Log.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\Service_Log.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\Service_Log.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:43:59.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "day_traffic.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\day_traffic.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\day_traffic.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T01:19:34.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Service.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Service\\Service.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\Service.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Service\\Service.aspx",
+              "RelativeToolTip": "WebApplication1\\Service\\Service.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T05:33:17.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\pingtime\\Class1.cs",
+              "RelativeDocumentMoniker": "pingtime\\Class1.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\pingtime\\Class1.cs",
+              "RelativeToolTip": "pingtime\\Class1.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAAAYwNAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:41:18.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Bottom.ascx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Common\\Bottom.ascx",
+              "RelativeDocumentMoniker": "WebApplication1\\Common\\Bottom.ascx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Common\\Bottom.ascx",
+              "RelativeToolTip": "WebApplication1\\Common\\Bottom.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-11-20T03:32:08.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication1\\Web.config",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Web.config",
+              "RelativeToolTip": "WebApplication1\\Web.config",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-20T03:32:00.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "perioid_traffic.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\perioid_traffic.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\perioid_traffic.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\perioid_traffic.aspx",
+              "RelativeToolTip": "WebApplication1\\Log\\perioid_traffic.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T01:37:18.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "main8.aspx",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\main8.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\main8.aspx",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\main8.aspx",
+              "RelativeToolTip": "WebApplication1\\main8.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-18T06:25:55.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\linuxclient\\Program.cs",
+              "RelativeDocumentMoniker": "linuxclient\\Program.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\linuxclient\\Program.cs",
+              "RelativeToolTip": "linuxclient\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:48:01.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "main8.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\main8.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\main8.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\main8.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\main8.aspx.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAQwEEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T06:26:12.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "day_traffic.aspx",
+              "DocumentMoniker": "\\\\192.168.0.190\\\uAE40\uD615\uC900\\\uBC31\uC5C5\\c# \uC18C\uC2A4\\2024.10.02\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx",
+              "ToolTip": "\\\\192.168.0.190\\\uAE40\uD615\uC900\\\uBC31\uC5C5\\c# \uC18C\uC2A4\\2024.10.02\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-20T01:30:46.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "day_traffic.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\day_traffic.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\day_traffic.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\day_traffic.aspx.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAcwIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T01:18:40.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "perioid_traffic.aspx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\perioid_traffic.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Log\\perioid_traffic.aspx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Log\\perioid_traffic.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\Log\\perioid_traffic.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T01:19:25.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\test8\\Program.cs",
+              "RelativeDocumentMoniker": "test8\\Program.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\test8\\Program.cs",
+              "RelativeToolTip": "test8\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:26:22.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "dragdrop.js",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Scripts\\dragdrop.js",
+              "RelativeDocumentMoniker": "WebApplication1\\Scripts\\dragdrop.js",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\Scripts\\dragdrop.js",
+              "RelativeToolTip": "WebApplication1\\Scripts\\dragdrop.js",
+              "ViewState": "AQIAAFsBAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T06:28:39.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\LNM\\Program.cs",
+              "RelativeDocumentMoniker": "LNM\\Program.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\LNM\\Program.cs",
+              "RelativeToolTip": "LNM\\Program.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:31:17.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAADwvxgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T05:33:36.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Cpu_Mail.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\SecurityServer\\Cpu_Mail.cs",
+              "RelativeDocumentMoniker": "SecurityServer\\Cpu_Mail.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\SecurityServer\\Cpu_Mail.cs",
+              "RelativeToolTip": "SecurityServer\\Cpu_Mail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:51:31.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Systeminfo.asmx.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\SOAP\\Systeminfo.asmx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\SOAP\\Systeminfo.asmx.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\WebApplication1\\SOAP\\Systeminfo.asmx.cs",
+              "RelativeToolTip": "WebApplication1\\SOAP\\Systeminfo.asmx.cs",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAewCQBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:38:16.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\Client\\Class1.cs",
+              "RelativeDocumentMoniker": "Client\\Class1.cs",
+              "ToolTip": "D:\\c#\\c# \uC18C\uC2A4\\source\\repos\\NMS\\Client\\Class1.cs",
+              "RelativeToolTip": "Client\\Class1.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAewKYAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:38:05.278Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

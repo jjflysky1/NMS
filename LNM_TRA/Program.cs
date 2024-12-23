@@ -15,8 +15,8 @@ namespace LNM_TRA
                 //if (License.uuid("20244D56-F6BD-E22A-1D52-3669DF035654") == true)
                 //{
 
-                //리눅스,보안,스위치장비 서비스
-                SecurityServer.Class1 Sercurity = new SecurityServer.Class1();
+                    //리눅스,보안,스위치장비 서비스
+                    SecurityServer.Class1 Sercurity = new SecurityServer.Class1();
                 ////AP장비
                 //AP.Class1 APThread = new AP.Class1();
 
@@ -24,9 +24,10 @@ namespace LNM_TRA
                 Thread thread11 = new Thread(Sercurity.Securethread);
                 thread11.Start();
 
+                ///이제 안씀 리눅스 자체 클라이언트 만듬
                 ////리눅스
-                Thread thread12 = new Thread(Sercurity.Linuxthread);
-                thread12.Start();
+                //Thread thread12 = new Thread(Sercurity.Linuxthread);
+                //thread12.Start();
 
                 //////AP장비
                 //Thread thread17 = new Thread(APThread.APThread);

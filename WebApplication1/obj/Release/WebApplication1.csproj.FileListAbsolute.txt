@@ -236,6 +236,6 @@ D:\c#\c# 소스\source\repos\NMS\WebApplication1\bin\Nito.AsyncEx.Concurrent.xml
 D:\c#\c# 소스\source\repos\NMS\WebApplication1\bin\Nito.AsyncEx.Enlightenment.xml
 D:\c#\c# 소스\source\repos\NMS\WebApplication1\bin\System.Net.Http.Extensions.xml
 D:\c#\c# 소스\source\repos\NMS\WebApplication1\bin\System.Net.Http.Primitives.xml
-D:\c#\c# 소스\source\repos\NMS\WebApplication1\obj\Release\WebApplication1.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\NMS\WebApplication1\obj\Release\WebApplication1.dll
 D:\c#\c# 소스\source\repos\NMS\WebApplication1\obj\Release\WebApplication1.pdb
+D:\c#\c# 소스\source\repos\NMS\WebApplication1\obj\Release\WebAppli.7D14BD69.Up2Date

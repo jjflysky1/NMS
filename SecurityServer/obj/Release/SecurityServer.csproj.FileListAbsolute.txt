@@ -82,6 +82,6 @@ D:\c#\c# 소스\source\repos\NMS\SecurityServer\bin\Release\System.Memory.xml
 D:\c#\c# 소스\source\repos\NMS\SecurityServer\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\SecurityServer.csproj.AssemblyReference.cache
 D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\SecurityServer.csproj.CoreCompileInputs.cache
-D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\SecurityServer.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\SecurityServer.dll
 D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\SecurityServer.pdb
+D:\c#\c# 소스\source\repos\NMS\SecurityServer\obj\Release\Security.80361251.Up2Date

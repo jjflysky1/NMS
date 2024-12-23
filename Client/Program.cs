@@ -52,52 +52,32 @@ namespace Client
                     Console.WriteLine(ex.Message);  
             }
 
-            
+
 
             //try
             //{
-            //    SOAP.Systeminfo soapclient = new SOAP.Systeminfo();
-            //    DataSet ds = soapclient.LOGIN("test", "test");
+            //    // 네트워크 어댑터 정보 검색
+            //    ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = true");
 
-            //    foreach(DataRow row in ds.Tables[0].Rows)
+            //    foreach (ManagementObject queryObj in searcher.Get())
             //    {
-            //        Console.WriteLine(row["serverip"].ToString() + " : " + row["computer_name"].ToString());
+            //        // 네트워크 어댑터 이름 출력
+            //        Console.WriteLine("Adapter: " + queryObj["Description"]);
+
+            //        // 대표 IP 주소 한 개만 출력
+            //        string[] ipAddresses = (string[])queryObj["IPAddress"];
+            //        if (ipAddresses != null && ipAddresses.Length > 0)
+            //        {
+            //            Console.WriteLine("IP Address: " + ipAddresses[0]);
+            //        }
+
+            //        // 첫 번째 활성화된 네트워크 어댑터만 가져오기 위해 break 추가
+            //        break;
             //    }
-
-            //    //ds.WriteXml(@"C:\test\test.xml");
-
-            //    ////Console.WriteLine(ds.ReadXml(@"C:\test\test.xml"));
-
-            //    ////string myXMLfile = @"C:\test\test.xml";
-            //    ////XmlDocument document = new XmlDocument();
-            //    ////document.Load(Path.Combine(Environment.CurrentDirectory, @"C:\test\test.xml"));
-            //    ////XmlNode node = document.SelectSingleNode("/NewDataSet");
-            //    ////Console.WriteLine("Id: {0}", node["BD"].InnerText);
-
-            //    //XmlTextReader reader = new XmlTextReader(@"C:\test\test.xml");
-            //    //while (reader.Read())
-            //    //{
-            //    //    switch (reader.NodeType)
-            //    //    {
-            //    //        //case XmlNodeType.Element: // The node is an element.
-            //    //        //    Console.Write("<" + reader.Name);
-            //    //        //    Console.WriteLine(">");
-            //    //        //    break;
-            //    //        case XmlNodeType.Text: //Display the text in each element.
-            //    //            Console.WriteLine(reader.Value);
-            //    //            break;
-            //    //        //case XmlNodeType.EndElement: //Display the end of the element.
-            //    //        //    Console.Write("</" + reader.Name);
-            //    //        //    Console.WriteLine(">");
-            //    //        //    break;
-            //    //    }
-            //    //}
-
-
             //}
-            //catch(Exception e)
+            //catch (Exception e)
             //{
-            //    Console.WriteLine(e.Message);
+            //    Console.WriteLine("An error occurred: " + e.Message);
             //}
 
 

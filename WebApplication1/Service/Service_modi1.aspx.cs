@@ -19,6 +19,7 @@ namespace WebApplication1
         {
             if (IsPostBack == true)
             {
+                VANDORHF.Value = vandor.Value;
                 NAMEHF.Value = name.Value;
                 SERVERIPHF.Value = serverip.Value;
                 SERVERIDHF.Value = serverid.Value;
@@ -45,6 +46,7 @@ namespace WebApplication1
             ADT.Fill(DBSET, "BD");
             foreach (DataRow row in DBSET.Tables["BD"].Rows)
             {
+                vandor.Value = row["vandor"].ToString();
                 name.Value = row["name"].ToString();
                 serverip.Value = row["serverip"].ToString();
                 serverid.Value = row["serverid"].ToString();
@@ -67,9 +69,10 @@ namespace WebApplication1
                 cmd.CommandType = System.Data.CommandType.Text;
                 if (serverpwd.Value == "")
                 {
-                    cmd.CommandText = "update service set name = @NAME , serverid = @SERVERID,   serverpwd = @serverpwd , sshport = @sshport " +
+                    cmd.CommandText = "update service set vandor = @vandor,  name = @NAME , serverid = @SERVERID,   serverpwd = @serverpwd , sshport = @sshport " +
                         " , Community = @Community where no = @no";
-                 
+
+                    cmd.Parameters.Add("@vandor", MySqlDbType.VarChar, 50).Value = VANDORHF.Value;
                     cmd.Parameters.Add("@NAME", MySqlDbType.VarChar, 50).Value = NAMEHF.Value;
                    // cmd.Parameters.Add("@SERVERIP", MySqlDbType.VarChar, 50).Value = SERVERIPHF.Value;
                     cmd.Parameters.Add("@SERVERID", MySqlDbType.VarChar, 50).Value = SERVERIDHF.Value;
@@ -80,8 +83,9 @@ namespace WebApplication1
                 }
                 else
                 {
-                    cmd.CommandText = "update service set name = @NAME , serverid = @SERVERID,   oripwd = serverpwd  , newpwd = @SERVERPWD , sshport = @sshport" +
+                    cmd.CommandText = "update service set vandor = @vandor,name = @NAME , serverid = @SERVERID,   oripwd = serverpwd  , newpwd = @SERVERPWD , sshport = @sshport" +
                         ", Community = @Community where no = @no";
+                    cmd.Parameters.Add("@vandor", MySqlDbType.VarChar, 50).Value = VANDORHF.Value;
                     cmd.Parameters.Add("@NAME", MySqlDbType.VarChar, 50).Value = NAMEHF.Value;
                     //cmd.Parameters.Add("@SERVERIP", MySqlDbType.VarChar, 50).Value = SERVERIPHF.Value;
                     cmd.Parameters.Add("@SERVERID", MySqlDbType.VarChar, 50).Value = SERVERIDHF.Value;

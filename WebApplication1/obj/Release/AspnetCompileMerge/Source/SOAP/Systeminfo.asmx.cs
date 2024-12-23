@@ -284,8 +284,8 @@ namespace WebApplication1.SOAP
                     DB.Close();
                 }
 
+             
 
-           
                 return "OK";
             }
             catch (Exception e)
@@ -357,16 +357,32 @@ namespace WebApplication1.SOAP
             {
                 //
                 string SQL = "";
-                SQL = "select distinct os, serverip, serverid, serverpwd, b.cpulimit , b.memorylimit, b.trafficlimit , c.log_time from service a , mail_info b , log_time_config c where a.flag = '1' and  a.status = 'Server Connect' " +
-                          " and serverip = '" + serverip + "' ";
+                SQL = "select distinct os, serverip, serverid, serverpwd, b.cpulimit , b.memorylimit, b.trafficlimit , c.log_time from service a , mail_info b ," +
+                    " log_time_config c where a.flag = '1' and  a.status = 'Server Connect' and serverip = '" + serverip + "' ";
 
                 MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
                 DataSet DBSET = new DataSet();
                 ADT.Fill(DBSET, "BD");
                 foreach (DataRow row in DBSET.Tables["BD"].Rows)
                 {
+
+                    DB.Open();
+                    MySqlCommand cmd3 = new MySqlCommand("Add_System_Log_Cpu_Memory", DB);
+                    cmd3.CommandType = CommandType.StoredProcedure;
+                    cmd3.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                    cmd3.ExecuteNonQuery();
+                    DB.Close();
+
+                    DB.Open();
+                    MySqlCommand cmd4 = new MySqlCommand("Add_System_Log_Traffic", DB);
+                    cmd4.CommandType = CommandType.StoredProcedure;
+                    cmd4.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
+                    cmd4.ExecuteNonQuery();
+                    DB.Close();
+
+
                     /// CPU메일 보내기
-                    if (Convert.ToInt32(row["cpulimit"]) < Convert.ToInt32(cpu) && Convert.ToInt32(row["cpulimit"]) > 0)
+                    if (Convert.ToInt32(row["cpulimit"]) < Convert.ToDouble(cpu) && Convert.ToInt32(row["cpulimit"]) > 0)
                     {
                         Cpu_Mail mail = new Cpu_Mail();
                         mail.cpu_sendmail(row["serverip"].ToString(), (cpu).ToString());
@@ -384,6 +400,8 @@ namespace WebApplication1.SOAP
                         Traffic_Mail mail = new Traffic_Mail();
                         mail.Traffic_sendmail(row["serverip"].ToString(), traffic.ToString());
                     }
+
+
 
                     string state = "";
                     //if (row["log_time"].ToString() == "1")//1시간
@@ -419,8 +437,7 @@ namespace WebApplication1.SOAP
                     //    }
 
                     //}
-                    if (row["log_time"].ToString() == "2")//30분
-                    {
+                  
                         //string SQL2 = "select date_format(DATE_ADD(time, INTERVAL 30 MINUTE), '%Y-%c-%d %H:%i') as time from system_log_cpu_memory where serverip = '" + row["serverip"].ToString() + "' order by no desc limit 1";
                         //MySqlDataAdapter ADT2 = new MySqlDataAdapter(SQL2, DB);
                         //DataSet DBSET2 = new DataSet();
@@ -438,21 +455,9 @@ namespace WebApplication1.SOAP
                         //    }
                         //    state = "in";
                         //}
-                        DB.Open();
-                        MySqlCommand cmd3 = new MySqlCommand("Add_System_Log_Cpu_Memory", DB);
-                        cmd3.CommandType = CommandType.StoredProcedure;
-                        cmd3.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
-                        cmd3.ExecuteNonQuery();
-                        DB.Close();
+                     
 
-                        DB.Open();
-                        MySqlCommand cmd4 = new MySqlCommand("Add_System_Log_Traffic", DB);
-                        cmd4.CommandType = CommandType.StoredProcedure;
-                        cmd4.Parameters.AddWithValue("@serverip1", row["serverip"].ToString());
-                        cmd4.ExecuteNonQuery();
-                        DB.Close();
-
-                    }
+                 
 
                 }
                 return "OK";

@@ -13,6 +13,6 @@ namespace DBCON
         //public string DBCON = "Server=192.168.1.174; Database=cs; User id=nms; Password=P@ssw0rd";
 
         public int Liesence = 100;
-        public string date = "20230715";
+        public string date = "20280731";
     }
 }

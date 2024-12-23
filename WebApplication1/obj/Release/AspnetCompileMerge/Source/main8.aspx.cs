@@ -24,6 +24,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data;
 using iTextSharp.text;
 using Tamir.SharpSsh.jsch;
+using Tamir.SharpSsh.jsch.jce;
 
 namespace WebApplication1
 {
@@ -50,10 +51,6 @@ namespace WebApplication1
 
         }
 
-
-
-
-
         private void UISET()
         {
             TBLSET0();
@@ -67,9 +64,7 @@ namespace WebApplication1
             TBLSET7();
             TBLLOAD5();
             //TBLLOAD10();
-
         }
-
         private void TBLSET()
         {
             TableHeaderRow TR;
@@ -644,7 +639,6 @@ namespace WebApplication1
             }
         }
         /// 네트워크/보안 자원top
-
         private void TBLLOAD3_1()
         {
 
@@ -1024,9 +1018,6 @@ namespace WebApplication1
             TableRow TR;
             TableCell TD;
 
-
-
-
             TR = new TableRow();
             TR.Font.Size = 9;
             TD = new TableCell();
@@ -1087,7 +1078,6 @@ namespace WebApplication1
             //if (Convert.ToDouble(memory.ToString()) > Convert.ToDouble(memorylimit.ToString()) && Convert.ToDouble(memorylimit.ToString()) != 0)
             //{
             //    TD.ForeColor = System.Drawing.Color.Red;
-
             //}
             //TD.Attributes.Add("Onclick", "go2('" + serverip + "','" + category + "')");
             //TR.Cells.Add(TD);
@@ -1503,18 +1493,19 @@ namespace WebApplication1
             List<network> Parts = new List<network>();
             Parts.Clear();
 
-            
+
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where memory is not null and flag = '1' and Category like '%네트워크%'  ORDER BY INET_ATON(serverip) LIMIT 10 ";
             //string SQL = "select  cpu,memory,serverip, category, now() as getdate,status , left(os,30) as os from service where flag = '1' and Category IS NOT null  ORDER BY INET_ATON(serverip)   ";
-            string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model, a.computer_name , a.network_name " +
-                "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY network_name asc, INET_ATON(a.serverip) desc) " +
-                "UNION " +
-                "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model, computer_name, network_name FROM " +
-                "service where flag = '1' and Category = '서버 장비') ORDER BY network_name asc, INET_ATON(serverip) desc";
+            //string SQL = "(SELECT distinct cpu, MEMORY, a.serverip, category, now() as getdate,status , left(os, 30) as os , b.Model, a.computer_name , a.network_name " +
+            //    "from service a, server_oid_list b where flag = '1' AND Category IS NOT NULL and  a.serverip = b.serverip ORDER BY network_name asc, INET_ATON(a.serverip) desc) " +
+            //    "UNION " +
+            //    "(select  cpu, memory, serverip, category, now() as getdate, status, left(os, 30) as os, case when category != '서버 장비' then '＃' end AS model, computer_name, network_name FROM " +
+            //    "service where flag = '1' and Category = '서버 장비') ORDER BY network_name asc, INET_ATON(serverip) desc";
+            string SQL = "SELECT distinct cpu, MEMORY, serverip, category, now() as getdate,status , left(os, 30) as os , vandor, computer_name , network_name FROM service where flag = '1' AND Category IS NOT NULL";
             MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET4 = new DataSet();
             ADT4.Fill(DBSET4, "BD4");
-            string cpu, memory, serverip, category, status, os, model = "";
+            string cpu, memory, serverip, category, status, os, vandor = "";
             int i = 0;
             List<string> list = new List<string>();
             list.Clear();
@@ -1530,7 +1521,7 @@ namespace WebApplication1
                     category = row1["category"].ToString();
                     status = row1["status"].ToString();
                     os = row1["os"].ToString();
-                    model = row1["model"].ToString();
+                    vandor = row1["vandor"].ToString();
                     
 
                     //라벨 추가
@@ -1546,7 +1537,7 @@ namespace WebApplication1
                     
                     st.Append("<div class='product' id='product" + i + "'  style='width:130px; height:90px; float:left; margin:0 auto;'><center>");
                     //st.Append("<center><a href='Service/Service_list.aspx?serverip=" + row1["serverip"].ToString() + "&category=" + row1["category"] + "' style='text-decoration:none; color='black''>");
-                    if (model.Contains("CISCO") == true || model.Contains("＃") == true)
+                    if (vandor.Contains("CISCO") == true || vandor.Contains("＃") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
@@ -1557,7 +1548,7 @@ namespace WebApplication1
                             st.Append("<img src='Dash_image/switch.png' width='100' height='50' >");
                         }
                     }
-                    if (model.Contains("SECUI") == true)
+                    if (vandor.Contains("SECUI") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {
@@ -1568,7 +1559,7 @@ namespace WebApplication1
                             st.Append("<img src='Dash_image/security.png' width='100' height='50' >");
                         }
                     }
-                    if (model.Contains("AXGATE") == true)
+                    if (vandor.Contains("AXGATE") == true)
                     {
                         if (status.Contains("Disconnect") == true)
                         {

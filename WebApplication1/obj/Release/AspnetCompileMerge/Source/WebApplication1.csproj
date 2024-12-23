@@ -52,7 +52,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
-    <Reference Include="DBCON">
+    <Reference Include="DBCON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DBCON\bin\Release\DBCON.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
@@ -149,6 +150,7 @@
     <Content Include="Content\bootstrap.min2.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\gauges.css" />
+    <Content Include="Content\grid_card.css" />
     <Content Include="Content\ionicons.min.css" />
     <Content Include="Content\JavaScript.js" />
     <Content Include="Content\login.css" />
@@ -191,8 +193,9 @@
     <Content Include="Log\Secure_Log_Main.aspx" />
     <Content Include="Log\Secure_Log.aspx" />
     <Content Include="Log\Event_log.aspx" />
-    <Content Include="main9.aspx" />
     <Content Include="main8.aspx" />
+    <Content Include="main9.aspx" />
+    <Content Include="main10.aspx" />
     <Content Include="main7.aspx" />
     <Content Include="main6.aspx" />
     <Content Include="main5.aspx" />
@@ -237,6 +240,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap4\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap4\bootstrap.min.css" />
+    <Content Include="Scripts\chart.js" />
     <Content Include="Scripts\chart.min.js" />
     <Content Include="Scripts\dash_chart.js" />
     <Content Include="Scripts\datepicker3.min.css" />
@@ -271,6 +275,7 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\Raphael-min.js" />
+    <Content Include="Scripts\sb-admin-2.min.css" />
     <Content Include="Service\Mail_modi.aspx" />
     <Content Include="Service\Service_Down_History.aspx" />
     <Content Include="Service\Service_History.aspx" />
@@ -480,6 +485,13 @@
     <Compile Include="Log\Event_log.aspx.designer.cs">
       <DependentUpon>Event_log.aspx</DependentUpon>
     </Compile>
+    <Compile Include="main8.aspx.cs">
+      <DependentUpon>main8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main8.aspx.designer.cs">
+      <DependentUpon>main8.aspx</DependentUpon>
+    </Compile>
     <Compile Include="main9.aspx.cs">
       <DependentUpon>main9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -487,12 +499,12 @@
     <Compile Include="main9.aspx.designer.cs">
       <DependentUpon>main9.aspx</DependentUpon>
     </Compile>
-    <Compile Include="main8.aspx.cs">
-      <DependentUpon>main8.aspx</DependentUpon>
+    <Compile Include="main10.aspx.cs">
+      <DependentUpon>main10.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="main8.aspx.designer.cs">
-      <DependentUpon>main8.aspx</DependentUpon>
+    <Compile Include="main10.aspx.designer.cs">
+      <DependentUpon>main10.aspx</DependentUpon>
     </Compile>
     <Compile Include="main7.aspx.cs">
       <DependentUpon>main7.aspx</DependentUpon>

@@ -161,7 +161,7 @@
 
                 <section class="content-header">
                     <h1>장비리스트
-                <small>장비리스트들이 보여집니다</small>
+                <small>장비리스트 확인페이지</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
@@ -241,25 +241,15 @@
                                     <asp:Button ID="Button100" runat="server" Text="등록" CssClass="btn btn-primary btn-sm" OnClick="Button100_Click" />
                                 </li>
                             </ui>
-
-
                         </div>
-
                     </nav>
 
-
-
-                    <br />
-
-                    <div style="text-align: right; margin-right: 10px; margin-top: -60px; margin-bottom: -10px;">
-
+                    <div style="text-align: right; margin-right: 10px; margin-top: -30px; margin-bottom: -10px;">
                         <asp:DropDownList ID="DropDownList2" runat="server" Height="30" Class="form-control" Width="100px" AutoPostBack="true" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
                             <asp:ListItem Value="15">15</asp:ListItem>
                             <asp:ListItem Value="50">50</asp:ListItem>
                             <asp:ListItem Value="100">100</asp:ListItem>
                         </asp:DropDownList>
-
-
                     </div>
 
 

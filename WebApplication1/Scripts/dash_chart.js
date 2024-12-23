@@ -188,7 +188,7 @@ function OnSuccess(response) {
     var ctx = "";
     var myChart = "";
     $('#div1').html(''); //remove canvas from container
-    $('#div1').html('<canvas id="myChart" style="z-index:200; position:relative;  width:100%;  height: 100%;  "></canvas>'); //add it back to the container
+    $('#div1').html('<canvas id="myChart" style="z-index:200; position:relative;  width:100%;  height: 100%; "></canvas>'); //add it back to the container
     ctx = document.getElementById("myChart").getContext("2d");
     var gradientFill = ctx.createLinearGradient(0, 0, 0, 450);
     gradientFill.addColorStop(0, 'rgba(22, 183, 250, 0.3)');
@@ -221,6 +221,8 @@ function OnSuccess(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
                     fill: "start"
                 }
                 , {
@@ -233,6 +235,8 @@ function OnSuccess(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
                     fill: "start"
                 }
                 , {
@@ -245,93 +249,84 @@ function OnSuccess(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
                     fill: "start"
                 }
             ]
         },
         options: {
-            animation: {
-                duration: 0
-            },
-            tooltips: {
-                intersect: false,
-                backgroundColor: "rgba(113, 88, 203, 1)",
-                titleFontSize: 16,
-                titleFontStyle: "400",
-                titleSpacing: 4,
-                titleMarginBottom: 8,
-                bodyFontSize: 12,
-                bodyFontStyle: '400',
-                bodySpacing: 4,
-                xPadding: 8,
-                yPadding: 8,
-                cornerRadius: 4,
-                displayColors: false,
-
-                callbacks: {
-                    title: function (t, d) {
-                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                        return o.join(', ');
+            animation: false,
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#d4d4d4', // X축 레이블 색상
+                        font: {
+                            size: 11
+                        }
                     },
-                    label: function (t, d) {
-                        return d.labels[t.index];
+                    title: {
+                        display: false,
+                        text: 'Month',
+                        color: 'red', // X축 제목 색상
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
                     }
-                }
-            },
-            title: {
-                text: "Public Bandwidth",
-                display: false
-            },
-            maintainAspectRatio: true,
-            spanGaps: false,
-            elements: {
-                line: {
-                    tension: 0.3
+                },
+                y: {
+                    ticks: {
+                        color: '#d4d4d4', // Y축 레이블 색상
+                        font: {
+                            size: 11
+                        }
+                    },
+                    title: {
+                        display: false,
+                        text: 'Sales',
+                        color: 'purple', // Y축 제목 색상
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
                 }
             },
             plugins: {
-                filler: {
-                    propagate: false
-                }
-            },
-            legend: {
-                labels: {
-                    fontColor: "#d4d4d4",
-                    fontSize: 11
-                }
-            },
-            scales: {
-                xAxes: [
-                    {
-                        ticks: {
-                            fontColor: "#d4d4d4",
-                            autoSkip: true,
-                            maxTicksLimit: 5,
-                            display: true,
-                            maxRotation: 0,
-                            minRotation: 0
-                        },
-                        gridLines: {
-                            display: true,
-                            drawOnChartArea: false,
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            let label = context.dataset.label.split(" ");
+                            let label2 = context.raw;
+                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                            return label[0] + " " +label[1] + " : " + label2 + ' mbps';
                         }
                     }
-                ],
-                yAxes: [
-                    {
-                        ticks: {
-                            fontColor: "#d4d4d4",
-                            //reverse: true //리버스
-
+                },
+               
+                legend: {
+                    labels: {
+                        color: '#d4d4d4', // 범례 텍스트 색상
+                        font: {
+                            size: 11
                         }
                     }
-                ],
-                y2: {
-                    reverse: true
+                },
+                title: {
+                    display: false,
+                    text: 'Monthly Sales Data',
+                    color: 'brown', // 차트 제목 색상
+                    font: {
+                        size: 18,
+                        weight: 'bold'
+                    }
                 }
+            },
+            interaction: {
+                intersect: false,
+            },
 
-            }
         }
     });
 
@@ -450,7 +445,9 @@ function OnSuccess6(response) {
         temp_traffic6 += this.traffic3 + ",";
         temp_time6 += this.time3 + ",";
     });
-
+    if (serverip6.length == 0) {
+        return;
+    }
     temp_traffic6 = temp_traffic6.slice(0, -1);
     temp_time6 = temp_time6.slice(0, -1);
     trafficArray6 = temp_traffic6.split(',');
@@ -458,6 +455,7 @@ function OnSuccess6(response) {
     trafficArray6.reverse();
     timeArray6.reverse();
     data6 = trafficArray6;
+    
 }
 
 
@@ -477,7 +475,9 @@ function OnSuccess5(response) {
         temp_time5 += this.time2 + ",";
 
     });
-
+    if (serverip5.length == 0) {
+        return;
+    }
     temp_traffic5 = temp_traffic5.slice(0, -1);
     temp_time5 = temp_time5.slice(0, -1);
     trafficArray5 = temp_traffic5.split(',');
@@ -485,6 +485,7 @@ function OnSuccess5(response) {
     trafficArray5.reverse();
     timeArray5.reverse();
     data5 = trafficArray5;
+
 }
 
 
@@ -501,6 +502,9 @@ function OnSuccess4(response) {
         temp_time4 += this.time + ",";
 
     });
+    if (serverip4.length == 0) {
+        return;
+    }
     temp_traffic4 = temp_traffic4.slice(0, -1);
     temp_time4 = temp_time4.slice(0, -1);
     var trafficArray4 = temp_traffic4.split(',');
@@ -508,6 +512,7 @@ function OnSuccess4(response) {
     trafficArray4.reverse();
     timeArray4.reverse();
     let data4 = trafficArray4;
+    
     //alert(data2);
 
 
@@ -557,7 +562,9 @@ function OnSuccess4(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
-                    fill: "start"
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
+                    fill: "start",
                 }
                 , {
                     label: serverip5,
@@ -569,6 +576,8 @@ function OnSuccess4(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
                     fill: "start"
                 }
                 , {
@@ -581,89 +590,83 @@ function OnSuccess4(response) {
                     borderWidth: 1,
                     pointRadius: 1,
                     pointHoverRadius: 1,
-                    fill: "start"
+                    cubicInterpolationMode: 'monotone',
+                    tension: 0.4,
+                    fill: "start",
+                 
                 }
             ]
         },
         options: {
-            animation: {
-                duration: 0
-            },
-            tooltips: {
-                intersect: false,
-                backgroundColor: "rgba(113, 88, 203, 1)",
-                titleFontSize: 16,
-                titleFontStyle: "400",
-                titleSpacing: 4,
-                titleMarginBottom: 8,
-                bodyFontSize: 12,
-                bodyFontStyle: '400',
-                bodySpacing: 4,
-                xPadding: 8,
-                yPadding: 8,
-                cornerRadius: 4,
-                displayColors: false,
-
-                callbacks: {
-                    title: function (t, d) {
-                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                        return o.join(', ');
+            animation: false,
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#d4d4d4', // X축 레이블 색상
+                        font: {
+                            size: 11
+                        }
                     },
-                    label: function (t, d) {
-                        return d.labels[t.index];
+                    title: {
+                        display: false,
+                        text: 'Month',
+                        color: 'red', // X축 제목 색상
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
                     }
-                }
-            },
-            title: {
-                text: "Public Bandwidth",
-                display: false
-            },
-            maintainAspectRatio: true,
-            spanGaps: false,
-            elements: {
-                line: {
-                    tension: 0.3
+                },
+                y: {
+                    ticks: {
+                        color: '#d4d4d4', // Y축 레이블 색상
+                        font: {
+                            size: 11
+                        }
+                    },
+                    title: {
+                        display: false,
+                        text: 'Sales',
+                        color: 'purple', // Y축 제목 색상
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
                 }
             },
             plugins: {
-                filler: {
-                    propagate: false
-                }
-            },
-            legend: {
-                labels: {
-                    fontColor: "#d4d4d4",
-                    fontSize: 11
-                }
-            },
-            scales: {
-                xAxes: [
-                    {
-                        ticks: {
-                            fontColor: "#d4d4d4",
-                            autoSkip: true,
-                            maxTicksLimit: 5,
-                            display: true,
-                            maxRotation: 0,
-                            minRotation: 0
-
-                        },
-                        gridLines: {
-                            display: true,
-                            drawOnChartArea: false,
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            let label = context.dataset.label.split(" ");
+                            let label2 = context.raw;
+                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                            return label[0] +  " : " + label2 + ' mbps';
                         }
                     }
-                ],
-                yAxes: [
-                    {
-                        ticks: {
-                            fontColor: "#d4d4d4"
-
+                },
+                legend: {
+                    labels: {
+                        color: '#d4d4d4', // 범례 텍스트 색상
+                        font: {
+                            size: 11
                         }
                     }
-                ]
-            }
+                },
+                title: {
+                    display: false,
+                    text: 'Monthly Sales Data',
+                    color: 'brown', // 차트 제목 색상
+                    font: {
+                        size: 18,
+                        weight: 'bold'
+                    }
+                }
+            },
+            interaction: {
+                intersect: false,
+            },
         }
     });
 };

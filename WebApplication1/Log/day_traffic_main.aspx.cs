@@ -278,11 +278,11 @@ namespace WebApplication1
             TBLLIST.Rows.Add(TR);
             if (log_time.ToString() == "1")
             {
-                RadioButton2.Checked = true;
+                //RadioButton2.Checked = true;
             }
             else
             {
-                RadioButton1.Checked = true;
+                //RadioButton1.Checked = true;
             }
         }
         private void PAGEADD(int pagecount, int nowpage)
@@ -462,46 +462,46 @@ namespace WebApplication1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            if(RadioButton1.Checked == true)
-            {
-                DB.Open();
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = DB;
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "update log_time_config set log_time ='2'";
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-                cmd = null;
-                DB.Close();
+           // if(RadioButton1.Checked == true)
+           // {
+           //     DB.Open();
+           //     MySqlCommand cmd = new MySqlCommand();
+           //     cmd.Connection = DB;
+           //     cmd.CommandType = System.Data.CommandType.Text;
+           //     cmd.CommandText = "update log_time_config set log_time ='2'";
+           //     cmd.ExecuteNonQuery();
+           //     cmd.Dispose();
+           //     cmd = null;
+           //     DB.Close();
                 
-            }
+           // }
 
-           if(RadioButton2.Checked == true)
-            {
-                DB.Open();
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.Connection = DB;
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "update log_time_config set log_time ='1'";
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-                cmd = null;
-                DB.Close();
+           //if(RadioButton2.Checked == true)
+           // {
+           //     DB.Open();
+           //     MySqlCommand cmd = new MySqlCommand();
+           //     cmd.Connection = DB;
+           //     cmd.CommandType = System.Data.CommandType.Text;
+           //     cmd.CommandText = "update log_time_config set log_time ='1'";
+           //     cmd.ExecuteNonQuery();
+           //     cmd.Dispose();
+           //     cmd = null;
+           //     DB.Close();
                 
-            }
-            Response.Redirect("System_log.aspx");
+           // }
+           // Response.Redirect("System_log.aspx");
 
 
         }
 
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton2.Checked = false;
+            //RadioButton2.Checked = false;
         }
 
         protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton1.Checked = false;
+            //RadioButton1.Checked = false;
         }
 
         protected void Button4_Click(object sender, EventArgs e)

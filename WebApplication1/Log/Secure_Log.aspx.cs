@@ -164,7 +164,7 @@ namespace WebApplication1
             }
 
 
-            string SQL2 = "select count(*) as count from " + view_type.Value + " where serverip = '" + serverip.Value + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            string SQL2 = "select count(*) as count from " + view_type.Value + " where serverip like '%" + serverip.Value + "%' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
             //if (DropDownList1.SelectedValue == "1")
             //{
             //    SQL2 = "select count(*) as count from " + view_type.Value + " where serverip = '" + Search.Text + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
@@ -293,7 +293,7 @@ namespace WebApplication1
             //    SQL = "select count(*) as count from " + view_type.Value + " where time between '" + startdate.Text + "' and '" + enddate.Text + "' and serverip like '%" + serverip.Value + "%'";
             //}
 
-            SQL = "select count(*) as count from " + view_type.Value + " where serverip = '" + serverip.Value + "' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
+            SQL = "select count(*) as count from " + view_type.Value + " where serverip like '%" + serverip.Value + "%' and time between '" + startdate.Text + "' and '" + enddate.Text + "'";
 
             MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
             DataSet DBSET = new DataSet();
@@ -459,7 +459,18 @@ namespace WebApplication1
             MySqlCommand comm = new MySqlCommand(SQL2, DB);
             //MySqlCommand comm = new MySqlCommand("SELECT COUNT(*) as count FROM down_log", DB);
 
-            Int64 count = (Int64)comm.ExecuteScalar();
+            object result = comm.ExecuteScalar();
+            int count = 0;
+            if (result != DBNull.Value)  // null 또는 DBNull 체크
+            {
+                count = Convert.ToInt32(result);  // 적절하게 타입 변환
+            }
+            else
+            {
+                // DB에서 반환된 값이 null일 경우의 처리
+                count = 0;  // 예시: null일 경우 0으로 초기화
+            }
+
             int pagenum = Convert.ToInt32(DropDownList2.SelectedValue);
             DB.Close();
 

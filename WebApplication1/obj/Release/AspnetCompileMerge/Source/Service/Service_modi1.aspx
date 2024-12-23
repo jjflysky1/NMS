@@ -20,6 +20,17 @@
             </div>
             <div class="modal-body">
                 <div style="width:500px; margin-left:auto; margin-right:auto; " >
+					    <div class="form-group" >
+							<label for="name" class="cols-sm-2 control-label">밴더 이름 (예:SECUI, CISCO, AXGATE)</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" runat="server" class="form-control" name="name" id="vandor"  placeholder="Enter your Name"/>
+                                    
+								</div>
+							</div>
+						</div>
+
                 <div class="form-group" >
 							<label for="name" class="cols-sm-2 control-label">서비스 이름</label>
 							<div class="cols-sm-10">
@@ -98,6 +109,7 @@
   
 
 <asp:HiddenField ID="HiddenField1" runat="server" />
+		<asp:HiddenField ID="VANDORHF" runat="server" />
         <asp:HiddenField ID="NAMEHF" runat="server" />
         <asp:HiddenField ID="SERVERIPHF" runat="server" />
         <asp:HiddenField ID="SERVERIDHF" runat="server" />

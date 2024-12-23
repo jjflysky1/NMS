@@ -27,7 +27,7 @@
     <script src="Scripts/highcharts-3d.js"></script>
     <script src="Scripts/exporting.js"></script>
     <script src="Scripts/export-data.js"></script>
-    <script src="Scripts/jschart.js"></script>
+    <script src="Scripts/chart.js"></script>
     <link href="Scripts/Allcss.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-3.2.1.min.js"></script>

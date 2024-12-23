@@ -80,7 +80,7 @@
             <section class="content-header">
               <h1>
                 사용자리스트
-                <small>사용자리스트들이 보여집니다</small>
+                <small>사용자리스트 확인페이지</small>
               </h1>
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>

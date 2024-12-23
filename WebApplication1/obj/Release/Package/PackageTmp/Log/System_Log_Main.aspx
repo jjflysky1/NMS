@@ -67,7 +67,7 @@
             <section class="content-header">
               <h1>
                 장비로그
-                <small>장비로그들이 보여집니다</small>
+                <small>장비로그 확인페이지</small>
               </h1>
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -129,14 +129,13 @@
     	  <div class="">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-btn " style="margin-left:10px;margin-right: 10px" >
-                <ui class="nav navbar-nav navbar-left">
-                     
+             <%--   <ui class="nav navbar-nav navbar-left">
                     <li>
                        <Button ID="Button1" runat="server"   OnserverClick="Button6_Click" Class="btn btn-primary btn-sm">
                               <span class="glyphicon glyphicon-save-file" style='color:white;'></span> 엑셀 저장
                         </button>
                     </li>
-                </ui>
+                </ui>--%>
                 <ui class="nav navbar-nav navbar-right">
                    
                     <li style="margin-top:5px; margin-right:10px">

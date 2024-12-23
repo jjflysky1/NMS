@@ -7,11 +7,13 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
-    
-    
-    public partial class App {
-        
+namespace WebApplication1
+{
+
+
+    public partial class App
+    {
+
         /// <summary>
         /// form1 컨트롤입니다.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// uc_menu 컨트롤입니다.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::WebApplication1.Common.WebUserControl1 uc_menu;
-        
+
         /// <summary>
         /// Label4 컨트롤입니다.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-        
+
         /// <summary>
         /// DropDownList1 컨트롤입니다.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
+
         /// <summary>
         /// Label5 컨트롤입니다.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// Search 컨트롤입니다.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Search;
-        
+
         /// <summary>
         /// Button3 컨트롤입니다.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
-        
+
         /// <summary>
         /// Label1 컨트롤입니다.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// TBLLIST 컨트롤입니다.
         /// </summary>
@@ -92,7 +94,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table TBLLIST;
-        
+
         /// <summary>
         /// HiddenField1 컨트롤입니다.
         /// </summary>
@@ -101,7 +103,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
-        
+
         /// <summary>
         /// Button2 컨트롤입니다.
         /// </summary>
@@ -110,7 +112,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
-        
+
         /// <summary>
         /// Label2 컨트롤입니다.
         /// </summary>
@@ -119,7 +121,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// Label3 컨트롤입니다.
         /// </summary>
@@ -128,7 +130,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// TextBox5 컨트롤입니다.
         /// </summary>
@@ -137,7 +139,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField TextBox5;
-        
+
         /// <summary>
         /// uc_menu1 컨트롤입니다.
         /// </summary>
@@ -145,6 +147,6 @@ namespace WebApplication1 {
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        
+        protected global::WebApplication1.Common.WebUserControl2 uc_menu1;
     }
 }

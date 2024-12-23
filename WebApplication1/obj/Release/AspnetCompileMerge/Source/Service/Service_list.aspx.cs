@@ -32,10 +32,10 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            
+
             if (!Page.IsPostBack)
             {
-               
+
                 Search.Text = Request["search"];
                 DropDownList1.SelectedValue = Request["type"];
                 DropDownList1.SelectedValue = Request["dropdownlist2"];
@@ -72,9 +72,9 @@ namespace WebApplication1
 
             drop.Visible = false;
             maclist.Visible = false;
-            snmpadd.Visible = false;
-            snmplist.Visible = false;
-            snmplist2.Visible = false;
+            //snmpadd.Visible = false;
+            //snmplist.Visible = false;
+            //snmplist2.Visible = false;
             portdiv.Visible = false;
             TBLSET2();
             TBLSET();
@@ -82,13 +82,13 @@ namespace WebApplication1
             if (HiddenField3.Value.Contains("네트워크") == true)
             {
                 TBLSET1();
-                TBLSET3();
+                //TBLSET3();
                 drop.Visible = true;
                 history.Visible = true;
                 history2.Visible = true;
-                snmpadd.Visible = true;
-                snmplist.Visible = true;
-                snmplist2.Visible = true;
+                //snmpadd.Visible = true;
+                //snmplist.Visible = true;
+                //snmplist2.Visible = true;
                 history_pageing.Visible = true;
                 portdiv.Visible = true;
                 //maclistpage.Visible = true;
@@ -96,14 +96,14 @@ namespace WebApplication1
             if (HiddenField3.Value.Contains("AP") == true)
             {
                 //TBLSET1();
-                TBLSET3();
+                //TBLSET3();
                 TBLSET6();
                 drop.Visible = true;
                 history.Visible = true;
                 history2.Visible = true;
-                snmpadd.Visible = true;
-                snmplist.Visible = true;
-                snmplist2.Visible = true;
+                //snmpadd.Visible = true;
+                //snmplist.Visible = true;
+                //snmplist2.Visible = true;
                 history_pageing.Visible = true;
                 maclist.Visible = true;
                 //maclistpage.Visible = true;
@@ -111,17 +111,17 @@ namespace WebApplication1
             if (HiddenField3.Value.Contains("서버") == true)
             {
                 //TBLSET1();
-                TBLSET3();
+                //TBLSET3();
                 drop.Visible = true;
                 history.Visible = true;
                 history2.Visible = true;
-                snmpadd.Visible = true;
-                snmplist.Visible = true;
-                snmplist2.Visible = true;
+                //snmpadd.Visible = true;
+                //snmplist.Visible = true;
+                //snmplist2.Visible = true;
                 history_pageing.Visible = true;
             }
             TBLSET4();
-          
+
             //TBLSET5();
             // UISET();
             count();
@@ -136,96 +136,96 @@ namespace WebApplication1
                 Response.Redirect("/Default.aspx");
             }
 
-        
-            Bind_DD();
-  
+
+            //Bind_DD();
+
 
         }
 
 
-        private void Bind_DD()
-        {
-            if (HiddenField5.Value == "")
-            {
-                DataTable dt = new DataTable();
+        //private void Bind_DD()
+        //{
+        //    if (HiddenField5.Value == "")
+        //    {
+        //        DataTable dt = new DataTable();
 
-                using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
-                {
-                    con2.Open();
-                    MySqlCommand cmd1 = new MySqlCommand("SELECT  distinct no, Equipment_name  FROM Equipment_name_list order by no asc", con2);
-                    MySqlDataAdapter sda = new MySqlDataAdapter(cmd1);
-                    sda.Fill(dt);
-                }
+        //        using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
+        //        {
+        //            con2.Open();
+        //            MySqlCommand cmd1 = new MySqlCommand("SELECT  distinct no, Equipment_name  FROM Equipment_name_list order by no asc", con2);
+        //            MySqlDataAdapter sda = new MySqlDataAdapter(cmd1);
+        //            sda.Fill(dt);
+        //        }
 
-                MYDDL.DataSource = dt;
-                MYDDL.DataTextField = "Equipment_name";
-                MYDDL.DataValueField = "Equipment_name";
-                MYDDL.DataBind();
+        //        MYDDL.DataSource = dt;
+        //        MYDDL.DataTextField = "Equipment_name";
+        //        MYDDL.DataValueField = "Equipment_name";
+        //        MYDDL.DataBind();
 
-            }
-            HiddenField5.Value = MYDDL.SelectedValue;
-            //TextBox6.Text = ListBox1.SelectedItem;
+        //    }
+        //    HiddenField5.Value = MYDDL.SelectedValue;
+        //    //TextBox6.Text = ListBox1.SelectedItem;
 
-            HiddenField6.Value = MYDDL2.SelectedValue;
+        //    HiddenField6.Value = MYDDL2.SelectedValue;
 
-            DataTable dt2 = new DataTable();
+        //    DataTable dt2 = new DataTable();
 
-            using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
-            {
-                con2.Open();
-                MySqlCommand cmd1 = new MySqlCommand("select '선택' as model union all SELECT distinct  model  FROM All_oid where model like '%" + MYDDL.SelectedValue + "%'", con2);
-                MySqlDataAdapter sda2 = new MySqlDataAdapter(cmd1);
-                sda2.Fill(dt2);
-            }
+        //    using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
+        //    {
+        //        con2.Open();
+        //        MySqlCommand cmd1 = new MySqlCommand("select '선택' as model union all SELECT distinct  model  FROM All_oid where model like '%" + MYDDL.SelectedValue + "%'", con2);
+        //        MySqlDataAdapter sda2 = new MySqlDataAdapter(cmd1);
+        //        sda2.Fill(dt2);
+        //    }
 
-            MYDDL2.DataSource = dt2;
-            MYDDL2.DataTextField = "model";
-            MYDDL2.DataValueField = "model";
-            MYDDL2.DataBind();
+        //    MYDDL2.DataSource = dt2;
+        //    MYDDL2.DataTextField = "model";
+        //    MYDDL2.DataValueField = "model";
+        //    MYDDL2.DataBind();
 
-            try
-            {
-                if (HiddenField6.Value != "")
-                {
-                    MYDDL2.SelectedValue = HiddenField6.Value;
-                }
-            }
-            catch
-            {
+        //    try
+        //    {
+        //        if (HiddenField6.Value != "")
+        //        {
+        //            MYDDL2.SelectedValue = HiddenField6.Value;
+        //        }
+        //    }
+        //    catch
+        //    {
 
-            }
+        //    }
 
-            if (HiddenField7.Value == "")
-            {
-                DataTable dt3 = new DataTable();
+        //    if (HiddenField7.Value == "")
+        //    {
+        //        DataTable dt3 = new DataTable();
 
-                using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
-                {
-                    con2.Open();
-                    MySqlCommand cmd1 = new MySqlCommand("SELECT distinct  Description  FROM All_oid where model like '%" + HiddenField6.Value + "%'", con2);
-                    MySqlDataAdapter sda3 = new MySqlDataAdapter(cmd1);
-                    sda3.Fill(dt3);
-                }
+        //        using (MySqlConnection con2 = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString))
+        //        {
+        //            con2.Open();
+        //            MySqlCommand cmd1 = new MySqlCommand("SELECT distinct  Description  FROM All_oid where model like '%" + HiddenField6.Value + "%'", con2);
+        //            MySqlDataAdapter sda3 = new MySqlDataAdapter(cmd1);
+        //            sda3.Fill(dt3);
+        //        }
 
-                MYDDL3.DataSource = dt3;
-                MYDDL3.DataTextField = "Description";
-                MYDDL3.DataValueField = "Description";
-                MYDDL3.DataBind();
+        //        MYDDL3.DataSource = dt3;
+        //        MYDDL3.DataTextField = "Description";
+        //        MYDDL3.DataValueField = "Description";
+        //        MYDDL3.DataBind();
 
-            }
+        //    }
 
-            HiddenField7.Value = MYDDL3.SelectedValue;
-        }
+        //    HiddenField7.Value = MYDDL3.SelectedValue;
+        //}
 
 
 
         private void UISET()
         {
             TBLSET();
-            
+
             TBLSET2();
             TBLSET3();
-          
+
         }
         private void TBLSET()
         {
@@ -364,7 +364,7 @@ namespace WebApplication1
             TBLLOAD1();
         }
 
-       
+
 
         private void TBLSET2()
         {
@@ -451,7 +451,7 @@ namespace WebApplication1
             TD.Attributes["style"] = "text-align : center";
             TR.Cells.Add(TD);
 
-            TBLLIST3.Rows.Add(TR);
+            //TBLLIST3.Rows.Add(TR);
 
 
             TBLLOAD3();
@@ -500,7 +500,7 @@ namespace WebApplication1
             TableHeaderCell TD;
 
             TR = new TableHeaderRow();
-            
+
             //TD = new TableHeaderCell();
             //TD.Width = 60;
             //TD.Text = "아이피";
@@ -588,7 +588,7 @@ namespace WebApplication1
             //TBLLOAD5();
         }
 
-       
+
         private void PAGEADD(int pagecount, int nowpage)
         {
             StringBuilder SB = new StringBuilder();
@@ -848,7 +848,7 @@ namespace WebApplication1
             Label17.Text = "Uptime : " + uptime.ToString();
         }
 
-        
+
         public void TBLLOAD1()
         {
             int count = 0;
@@ -874,12 +874,12 @@ namespace WebApplication1
             }
 
 
-            
-            
-          
+
+
+
             int j = 0;
-            
-            
+
+
             List<Tuple<string, string>> live = new List<Tuple<string, string>>();
 
             SQL = "select * from Secure_Port_Traffic where serverip = '" + TextBox5.Value + "' AND portname != 'Null' group by no,serverip,portname,live,traffic";
@@ -890,16 +890,16 @@ namespace WebApplication1
             {
 
                 live.Add(new Tuple<string, string>(row["live"].ToString(), row["portname"].ToString()));
-                
-                
+
+
             }
             int a = 10;
-            a = live.Count() / a  ;
-                
-          
+            a = live.Count() / a;
+
+
             TBLADD11(live);
-           
-            
+
+
 
 
 
@@ -941,7 +941,7 @@ namespace WebApplication1
             ADT.SelectCommand.CommandType = CommandType.StoredProcedure;
             ADT.SelectCommand.Parameters.AddWithValue("@search", "serverip = '" + TextBox5.Value + "'");
             ADT.SelectCommand.Parameters.AddWithValue("@where1", "where tempno >= " + start + " and tempno <= " + end);
-          
+
             DataSet DBSET = new DataSet();
             ADT.Fill(DBSET, "BD");
             foreach (DataRow row in DBSET.Tables["BD"].Rows)
@@ -1011,7 +1011,7 @@ namespace WebApplication1
             foreach (DataRow row in DBSET.Tables["BD"].Rows)
             {
 
-                TBLADD4(row["no"].ToString(),row["tempno"].ToString(), row["serverip"].ToString(), row["time"].ToString(),row["text"].ToString());
+                TBLADD4(row["no"].ToString(), row["tempno"].ToString(), row["serverip"].ToString(), row["time"].ToString(), row["text"].ToString());
             }
 
         }
@@ -1059,10 +1059,10 @@ namespace WebApplication1
             {
                 TBLADD6(row["mac"].ToString());
             }
-            
+
         }
-        
-        private void TBLADD6( string mac)
+
+        private void TBLADD6(string mac)
         {
             TableRow TR;
             TableCell TD;
@@ -1074,12 +1074,12 @@ namespace WebApplication1
             TD.Text = mac.ToString();
             TD.Attributes["style"] = "text-align : center";
             TR.Cells.Add(TD);
-                
+
             Table1.Rows.Add(TR);
-           
-            
+
+
             a++;
-            
+
 
         }
 
@@ -1157,7 +1157,7 @@ namespace WebApplication1
         //    Int32 count = (Int32)comm.ExecuteScalar();
 
         //    DB.Close();
-          
+
 
         //    //SQL = "select * from down_log where no >= "+ start +" and no <= "+ end +" order by no desc ";
         //    //MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
@@ -1257,7 +1257,7 @@ namespace WebApplication1
         //                row["traffic"].ToString(), row["time"].ToString(), row["log_time"].ToString(), row["HD"].ToString());
         //        }
         //    }
-           
+
 
         //}
         private void TBLADD5(string NO, string serverip, string cpu, string memory, string traffic, string time, string log_time, string hd)
@@ -1330,7 +1330,7 @@ namespace WebApplication1
 
             a++;
             //TBLLIST5.Rows.Add(TR);
-           
+
         }
         long a = 1;
 
@@ -1471,9 +1471,9 @@ namespace WebApplication1
 
             if (DropDownList2.Items.Count < Convert.ToInt32(count))
             {
-                if(live == "2" )
+                if (live == "2")
                 {
-                    
+
                     DropDownList2.Items.Add(portname.ToString() + " [Down]");
                     int a = DropDownList2.Items.Count - 1;
                     //DropDownList2.Items[a].Attributes.Add("style", "color:Red");
@@ -1484,13 +1484,13 @@ namespace WebApplication1
                 {
                     //DropDownList2.Attributes.Add("style", "background-color:white");
                     DropDownList2.Items.Add(portname.ToString() + " [Up]");
-                   
+
                 }
-                
+
             }
             DropDownList2.SelectedIndexChanged += work;
 
-   
+
 
             //TD = new TableCell();
             //TD.Width = 60;
@@ -1505,7 +1505,7 @@ namespace WebApplication1
             //TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             //TR.Cells.Add(TD);
 
-        
+
 
             //try
             //{
@@ -1517,14 +1517,14 @@ namespace WebApplication1
             //    {
             //        TD.Text = "<img src='/img/port_notuse.png' width='50px' height='50px' /><br>" + portname;
             //    }
-            
+
             //}
             //catch
             //{
 
             //}
-          
-            
+
+
 
 
 
@@ -1567,21 +1567,21 @@ namespace WebApplication1
             int down = 0;
             foreach (var lives in live)
             {
-               
+
                 TD.Width = new Unit("10%");
                 TD.Attributes["style"] = "display:table-cell; padding-left:20px; vertical-align:baseline; margin-top:10px;  margin-bottom:10px;";
                 if (lives.Item1 == "1")
                 {
-                    TD.Text += "<div style='width:50px; float:left; margin-right:5%;  text-align:center; cursor:pointer;' onclick=port('" + lives.Item2 +"')>";
-                    TD.Text += "<img src='/img/port_use.png' width='50px' height='50px' style='margin-right:10px;  vertical-align:bottom; ' /></a>";
-                    TD.Text += "[UP] " + lives.Item2 + " </div> ";
+                    TD.Text += "<div style='width:110px; height:110px; float:left; margin-right:2%; text-align: center; cursor:pointer; single-line:white-space:nowrap;' onclick=port('" + lives.Item2 + "')>";
+                    TD.Text += "<img src='/img/port_use.png' width='50px' height='50px' style=' vertical-align:bottom; ' />";
+                    TD.Text += "<p>[UP] " + lives.Item2 + " </div> ";
                     up++;
                 }
                 if (lives.Item1 == "2")
                 {
-                    TD.Text += "<div style='width:50px; float:left; margin-right:5%;  text-align:center;cursor:pointer;' onclick=port('" + lives.Item2 + "')>";
-                    TD.Text += "<img src='/img/port_notuse.png' width='50px' height='50px' style='margin-right:10px;  vertical-align:bottom; ' />";
-                    TD.Text += "[DOWN] " + lives.Item2 + " </div> ";
+                    TD.Text += "<div style='width:110px; height:110px; float:left; margin-right:2%; text-align: center; cursor:pointer; single-line:white-space:nowrap;' onclick=port('" + lives.Item2 + "')>";
+                    TD.Text += "<img src='/img/port_notuse.png' width='50px' height='50px' style='  vertical-align:bottom; ' />";
+                    TD.Text += "<p>[DOWN] " + lives.Item2 + " </div> ";
                     down++;
                 }
                 TR.Cells.Add(TD);
@@ -1590,7 +1590,7 @@ namespace WebApplication1
 
             int all = Convert.ToInt32(up) + Convert.ToInt32(down);
             TD.Text += "<br><br><div style='width:100%; float:left;  margin-right:5%; text-align:center;'>";
-            TD.Text += "<b><font size = '4'>ALL : "+ all  + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UP : " + up + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOWN : " + down +"</font></b>";
+            TD.Text += "<b><font size = '4'>ALL : " + all + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UP : " + up + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOWN : " + down + "</font></b>";
             TD.Text += "</div>";
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
@@ -1630,13 +1630,13 @@ namespace WebApplication1
             TD.Width = 60;
             if (body.ToString().Length > 10)
             {
-                TD.Text = "<a href='Service_history.aspx?no=" + no.ToString() + "&serverip=" + serverip.ToString() + "&flag=1' data-toggle='modal' data-target='#myModal' data-backdrop='static' data-keyboard='false'><font color='black'>" + body.Substring(0,10) +  "...</a></font>";
+                TD.Text = "<a href='Service_history.aspx?no=" + no.ToString() + "&serverip=" + serverip.ToString() + "&flag=1' data-toggle='modal' data-target='#myModal' data-backdrop='static' data-keyboard='false'><font color='black'>" + body.Substring(0, 10) + "...</a></font>";
             }
             else
             {
                 TD.Text = "<a href='Service_history.aspx?no=" + no.ToString() + "&serverip=" + serverip.ToString() + "&flag=1' data-toggle='modal' data-target='#myModal' data-backdrop='static' data-keyboard='false'><font color='black'>" + body.ToString() + "</a></font>";
             }
-                
+
             TD.Attributes["style"] = "text-align : center; vertical-align:middle;";
             TR.Cells.Add(TD);
 
@@ -1653,7 +1653,7 @@ namespace WebApplication1
         }
 
         long f = 1;
-        private void TBLADD4(string NO,string tempno, string serverip, string time, string text)
+        private void TBLADD4(string NO, string tempno, string serverip, string time, string text)
         {
             TableRow TR;
             TableCell TD;
@@ -1687,9 +1687,9 @@ namespace WebApplication1
 
             TD = new TableCell();
             TD.Width = 60;
-            if(text.ToString().Length > 10)
+            if (text.ToString().Length > 10)
             {
-                TD.Text = "<a href='Service_Down_History.aspx?no=" + tempno.ToString() + "&serverip=" + serverip.ToString() + "&flag=1' data-toggle='modal' data-target='#myModal3' data-backdrop='static' data-keyboard='false'>" + text.Substring(0,10) +"..." + "</a>";
+                TD.Text = "<a href='Service_Down_History.aspx?no=" + tempno.ToString() + "&serverip=" + serverip.ToString() + "&flag=1' data-toggle='modal' data-target='#myModal3' data-backdrop='static' data-keyboard='false'>" + text.Substring(0, 10) + "..." + "</a>";
             }
             else if (text.ToString().Length == 0)
             {
@@ -1751,7 +1751,7 @@ namespace WebApplication1
             TR.Cells.Add(TD);
 
             d++;
-            TBLLIST3.Rows.Add(TR);
+            //TBLLIST3.Rows.Add(TR);
 
         }
         protected void work(object sender, EventArgs e)
@@ -1794,24 +1794,25 @@ namespace WebApplication1
                     cmd.Connection = DB;
 
                     cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = "insert into Service (name, serverip, serverid, serverpwd,create_date) values(@name,@serverip,@serverid,@serverpwd," +
-                        "(select top 1 create_date from service where serverip = @serverip))";
+                    cmd.CommandText = "insert into Service (name, serverip, serverid, serverpwd,create_date, category) values(@name,@serverip,@serverid,@serverpwd,@create_date,@category)";
                     cmd.Parameters.Add("@name", MySqlDbType.VarChar, 100).Value = TextBox1.Text;
                     cmd.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = TextBox2.Text;
                     cmd.Parameters.Add("@serverid", MySqlDbType.VarChar, 100).Value = TextBox3.Text;
                     cmd.Parameters.Add("@serverpwd", MySqlDbType.VarChar, 100).Value = TextBox4.Text;
+                    cmd.Parameters.Add("@create_date", MySqlDbType.VarChar, 100).Value = DateTime.Now.ToString("yyyy-MM-dd");
+                    cmd.Parameters.Add("@category", MySqlDbType.VarChar, 100).Value = HiddenField3.Value;
                     cmd.ExecuteNonQuery();
                     DB.Close();
                     cmd.Dispose();
                     cmd = null;
 
-                    Response.Redirect("Service_list.aspx?serverip=" + TextBox5.Value);
+                    Response.Redirect("Service_list.aspx?serverip=" + TextBox5.Value + "&category=" + HiddenField3.Value);
                 }
 
             }
             catch
             {
-                ScriptManager.RegisterClientScriptBlock(Page, typeof(Page), "ClientScript", "alert('해당서버와 통신이 되지 않습니다')", true);
+                ScriptManager.RegisterClientScriptBlock(Page, typeof(Page), "ClientScript", "alert('잘못 입력되었습니다.')", true);
             }
 
 
@@ -2193,8 +2194,8 @@ namespace WebApplication1
 
             //Response.Redirect(Request.RawUrl);
         }
-     
-     
+
+
 
         protected void ExportToImage(object sender, EventArgs e)
         {
@@ -2327,62 +2328,50 @@ namespace WebApplication1
 
             return Parts;
 
+
+
         }
 
-        //public static List<Customer> chart1(string serverip, string port)
-        //{
-        //    MySqlConnection DB = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
-        //    List<Customer> Parts = new List<Customer>();
+        [WebMethod]
+        public static List<Customer> chart1_server(string serverip)
+        {
+            MySqlConnection DB = new MySqlConnection(ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString);
+            List<Customer> Parts = new List<Customer>();
+          
+            string count2 = "";
+            string SQL = "select service_list_chart from Log_Time_Config";
+            MySqlDataAdapter ADT1 = new MySqlDataAdapter(SQL, DB);
+            DataSet DBSET1 = new DataSet();
+            ADT1.Fill(DBSET1, "BD4");
+            foreach (DataRow row1 in DBSET1.Tables["BD4"].Rows)
+            {
+                count2 = row1["service_list_chart"].ToString();
+            }
 
-        //    string[] pp = port.Split('[');
-        //    string SQL3 = "select mac from Secure_Port_Traffic where serverip = '" + serverip + "' and portname= '" + pp[0].Trim() + "'";
-        //    MySqlDataAdapter ADT = new MySqlDataAdapter(SQL3, DB);
-        //    DataSet DBSET = new DataSet();
-        //    ADT.Fill(DBSET, "BD");
-        //    string mac = "";
-        //    foreach (DataRow row in DBSET.Tables["BD"].Rows)
-        //    {
-        //        mac = row["mac"].ToString();
-        //    }
+            string SQL2 = "select concat(DATE_FORMAT(time, '%e'), '일',left(DATE_FORMAT(time, '%T'),5)) as temptime, round((traffic / 1024 / 1024),2) as traffic, serverip from system_log_traffic where " +
+              "serverip = '" + serverip + "' and time between DATE_ADD(now(), INTERVAL -" + count2 + " DAY) and DATE_ADD(now(), INTERVAL 1 DAY) order by time desc LIMIT 50";
+            MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL2, DB);
+            DataSet DBSET4 = new DataSet();
+            ADT4.Fill(DBSET4, "BD4");
+            foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
+            {
+                Parts.Add(new Customer
+                {
+                    serverip = row1["serverip"].ToString() ,
+                    traffic = row1["traffic"].ToString(),
+                    time = row1["temptime"].ToString()
+                });
+            }
 
-        //    string count2 = "";
-        //    string SQL = "select service_list_chart from Log_Time_Config";
-        //    MySqlDataAdapter ADT1 = new MySqlDataAdapter(SQL, DB);
-        //    DataSet DBSET1 = new DataSet();
-        //    ADT1.Fill(DBSET1, "BD4");
-        //    foreach (DataRow row1 in DBSET1.Tables["BD4"].Rows)
-        //    {
-        //        count2 = row1["service_list_chart"].ToString();
-        //    }
+            return Parts;
 
-        //    string SQL2 = "select concat(DATE_FORMAT(time, '%e'), '일',left(DATE_FORMAT(time, '%T'),5)) as temptime, round((traffic / 1024 / 1024),2) as traffic, serverip from Secure_Log where " +
-        //      "serverip = '" + serverip + " " + port + "' and time between DATE_ADD(now(), INTERVAL -" + count2 + " DAY) and DATE_ADD(now(), INTERVAL 1 DAY)    order by time desc";
-        //    MySqlDataAdapter ADT4 = new MySqlDataAdapter(SQL2, DB);
-        //    DataSet DBSET4 = new DataSet();
-        //    ADT4.Fill(DBSET4, "BD4");
-        //    foreach (DataRow row1 in DBSET4.Tables["BD4"].Rows)
-        //    {
-        //        Parts.Add(new Customer
-        //        {
-        //            serverip = row1["serverip"].ToString() + " 맥주소 :  " + mac.ToString(),
-        //            traffic = row1["traffic"].ToString(),
-        //            time = row1["temptime"].ToString()
-        //        });
-        //    }
-        //    //string iresurlt = "";
-        //    //iresurlt = JsonConvert.SerializeObject(Parts);
-
-
-
-        //    return Parts;
-
-        //}
+        }
 
         protected void Button6_ServerClick(object sender, EventArgs e)
         {
             SQL = "select * FROM ap_mac where serverip = '" + TextBox5.Value + "' ";
             MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, DB);
-            
+
             System.Web.HttpResponse objResponse = System.Web.HttpContext.Current.Response;
 
             objResponse.ClearContent();
@@ -2428,7 +2417,7 @@ namespace WebApplication1
 
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "delete from ap_mac";
-            
+
 
             cmd.ExecuteNonQuery();
             DB.Close();
@@ -2438,8 +2427,8 @@ namespace WebApplication1
             Response.Redirect("Service_list.aspx?&category=" + Request["category"] + "&search=" + Search.Text + "&type=" + DropDownList1.SelectedValue + "&serverip=" + TextBox5.Value);
         }
 
-      
+
     }
 }
-       
+
 

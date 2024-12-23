@@ -39,13 +39,6 @@ namespace pingtime
                         Console.WriteLine("시간 ================================================================" + row2["time"].ToString());
                         time = row2["time"].ToString();
                     }
-                    if (Convert.ToInt32(time) > Convert.ToInt32(DBCON.date))
-                    {
-                        Process.Start("C:/NMS(maria)/alert.exe");
-                        //break;
-                    }
-
-
 
                     string[] serverip = { };
                     string tempip = "";
@@ -83,20 +76,6 @@ namespace pingtime
                        pingtime(serverip[i]);
 
                    });
-
-
-
-                    //for (int i = 0; i < count; i++)
-                    //{
-
-                    //    thread[i] = new Thread(delegate ()
-                    //    {
-                    //        pingtime(serverip[i]);
-                    //    });
-                    //    thread[i].Start();
-                    //    Thread.Sleep(500);
-
-                    //}
 
                     Thread.Sleep(sleep);
 
@@ -326,10 +305,6 @@ namespace pingtime
             {
                 Console.WriteLine("여기2" + e.Message);
             }
-
-
         }
-
-
     }
 }

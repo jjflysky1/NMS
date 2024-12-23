@@ -34,7 +34,8 @@
     <script src="Scripts/highcharts-3d.js"></script>
     <script src="Scripts/exporting.js"></script>
     <script src="Scripts/export-data.js"></script>--%>
-    <script src="Scripts/jschart.js"></script>
+    <%--<script src="Scripts/jschart.js"></script>--%>
+    <script src="Scripts/chart.js"></script>
     <%--<link href="Scripts/Allcss.css" rel="stylesheet" />--%>
     <script src="Scripts/html2canvas/html2canvas.js"></script>
     <script src="Scripts/html2canvas/html2canvas.min.js"></script>
@@ -143,17 +144,17 @@
                     --%>
                 </section>
 
-                <%--<div style="float: right; margin-top: 0px; margin-right: 15px; margin-bottom: 0px;">
+                <div style="float: right; margin-top: 0px; margin-right: 15px; margin-bottom: 0px;">
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>
                             <asp:Timer ID="Timer1" runat="server" Interval="5700"></asp:Timer>
                             <span style="color: black;" class="glyphicon glyphicon-time" aria-hidden="true"></span><font color="black" size="3">
-                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
                             </font>
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
-                <br />--%>
+                <br />
 
                 <section class="content">
                     <div class="row">
@@ -606,7 +607,9 @@
                                                     borderWidth: 1,
                                                     pointRadius: 1,
                                                     pointHoverRadius: 1,
-                                                    fill: "start"
+                                                    cubicInterpolationMode: 'monotone',
+                                                    tension: 0.4,
+                                                    fill: "start" // 리버스 할경우 지워야함
                                                 }
                                                 //,{
                                                 //  label: serverip2,
@@ -627,84 +630,75 @@
                                             ]
                                         },
                                         options: {
-                                            responsive: true,
-                                            maintainAspectRatio: true,
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(3, 169, 244, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "네트워크/보안 차트1",
-                                                display: false,
-                                                fontColor: "black",
-                                            },
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black"
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
-
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -757,84 +751,75 @@
                                             ]
                                         },
                                         options: {
-                                            responsive: true,
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(255, 152, 0, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "네트워크/보안 차트2",
-                                                display: false,
-                                                fontColor: "black"
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black"
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -882,92 +867,82 @@
                                                     borderWidth: 1,
                                                     pointRadius: 1,
                                                     pointHoverRadius: 1,
-                                                    fill: "start"
+                                                    fill: "start",
+                                                    cubicInterpolationMode: 'monotone',
+                                                    tension: 1
                                                 }
                                             ]
                                         },
                                         options: {
-                                            responsive: true,
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(29, 233, 182, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "네트워크/보안 차트3",
-                                                display: false,
-                                                fontColor: "black"
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            //reverse: true //리버스
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-
-                                                
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -1337,7 +1312,9 @@
                                                     borderColor: ["rgba(3, 169, 244, 1)"],
                                                     borderWidth: 1,
                                                     pointRadius: 1,
-                                                    fill: "start"
+                                                    fill: "start",
+                                                    cubicInterpolationMode: 'monotone',
+                                                    tension: 0.4
                                                 }
                                                 //,{
                                                 //  label: serverip5,
@@ -1358,83 +1335,75 @@
                                             ]
                                         },
                                         options: {
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(3, 169, 244, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "서버 차트1",
-                                                display: false,
-                                                fontColor: "black",
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black"
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -1470,7 +1439,9 @@
                                                     borderColor: ["rgba(255, 152, 0, 1)"],
                                                     borderWidth: 1,
                                                     pointRadius: 1,
-                                                    fill: "start"
+                                                    fill: "start",
+                                                    cubicInterpolationMode: 'monotone',
+                                                    tension: 0.4
                                                 }
                                                 //,{
                                                 //  label: serverip6,
@@ -1483,83 +1454,75 @@
                                             ]
                                         },
                                         options: {
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(255, 152, 0, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps");
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "서버 차트2",
-                                                display: false,
-                                                fontColor: "black",
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black"
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -1601,91 +1564,84 @@
                                                     //backgroundColor: ["rgba(29, 233, 182, 0.4)"],
                                                     backgroundColor: gradientFill,
                                                     borderColor: ["rgba(29, 233, 182, 1)"],
-
                                                     borderWidth: 1,
                                                     pointRadius: 1,
-                                                    fill: "start"
+                                                    fill: "start",
+                                                    cubicInterpolationMode: 'monotone',
+                                                    tension: 0.4
                                                 }
                                             ]
                                         },
                                         options: {
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                backgroundColor: "rgba(29, 233, 182, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "서버 차트3",
-                                                display: false,
-                                                fontColor: "black",
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5,
-                                                            display: true,
-                                                            maxRotation: 0,
-                                                            minRotation: 0
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.dataset.label.split(" ");
+                                                            let label2 = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label[0] + " " + label[1] + " : " + label2 + ' mbps';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black"
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -1916,81 +1872,75 @@
                                             ]
                                         },
                                         options: {
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                //backgroundColor: "rgba(113, 88, 203, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " %    ")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "CPU",
-                                                display: true,
-                                                fontColor: "black",
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    max: 100,
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 5
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label + ' %';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            min: 0, // minimum value
-                                                            max: 100 // maximum value
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 
@@ -2165,82 +2115,75 @@
                                             ]
                                         },
                                         options: {
-                                            animation: {
-                                                duration: 0
-                                            },
-                                            tooltips: {
-                                                intersect: false,
-                                                //backgroundColor: "rgba(113, 88, 203, 1)",
-                                                titleFontSize: 16,
-                                                titleFontStyle: "400",
-                                                titleSpacing: 4,
-                                                titleMarginBottom: 8,
-                                                bodyFontSize: 12,
-                                                bodyFontStyle: '400',
-                                                bodySpacing: 4,
-                                                xPadding: 8,
-                                                yPadding: 8,
-                                                cornerRadius: 4,
-                                                displayColors: false,
-
-                                                callbacks: {
-                                                    title: function (t, d) {
-                                                        const o = d.datasets.map((ds) => ds.data[t[0].index] + " %    ")
-
-                                                        return o.join(', ');
+                                            animation: false,
+                                            scales: {
+                                                x: {
+                                                    ticks: {
+                                                        color: 'black', // X축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
                                                     },
-                                                    label: function (t, d) {
-                                                        return d.labels[t.index];
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Month',
+                                                        color: 'red', // X축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
                                                     }
-                                                }
-                                            },
-                                            title: {
-                                                text: "메모리",
-                                                display: true,
-                                                fontColor: "black",
-                                            },
-                                            maintainAspectRatio: true,
-                                            spanGaps: false,
-                                            elements: {
-                                                line: {
-                                                    tension: 0.3
+                                                },
+                                                y: {
+                                                    max:100,
+                                                    ticks: {
+                                                        color: 'black', // Y축 레이블 색상
+                                                        font: {
+                                                            size: 11
+                                                        }
+                                                    },
+                                                    title: {
+                                                        display: false,
+                                                        text: 'Sales',
+                                                        color: 'purple', // Y축 제목 색상
+                                                        font: {
+                                                            size: 16,
+                                                            weight: 'bold'
+                                                        }
+                                                    }
                                                 }
                                             },
                                             plugins: {
-                                                filler: {
-                                                    propagate: false
-                                                }
-                                            },
-                                            legend: {
-                                                labels: {
-                                                    fontColor: "black",
-                                                    fontSize: 11
-                                                }
-                                            },
-                                            scales: {
-                                                xAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            autoSkip: true,
-                                                            maxTicksLimit: 20
-                                                        },
-                                                        gridLines: {
-                                                            display: true,
-                                                            drawOnChartArea: false,
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function (context) {
+                                                            let label = context.raw;
+                                                            // 원하는 단위를 추가합니다. 예를 들어, " units"를 추가합니다.
+                                                            return label + ' %';
                                                         }
                                                     }
-                                                ],
-                                                yAxes: [
-                                                    {
-                                                        ticks: {
-                                                            fontColor: "black",
-                                                            min: 0, // minimum value
-                                                            max: 100 // maximum value
+                                                },
+                                                legend: {
+                                                    labels: {
+                                                        color: 'black', // 범례 텍스트 색상
+                                                        font: {
+                                                            size: 11
                                                         }
                                                     }
-                                                ]
-                                            }
+                                                },
+                                                title: {
+                                                    display: false,
+                                                    text: 'Monthly Sales Data',
+                                                    color: 'brown', // 차트 제목 색상
+                                                    font: {
+                                                        size: 18,
+                                                        weight: 'bold'
+                                                    }
+                                                }
+                                            },
+                                            interaction: {
+                                                intersect: false,
+                                            },
                                         }
                                     });
 

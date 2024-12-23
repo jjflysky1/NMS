@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iku4Almy/0REmtH5Edbg87yn16u3ZeFaVqiH9S8UCIB/aVSb1O/dqccjP8Y9EsIBCF11N36ffPgzgUpyDfEXRw==",
+  "dgSpecHash": "W4jrrfmOJMY=",
   "success": true,
   "projectFilePath": "D:\\c#\\c# 소스\\source\\repos\\NMS\\VIEW\\VIEW.csproj",
   "expectedPackageFiles": [
@@ -9,5 +9,62 @@
     "C:\\Users\\jun\\.nuget\\packages\\cefsharp.common\\88.2.90\\cefsharp.common.88.2.90.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\cefsharp.winforms\\88.2.90\\cefsharp.winforms.88.2.90.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-4c29-gfrp-g6x9이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 위험 심각도 취약성인 https://github.com/advisories/GHSA-j646-gj5p-p45g이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-vv6j-ww6x-54gx이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.WinForms' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-vv6j-ww6x-54gx이(가) 있습니다.",
+      "libraryId": "CefSharp.WinForms",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    }
+  ]
 }

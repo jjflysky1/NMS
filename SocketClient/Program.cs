@@ -11,7 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 namespace SocketClient
-{
+{ 
     class Program
     {
         static byte[] Buffer { get; set; }
@@ -19,12 +19,28 @@ namespace SocketClient
         [DllImport("kernel32.dll")]
         static extern IntPtr GetConsoleWindow();
 
+        
+        // user32.dll에 선언된 함수들을 가져옵니다.
         [DllImport("user32.dll")]
-        static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+        private static extern bool SetForegroundWindow(IntPtr hWnd);
+
+        [DllImport("user32.dll")]
+        private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        [DllImport("user32.dll")]
+        private static extern uint GetWindowThreadProcessId(IntPtr hWnd, IntPtr processId);
+
+        [DllImport("user32.dll")]
+        private static extern bool AttachThreadInput(uint idAttach, uint idAttachTo, bool fAttach);
+
+        [DllImport("kernel32.dll")]
+        private static extern uint GetCurrentThreadId();
 
         const int SW_HIDE = 0; // 숨기기
-        const int SW_SHOW = 1; // 보이기
+        //const int SW_SHOW = 1; // 보이기
 
+        private const int SW_SHOW = 5;        // 창을 보여줌
+        private const int SW_RESTORE = 9;     // 창을 복원함
 
         static void Main(string[] args)
         {
@@ -79,14 +95,60 @@ namespace SocketClient
                     {
                         Console.WriteLine("NO PC");
                         Process rdcProcess = new Process();
-                        //rdcProcess.StartInfo.FileName = Environment.ExpandEnvironmentVariables(@"%SystemRoot%\system32\mstsc.exe");
-                        //rdcProcess.StartInfo.FileName = "cmd";
-                        rdcProcess.StartInfo.FileName = "C:\\Program Files\\PuTTY\\putty";
+                        rdcProcess.StartInfo.FileName = @"C:\Program Files\PuTTY\putty";
 
-                        //rdcProcess.StartInfo.Arguments = "ssh 192.168.0.170";
+                        // PuTTY 실행
                         rdcProcess.Start();
 
-                        rdcProcess.Dispose();
+                        try
+                        {
+                            // 프로세스가 MainWindowHandle을 가질 때까지 대기
+                            rdcProcess.WaitForInputIdle();
+
+                            IntPtr handle = rdcProcess.MainWindowHandle;
+
+                            // 핸들이 초기화될 때까지 최대 5번 시도
+                            int retries = 5;
+                            while (handle == IntPtr.Zero && retries > 0)
+                            {
+                                Thread.Sleep(500); // 잠시 대기
+                                handle = rdcProcess.MainWindowHandle;
+                                retries--;
+                            }
+
+                            if (handle != IntPtr.Zero)
+                            {
+                                // 현재 쓰레드와 창의 쓰레드를 연결
+                                uint appThread = GetWindowThreadProcessId(handle, IntPtr.Zero);
+                                uint currentThread = GetCurrentThreadId();
+
+                                if (appThread != currentThread)
+                                {
+                                    AttachThreadInput(currentThread, appThread, true);
+                                    SetForegroundWindow(handle);
+                                    AttachThreadInput(currentThread, appThread, false);
+                                }
+                                else
+                                {
+                                    SetForegroundWindow(handle);
+                                }
+
+                                // 창을 복원하고 보여줌
+                                ShowWindow(handle, SW_RESTORE);
+                            }
+                            else
+                            {
+                                Console.WriteLine("프로세스의 메인 창 핸들을 가져오지 못했습니다.");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("오류 발생: " + ex.Message);
+                        }
+                        finally
+                        {
+                            rdcProcess.Dispose();
+                        }
                     }
 
 

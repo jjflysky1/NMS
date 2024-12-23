@@ -83,36 +83,46 @@ namespace SNMPTRAP
                                 {
                                     CON.Open();
                                 }
+                                MySqlCommand cmd1 = new MySqlCommand();
+                                cmd1.Connection = CON;
+                                cmd1.CommandType = System.Data.CommandType.Text;
+                                cmd1.CommandText = "insert into event_log (serverip,event_log,time) values(@serverip,@event_log,now()) ";
+                                cmd1.Parameters.Add("@event_log", MySqlDbType.VarChar, 100).Value = SnmpConstants.GetTypeName(v.Value.Type) + ": " + v.Value.ToString();
+                                cmd1.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = serverip[0].ToString();
+                                cmd1.ExecuteNonQuery();
+                                cmd1.Dispose();
+                                cmd1 = null;
+
                                 SQL = "select * from event_list where flag = '1'";
                                 MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
                                 DataSet DBSET = new DataSet();
                                 ADT.Fill(DBSET, "BD");
                                 foreach (DataRow row in DBSET.Tables["BD"].Rows)
                                 {
-                                    if (v.Value.ToString().Contains(row["name"].ToString()) == true)
-                                    {
+                                    //if (v.Value.ToString().Contains(row["name"].ToString()) == true)
+                                    //{
                                         Console.WriteLine(row["name"].ToString() + " 이벤트 발견");
 
 
-                                        MySqlCommand cmd1 = new MySqlCommand();
-                                        cmd1.Connection = CON;
-                                        cmd1.CommandType = System.Data.CommandType.Text;
-                                        cmd1.CommandText = "insert into event_log (serverip,event_log,time) values(@serverip,@event_log,now()) ";
-                                        cmd1.Parameters.Add("@event_log", MySqlDbType.VarChar, 100).Value = SnmpConstants.GetTypeName(v.Value.Type) + ": " + v.Value.ToString();
-                                        cmd1.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = serverip[0].ToString();
-                                        cmd1.ExecuteNonQuery();
-                                        cmd1.Dispose();
-                                        cmd1 = null;
+                                        //MySqlCommand cmd1 = new MySqlCommand();
+                                        //cmd1.Connection = CON;
+                                        //cmd1.CommandType = System.Data.CommandType.Text;
+                                        //cmd1.CommandText = "insert into event_log (serverip,event_log,time) values(@serverip,@event_log,now()) ";
+                                        //cmd1.Parameters.Add("@event_log", MySqlDbType.VarChar, 100).Value = SnmpConstants.GetTypeName(v.Value.Type) + ": " + v.Value.ToString();
+                                        //cmd1.Parameters.Add("@serverip", MySqlDbType.VarChar, 100).Value = serverip[0].ToString();
+                                        //cmd1.ExecuteNonQuery();
+                                        //cmd1.Dispose();
+                                        //cmd1 = null;
 
 
                                         mail mail = new mail();
                                         Console.WriteLine("진짜 값 : " + v.Value.ToString());
-                                        mail.Event_sendmail(serverip[0].ToString(), v.Value.ToString(), row["name"].ToString());
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("없다");
-                                    }
+                                        //mail.Event_sendmail(serverip[0].ToString(), v.Value.ToString(), row["name"].ToString());
+                                    //}
+                                    //else
+                                    //{
+                                    //    Console.WriteLine("없다");
+                                    //}
                                 }
                                 CON.Close();
 

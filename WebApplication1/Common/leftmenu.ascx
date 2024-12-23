@@ -320,7 +320,7 @@ $('ul.treeview-menu a').filter(function() {
           <ul class="treeview-menu">
             <li><a href="/Setting/Network_Setting.aspx"><i class="fa fa-circle-o"></i><font size="2"> 네트워크 설정</font></a></li>
             <li><a href="/Setting/Mail_Setting.aspx"><i class="fa fa-circle-o"></i><font size="2"> 알림 설정</font></a></li>
-            <li><a href="/Setting/oid_list.aspx"><i class="fa fa-circle-o"></i><font size="2"> OID 등록</font></a></li>
+          <%--  <li><a href="/Setting/oid_list.aspx"><i class="fa fa-circle-o"></i><font size="2"> OID 등록</font></a></li>--%>
             <li><a href="/Event/Event_list.aspx"><i class="fa fa-circle-o"></i><font size="2"> 이벤트 설정</font></a></li>
           </ul>
         </li>

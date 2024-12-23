@@ -63,7 +63,7 @@
             <section class="content-header">
               <h1>
                 이벤트로그
-                <small>이벤트 로그들이 보여집니다</small>
+                <small>이벤트로그 확인페이지</small>
               </h1>
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>

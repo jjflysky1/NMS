@@ -4,6 +4,6 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
     </div>
-    <strong>Copyright &copy; 2022 <a href="https://sungsimit.co.kr">SUNGSIMIT</a>.</strong> All rights
+    <strong>Copyright &copy; 2024 <a href="https://sungsimit.co.kr">SUNGSIMIT</a>.</strong> All rights
     reserved.
   </footer>

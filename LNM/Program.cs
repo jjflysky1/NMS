@@ -37,115 +37,64 @@ namespace LNM
                 //라이센스
                 License.Class1 License = new License.Class1();
                 //00-E0-4C-62-22-EC
-                //if (License.uuid("20244D56-F6BD-E22A-1D52-3669DF035654") == true)
-                //{
+                if (License.uuid("20244D56-F6BD-E22A-1D52-3669DF035654") == true)
+                {
 
 
-                //// LNM_TRA, Client 감시
-                //Thread thread = new Thread(reload.reload);
-                //thread.Start();
+                    //// LNM_TRA, Client 감시
+                    Thread thread = new Thread(reload.reload);
+                    thread.Start();
 
-                //// 자동등록
-                Thread thread3 = new Thread(cls2.autoadd);
-                thread3.Start();
+                    //// 자동등록
+                    Thread thread3 = new Thread(cls2.autoadd);
+                    thread3.Start();
 
-                ///윈도우서비스
-                Thread thread1 = new Thread(cls.service_window_thread);
-                thread1.Start();
+                    ///윈도우서비스
+                    Thread thread1 = new Thread(cls.service_window_thread);
+                    thread1.Start();
 
-                /////핑 확인
-                Thread thread2 = new Thread(cls4.pingthread);
-                thread2.Start();
+                    /////핑 확인
+                    Thread thread2 = new Thread(cls4.pingthread);
+                    thread2.Start();
 
-                ///////리눅스 서비스
-                //Thread thread1_1 = new Thread(cls.service_linux_thread);
-                //thread1_1.Start();
-
-
-
-                ////보안장비
-                //Thread thread11 = new Thread(Sercurity.Securethread);
-                //thread11.Start();
-
-                ///////리눅스
-                //Thread thread12 = new Thread(Sercurity.Linuxthread);
-                //thread12.Start();
-
-                //////AP장비
-                //Thread thread17 = new Thread(APThread.APThread);
-                //thread17.Start();
-
-                /////대시보드보안장비
-                Thread thread13 = new Thread(cls1.secure);
-                thread13.Start();
-
-                /////대시보드서버
-                Thread thread14 = new Thread(cls1.server);
-                thread14.Start();
-
-                /////이벤트(안씀)
-                //Thread thread15 = new Thread(eventread.readtext);
-                //thread15.Start();
-
-                /////SNMPTRAP
-                Thread thread16 = new Thread(SNMPTRAP.snmptrap);
-                thread16.Start();
-                //}
-                //else
-                //{
-                //    Console.WriteLine("라이센스가 맞지 않습니다");
-                //}
+                    ///////리눅스 서비스
+                    //Thread thread1_1 = new Thread(cls.service_linux_thread);
+                    //thread1_1.Start();
 
 
 
+                    ////보안장비
+                    //Thread thread11 = new Thread(Sercurity.Securethread);
+                    //thread11.Start();
 
+                    ///////리눅스
+                    //Thread thread12 = new Thread(Sercurity.Linuxthread);
+                    //thread12.Start();
 
+                    //////AP장비
+                    //Thread thread17 = new Thread(APThread.APThread);
+                    //thread17.Start();
 
+                    /////대시보드보안장비
+                    Thread thread13 = new Thread(cls1.secure);
+                    thread13.Start();
 
-                ////Thread thread4 = new Thread(cls6.systeminfo_thread);
-                ////thread4.Start();
+                    /////대시보드서버
+                    Thread thread14 = new Thread(cls1.server);
+                    thread14.Start();
 
-                ////Thread thread6 = new Thread(cls3.networkinfo_thread);
-                ////thread6.Start();
+                    /////이벤트(안씀)
+                    //Thread thread15 = new Thread(eventread.readtext);
+                    //thread15.Start();
 
-                /////비밀번호 변경
-                //Thread thread7 = new Thread(cls7.changepwd);
-                //thread7.Start();
-
-
-                //test();
-
-
-                // test2();
-                //test3();
-
-
-
-
-
-                //SimpleSnmp snmp = new SimpleSnmp("192.168.0.210", "public");
-                //Pdu pdu = new Pdu();
-
-                ////유선 사용하는 맥주소
-                //Dictionary<Oid, AsnType> result = snmp.Walk(SnmpVersion.Ver2, "1.3.6.1.4.1.11898.2.1.33.1.1.2");
-                //if (result == null)
-                //{
-                //    Console.WriteLine("Request failed.");
-                //}
-                //else
-                //{
-
-
-                //    foreach (KeyValuePair<Oid, AsnType> entry in result)
-                //    {
-                //        //Console.WriteLine( entry.Key.ToString() + " , " + entry.Value.ToString());
-                //        //list.Add(entry.Value.ToString());
-                //        Console.WriteLine(entry.Value.ToString());
-
-
-
-                //    }
-                //}
+                    /////SNMPTRAP
+                    Thread thread16 = new Thread(SNMPTRAP.snmptrap);
+                    thread16.Start();
+                }
+                else
+                 {
+                Console.WriteLine("라이센스가 맞지 않습니다");
+                }
 
 
 
@@ -153,35 +102,86 @@ namespace LNM
 
 
 
+            ////Thread thread4 = new Thread(cls6.systeminfo_thread);
+            ////thread4.Start();
+
+            ////Thread thread6 = new Thread(cls3.networkinfo_thread);
+            ////thread6.Start();
+
+            /////비밀번호 변경
+            //Thread thread7 = new Thread(cls7.changepwd);
+            //thread7.Start();
 
 
-                //    //CON.Close();
-                //    //DBCON.Class1 DBCON = new DBCON.Class1();
-                //    //MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
-                //    //string SQL = "";
-                //    //SQL = "select @ROWNUM := @ROWNUM + 1 as rownum, portname from secure_port_traffic where serverip = '192.168.0.200' ";
-                //    //MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
-                //    //DataSet DBSET = new DataSet();
-                //    //ADT.Fill(DBSET, "BD");
-                //    //foreach (DataRow row in DBSET.Tables["BD"].Rows)
-                //    //{
-                //    //    Console.WriteLine(row["portname"].ToString());
-                //    //}
+            //test();
 
 
-
-                //라이선스 
-                //}
-                //else
-                //{
-                //    Console.WriteLine("라이센스 에러");
-                //}
+            // test2();
+            //test3();
 
 
 
 
 
-            }
+            //SimpleSnmp snmp = new SimpleSnmp("192.168.0.210", "public");
+            //Pdu pdu = new Pdu();
+
+            ////유선 사용하는 맥주소
+            //Dictionary<Oid, AsnType> result = snmp.Walk(SnmpVersion.Ver2, "1.3.6.1.4.1.11898.2.1.33.1.1.2");
+            //if (result == null)
+            //{
+            //    Console.WriteLine("Request failed.");
+            //}
+            //else
+            //{
+
+
+            //    foreach (KeyValuePair<Oid, AsnType> entry in result)
+            //    {
+            //        //Console.WriteLine( entry.Key.ToString() + " , " + entry.Value.ToString());
+            //        //list.Add(entry.Value.ToString());
+            //        Console.WriteLine(entry.Value.ToString());
+
+
+
+            //    }
+            //}
+
+
+
+
+
+
+
+
+
+            //    //CON.Close();
+            //    //DBCON.Class1 DBCON = new DBCON.Class1();
+            //    //MySqlConnection CON = new MySqlConnection(DBCON.DBCON);
+            //    //string SQL = "";
+            //    //SQL = "select @ROWNUM := @ROWNUM + 1 as rownum, portname from secure_port_traffic where serverip = '192.168.0.200' ";
+            //    //MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
+            //    //DataSet DBSET = new DataSet();
+            //    //ADT.Fill(DBSET, "BD");
+            //    //foreach (DataRow row in DBSET.Tables["BD"].Rows)
+            //    //{
+            //    //    Console.WriteLine(row["portname"].ToString());
+            //    //}
+
+
+
+            //라이선스 
+            //}
+            //else
+            //{
+            //    Console.WriteLine("라이센스 에러");
+            //}
+
+
+
+
+
+        }
             catch (Exception e)
             {
                 Console.WriteLine("에러");

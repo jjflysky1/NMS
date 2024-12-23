@@ -166,10 +166,12 @@ namespace Client
                                 Console.WriteLine("Traffic: {0}", queryObj["BytesTotalPersec"]);
                                 Console.WriteLine(soapclient.Traffic(queryObj["BytesTotalPersec"].ToString(), IPAddress));
                                 traffic += Convert.ToInt32(queryObj["BytesTotalPersec"]);
+                                
                             }
-
+                            
                         }
                         Console.WriteLine(traffic);
+                        
                     }
                     catch (ManagementException e)
                     {

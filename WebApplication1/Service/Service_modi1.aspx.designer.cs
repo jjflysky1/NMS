@@ -7,11 +7,13 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
-    
-    
-    public partial class WebForm3 {
-        
+namespace WebApplication1
+{
+
+
+    public partial class WebForm3
+    {
+
         /// <summary>
         /// form1 컨트롤입니다.
         /// </summary>
@@ -20,7 +22,16 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
+        /// <summary>
+        /// vandor 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText vandor;
+
         /// <summary>
         /// name 컨트롤입니다.
         /// </summary>
@@ -29,7 +40,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText name;
-        
+
         /// <summary>
         /// SSHPORT 컨트롤입니다.
         /// </summary>
@@ -38,7 +49,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText SSHPORT;
-        
+
         /// <summary>
         /// Community 컨트롤입니다.
         /// </summary>
@@ -47,7 +58,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Community;
-        
+
         /// <summary>
         /// serverip 컨트롤입니다.
         /// </summary>
@@ -56,7 +67,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText serverip;
-        
+
         /// <summary>
         /// serverid 컨트롤입니다.
         /// </summary>
@@ -65,7 +76,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText serverid;
-        
+
         /// <summary>
         /// serverpwd 컨트롤입니다.
         /// </summary>
@@ -74,7 +85,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText serverpwd;
-        
+
         /// <summary>
         /// Button8 컨트롤입니다.
         /// </summary>
@@ -83,7 +94,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button8;
-        
+
         /// <summary>
         /// HiddenField1 컨트롤입니다.
         /// </summary>
@@ -92,7 +103,16 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
-        
+
+        /// <summary>
+        /// VANDORHF 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField VANDORHF;
+
         /// <summary>
         /// NAMEHF 컨트롤입니다.
         /// </summary>
@@ -101,7 +121,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField NAMEHF;
-        
+
         /// <summary>
         /// SERVERIPHF 컨트롤입니다.
         /// </summary>
@@ -110,7 +130,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField SERVERIPHF;
-        
+
         /// <summary>
         /// SERVERIDHF 컨트롤입니다.
         /// </summary>
@@ -119,7 +139,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField SERVERIDHF;
-        
+
         /// <summary>
         /// SERVERPWDHF 컨트롤입니다.
         /// </summary>
@@ -128,7 +148,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField SERVERPWDHF;
-        
+
         /// <summary>
         /// SSHPORTHF 컨트롤입니다.
         /// </summary>
@@ -137,7 +157,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField SSHPORTHF;
-        
+
         /// <summary>
         /// COMMUNITYHF 컨트롤입니다.
         /// </summary>
@@ -146,7 +166,7 @@ namespace WebApplication1 {
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField COMMUNITYHF;
-        
+
         /// <summary>
         /// Label3 컨트롤입니다.
         /// </summary>

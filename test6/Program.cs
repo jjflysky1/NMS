@@ -94,57 +94,81 @@ namespace test6
 
         static void Main(string[] args)
         {
+            string sample = "테스트";
+            Console.WriteLine("<Unicode -> UTF-8 변환하기>");
+            Console.WriteLine(" - 문자열 : {0}", sample);
 
-            MySqlConnection CON = new MySqlConnection("Server = 192.168.1.174; Database = cs; User id = nms; Password = P@ssw0rd");
-            //MySqlConnection CON = new MySqlConnection("Server = 192.168.0.190; Database = cs; User id = nms; Password = P@ssw0rd");
-            string SQL = "";
-            SQL = "select distinct a.email, a.mailno, c.phone , c.mailip, fORMAT(c.trafficlimit, 0) AS trafficlimit , mail_sender from mail_target a , service b ,  mail_info c where  c.flag=1 and  DATE_ADD(b.trafficmail, INTERVAL 10 MINUTE) < now() and a.serverip = b.ServerIP " +
-                " and b.serverip = '192.168.53.234' limit 1";
-            ///192.168.53.234
-            MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
-            DataSet DBSET = new DataSet();
-            ADT.Fill(DBSET, "BD");
-            foreach (DataRow row in DBSET.Tables["BD"].Rows)
+            //인코딩 방식을 지정
+            System.Text.Encoding utf8 = System.Text.Encoding.UTF8;
+
+            //변환하고자 하는 문자열을 UTF8 방식으로 변환하여 byte 배열로 반환
+            byte[] utf8Bytes = utf8.GetBytes(sample);
+
+            //UTF-8을 string으로 변한
+            string utf8String = "";
+            Console.Write(" - Encode: ");
+            foreach (byte b in utf8Bytes)
             {
-                if (row["email"].ToString() != "")
-                {
-                    try
-                    {
-                        //Response.Write("TEST");
-
-                        MailMessage MAIL = new MailMessage();
-                        SmtpClient SMTPMAIL = new SmtpClient(row["mailip"].ToString());
-                        //MAIL.From = new MailAddress(row["mail_sender"].ToString());
-                        MAIL.From = new MailAddress("noreply@jusung.com");
-                        SMTPMAIL.Port = 25;
-                        //MAIL.To.Add(Recever.Text.ToString());
-                        //MAIL.To.Add(row["email"].ToString());
-                        MAIL.To.Add("it@jusung.com");
-                        //if (CC.Text.ToString() != "")
-                        //{
-                        //    MAIL.CC.Add(CC.Text.ToString());
-                        //}
-
-                        MAIL.Subject = "메일 테스트 입니다";
-                        //MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
-                        MAIL.Body = "메일 테스트 입니다";
-                        MAIL.BodyEncoding = System.Text.Encoding.UTF8;
-                        MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
-
-                        SMTPMAIL.Send(MAIL);
-
-                        Console.WriteLine("메일보냄");
-                        Console.ReadLine();
-
-                    }
-                    catch(Exception e)
-                    {
-                       Console.WriteLine(e.Message);
-                       Console.ReadLine();
-                    }
-                }
-
+                utf8String += "%" + String.Format("{0:X}", b);
             }
+            Console.WriteLine(utf8String);
+
+
+            // 인코된 문자열 디코딩
+            string Unicode = utf8.GetString(utf8Bytes);
+            Console.WriteLine(" - Decode: " + Unicode);
+
+
+            //MySqlConnection CON = new MySqlConnection("Server = 192.168.1.174; Database = cs; User id = nms; Password = P@ssw0rd");
+            ////MySqlConnection CON = new MySqlConnection("Server = 192.168.0.190; Database = cs; User id = nms; Password = P@ssw0rd");
+            //string SQL = "";
+            //SQL = "select distinct a.email, a.mailno, c.phone , c.mailip, fORMAT(c.trafficlimit, 0) AS trafficlimit , mail_sender from mail_target a , service b ,  mail_info c where  c.flag=1 and  DATE_ADD(b.trafficmail, INTERVAL 10 MINUTE) < now() and a.serverip = b.ServerIP " +
+            //    " and b.serverip = '192.168.53.234' limit 1";
+            /////192.168.53.234
+            //MySqlDataAdapter ADT = new MySqlDataAdapter(SQL, CON);
+            //DataSet DBSET = new DataSet();
+            //ADT.Fill(DBSET, "BD");
+            //foreach (DataRow row in DBSET.Tables["BD"].Rows)
+            //{
+            //    if (row["email"].ToString() != "")
+            //    {
+            //        try
+            //        {
+            //            //Response.Write("TEST");
+
+            //            MailMessage MAIL = new MailMessage();
+            //            SmtpClient SMTPMAIL = new SmtpClient(row["mailip"].ToString());
+            //            //MAIL.From = new MailAddress(row["mail_sender"].ToString());
+            //            MAIL.From = new MailAddress("noreply@jusung.com");
+            //            SMTPMAIL.Port = 25;
+            //            //MAIL.To.Add(Recever.Text.ToString());
+            //            //MAIL.To.Add(row["email"].ToString());
+            //            MAIL.To.Add("it@jusung.com");
+            //            //if (CC.Text.ToString() != "")
+            //            //{
+            //            //    MAIL.CC.Add(CC.Text.ToString());
+            //            //}
+
+            //            MAIL.Subject = "메일 테스트 입니다";
+            //            //MAIL.Body = serverip + " 장비 " + portname + " 현재 트래픽 알림 기준치인 " + row["trafficlimit"].ToString() + " 넘어 " + String.Format("{0:n0}", nowtraffic) + " 입니다. ";
+            //            MAIL.Body = "메일 테스트 입니다";
+            //            MAIL.BodyEncoding = System.Text.Encoding.UTF8;
+            //            MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
+
+            //            SMTPMAIL.Send(MAIL);
+
+            //            Console.WriteLine("메일보냄");
+            //            Console.ReadLine();
+
+            //        }
+            //        catch(Exception e)
+            //        {
+            //           Console.WriteLine(e.Message);
+            //           Console.ReadLine();
+            //        }
+            //    }
+
+            //}
 
 
             //while (true)

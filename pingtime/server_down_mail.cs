@@ -35,7 +35,6 @@ namespace pingtime
                         {
                             try
                             {
-
                                 MailMessage MAIL = new MailMessage();
                                 SmtpClient SMTPMAIL = new SmtpClient(row["mailip"].ToString());
                                 MAIL.From = new MailAddress(row["mail_sender"].ToString());
@@ -47,7 +46,7 @@ namespace pingtime
                                 //    MAIL.CC.Add(CC.Text.ToString());
                                 //}
 
-                                MAIL.Subject = "장비 복구 알림";
+                                MAIL.Subject = serverip + " 장비 복구 알림";
                                 MAIL.Body = serverip + " 장비가 복구 되었습니다. " + Environment.NewLine + "시간 : " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                                 MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                                 MAIL.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -128,7 +127,7 @@ namespace pingtime
                                 //    MAIL.CC.Add(CC.Text.ToString());
                                 //}
 
-                                MAIL.Subject = "장비 다운 알림";
+                                MAIL.Subject = serverip + " 장비 다운 알림";
                                 MAIL.Body = serverip + " 장비가 다운 되었습니다." + Environment.NewLine + "시간 : " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                                 MAIL.BodyEncoding = System.Text.Encoding.UTF8;
                                 MAIL.SubjectEncoding = System.Text.Encoding.UTF8;

@@ -115,6 +115,63 @@
         }
       }
     },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "cef.redist.x64/88.2.9": {
+        "type": "package",
+        "build": {
+          "build/cef.redist.x64.props": {}
+        }
+      },
+      "cef.redist.x86/88.2.9": {
+        "type": "package",
+        "build": {
+          "build/cef.redist.x86.props": {}
+        }
+      },
+      "CefSharp.Common/88.2.90": {
+        "type": "package",
+        "dependencies": {
+          "cef.redist.x64": "[88.2.9]",
+          "cef.redist.x86": "[88.2.9]"
+        },
+        "compile": {
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net452/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net452/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/88.2.90": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[88.2.90]"
+        },
+        "compile": {
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net452/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      }
+    },
     ".NETFramework,Version=v4.8/win-x64": {
       "cef.redist.x64/88.2.9": {
         "type": "package",
@@ -987,6 +1044,11 @@
         "net48": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1015,6 +1077,9 @@
       "win": {
         "#import": []
       },
+      "win-arm64": {
+        "#import": []
+      },
       "win-x64": {
         "#import": []
       },
@@ -1022,5 +1087,63 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-4c29-gfrp-g6x9이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 위험 심각도 취약성인 https://github.com/advisories/GHSA-j646-gj5p-p45g이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.Common' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-vv6j-ww6x-54gx이(가) 있습니다.",
+      "libraryId": "CefSharp.Common",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'CefSharp.WinForms' 88.2.90 패키지에 알려진 높은 심각도 취약성인 https://github.com/advisories/GHSA-vv6j-ww6x-54gx이(가) 있습니다.",
+      "libraryId": "CefSharp.WinForms",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win",
+        ".NETFramework,Version=v4.8/win-arm64",
+        ".NETFramework,Version=v4.8/win-x64",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    }
+  ]
 }

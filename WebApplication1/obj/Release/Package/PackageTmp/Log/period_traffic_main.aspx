@@ -69,7 +69,7 @@
             <section class="content-header">
               <h1>
                 기간별트래픽
-                <small>기간별트래픽들이 보여집니다</small>
+                <small>기간별트래픽 확인페이지</small>
               </h1>
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -181,13 +181,13 @@
                     
 
                 </div>
-                <div style=" margin-top:-6px; margin-bottom:10px; margin-right:10px; float:left;">
+                <%--<div style=" margin-top:-6px; margin-bottom:10px; margin-right:10px; float:left;">
                     <asp:RadioButton ID="RadioButton1" GroupName="log"  runat="server" Text=" 30분"  OnCheckedChanged="RadioButton1_CheckedChanged"  />
                     <asp:RadioButton ID="RadioButton2" GroupName="log"  runat="server" Text=" 1시간"  OnCheckedChanged="RadioButton2_CheckedChanged" />
                 </div>
                 <div style=" margin-top:-10px; margin-bottom:10px; float:left;">
                     <asp:Button ID="Button2" runat="server" Text="적용" CssClass="btn btn-primary btn-sm" OnClick="Button2_Click" />
-                </div>
+                </div>--%>
                 <div style=" text-align: right; margin-right: 10px;">
                      <asp:Label ID="Label1" runat="server" Text="Label" ></asp:Label>
                 </div>

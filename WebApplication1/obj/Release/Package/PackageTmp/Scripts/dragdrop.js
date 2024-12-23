@@ -35,7 +35,7 @@
                     stop: function (event, ui) {
                         positions[this.id] = ui.position
                         localStorage.positions = JSON.stringify(positions)
-
+                        
                         //if (arr.length !== 0) {
                         //    window.location.reload();
                         //}
@@ -44,7 +44,7 @@
                         var output1 = JSON.parse(localStorage.getItem('value1') || "{}")
                         var output2 = JSON.parse(localStorage.getItem('port1') || "{}")
                         var output3 = JSON.parse(localStorage.getItem('port2') || "{}")
-
+                        
                         //for (var i = 0; i < localStorage.getItem('value').length; i++) {
                         //    myLine.hide();
                         //}
@@ -439,7 +439,12 @@ setInterval((function () {
 }), 10000);
 
 function RESET() {
-    localStorage.clear();
+    //localStorage.clear();
+    localStorage.removeItem('positions');
+    localStorage.removeItem('value');
+    localStorage.removeItem('value1');
+    localStorage.removeItem('port1');
+    localStorage.removeItem('port2');
     window.location.reload();
 }
 

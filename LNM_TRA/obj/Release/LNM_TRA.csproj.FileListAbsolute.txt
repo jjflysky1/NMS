@@ -87,8 +87,45 @@ D:\c#\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Buffers.xml
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Memory.xml
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.AssemblyReference.cache
-D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.SuggestedBindingRedirects.cache
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.CoreCompileInputs.cache
-D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.CopyComplete
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.exe
 D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\LNM_TRA.exe.config
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\LNM_TRA.exe
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\LNM_TRA.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\AP.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\BouncyCastle.Crypto.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\DBCON.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\Google.Protobuf.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Compression.LZ4.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Compression.LZ4.Streams.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Hash.xxHash.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\License.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\MySql.Data.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\SecurityServer.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Buffers.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Memory.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\Ubiety.Dns.Core.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\ZstdNet.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\SnmpSharpNet.dll
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\AP.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\DBCON.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\Google.Protobuf.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\Google.Protobuf.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Compression.LZ4.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Compression.LZ4.Streams.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\K4os.Hash.xxHash.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\License.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\MySql.Data.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\SecurityServer.pdb
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\SecurityServer.dll.config
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Buffers.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Memory.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.AssemblyReference.cache
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.CoreCompileInputs.cache
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.CopyComplete
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.exe
+\\192.168.0.190\김형준\백업\c# 소스\2024.03.04\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.pdb
+D:\c#\c# 소스\source\repos\NMS\LNM_TRA\obj\Release\LNM_TRA.csproj.Up2Date

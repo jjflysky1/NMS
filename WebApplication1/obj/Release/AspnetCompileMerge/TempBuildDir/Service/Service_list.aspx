@@ -88,8 +88,9 @@
             var port = portnum;
             // alert(serverip + " " + port);
 
-            //alert("test");
+            //alert();
 
+            
             $.ajax({
                 type: "POST",
                 url: "/Service/Service_list.aspx/chart1",
@@ -361,6 +362,234 @@
                               </div>
      
                     <script src='../Scripts/chart.min.js'></script>
+         <script>
+             $(function () {
+                 var serverip = document.getElementById("<%=TextBox5.ClientID %>").value;
+         var port = document.getElementById("<%=HiddenField4.ClientID %>").value.split('[');
+
+         //alert(serverip +" " +port[0]);
+
+         $.ajax({
+             type: "POST",
+             url: "/Service/Service_list.aspx/chart1_server",
+             //url: "/Service/Service_list.aspx/chart1",
+             data: "{'serverip':'" + serverip + "'}",
+             //data: '{}',
+             contentType: "application/json; charset=utf-8",
+             dataType: "json",
+             success: OnSuccess,
+             failure: function (response) {
+                 alert(response.d);
+             },
+             error: function (response) {
+                 //alert(serverip + " " + port[0]);
+                 alert(response.d);
+             }
+         });
+     });
+
+
+
+
+
+             setInterval(function () {
+                 $.ajax({
+                     type: "POST",
+                     url: "/Service/Service_list.aspx/chart1_server",
+                     data: "{'serverip':'" + serverip + "'}",
+                     contentType: "application/json; charset=utf-8",
+                     dataType: "json",
+                     success: OnSuccess,
+
+                     failure: function (response) {
+                         alert(response.d);
+                     },
+                     error: function (response) {
+                         alert(response.d);
+                     }
+                 });
+             }, 1 * 10 * 1000);
+
+
+
+             var temp_traffic3 = "";
+             var serverip3 = "";
+             var temp_time3 = "";
+             var trafficArray3 = "";
+             var timeArray3 = "";
+             let data3 = "";
+             function OnSuccess3(response) {
+                 var customers3 = response.d;
+                 temp_traffic3 = "";
+                 temp_time3 = "";
+                 $(customers3).each(function () {
+                     serverip3 = this.serverip3;
+                     temp_traffic3 += this.traffic3 + ",";
+                     temp_time3 += this.time3 + ",";
+                 });
+
+                 temp_traffic3 = temp_traffic3.slice(0, -1);
+                 temp_time3 = temp_time3.slice(0, -1);
+                 trafficArray3 = temp_traffic3.split(',');
+                 timeArray3 = temp_time3.split(',');
+                 trafficArray3.reverse();
+                 timeArray3.reverse();
+                 data3 = trafficArray3;
+
+             }
+
+
+
+             var temp_traffic2 = "";
+             var serverip2 = "";
+             var temp_time2 = "";
+             var trafficArray2 = "";
+             var timeArray2 = "";
+             let data2 = "";
+             function OnSuccess2(response) {
+                 var customers2 = response.d;
+                 temp_traffic2 = "";
+                 temp_time2 = "";
+                 $(customers2).each(function () {
+                     serverip2 = this.serverip2;
+                     temp_traffic2 += this.traffic2 + ",";
+                     temp_time2 += this.time2 + ",";
+
+                 });
+                 temp_traffic2 = temp_traffic2.slice(0, -1);
+                 temp_time2 = temp_time2.slice(0, -1);
+                 trafficArray2 = temp_traffic2.split(',');
+                 timeArray2 = temp_time2.split(',');
+                 trafficArray2.reverse();
+                 timeArray2.reverse();
+                 data2 = trafficArray2;
+             }
+
+
+             function OnSuccess(response) {
+                 ////alert(String(response.d).length);
+                 //alert(String(timeArray3).length);
+                 //alert(String(temp_time2).length);
+                 //alert(String(temp_traffic2).length);
+                 var customers = response.d;
+                 var temp_traffic = "";
+                 var serverip = "";
+                 var temp_time = "";
+                 $(customers).each(function () {
+                     serverip = this.serverip;
+                     temp_traffic += this.traffic + ",";
+                     temp_time += this.time + ",";
+
+                 });
+                 temp_traffic = temp_traffic.slice(0, -1);
+                 temp_time = temp_time.slice(0, -1);
+                 var trafficArray = temp_traffic.split(',');
+                 var timeArray = temp_time.split(',');
+                 trafficArray.reverse();
+                 timeArray.reverse();
+                 let data = trafficArray;
+                 //alert(data);
+
+
+
+                 //function addData(chart, data) {
+                 //  chart.data.datasets.forEach(dataset => {
+                 //    let data = dataset.data;
+                 //    const first = data.shift();
+                 //    data.push(first);
+                 //    dataset.data = data;
+                 //  });
+                 //    chart.update();
+
+                 //}
+
+                 var ctx = "";
+                 var myChart = "";
+                 $('#div1').html(''); //remove canvas from container
+                 $('#div1').html('<canvas id="myChart" style="z-index:200; position:relative;  width:100%;  height: 100%;  "></canvas>'); //add it back to the container
+                 ctx = document.getElementById("myChart").getContext("2d");
+                 myChart = new Chart(ctx, {
+                     type: "line",
+                     data: {
+                         labels: timeArray,
+                         datasets: [
+                             {
+                                 label: serverip,
+                                 data: trafficArray,
+                                 backgroundColor: ["rgba(113, 88, 203, .15)"],
+                                 borderColor: ["rgba(113, 88, 203, 1)"],
+                                 borderWidth: 1,
+                                 fill: "start"
+                             }
+                         ]
+                     },
+                     options: {
+                         animation: {
+                             duration: 0
+                         },
+                         tooltips: {
+                             intersect: false,
+                             backgroundColor: "rgba(113, 88, 203, 1)",
+                             titleFontSize: 16,
+                             titleFontStyle: "400",
+                             titleSpacing: 4,
+                             titleMarginBottom: 8,
+                             bodyFontSize: 12,
+                             bodyFontStyle: '400',
+                             bodySpacing: 4,
+                             xPadding: 8,
+                             yPadding: 8,
+                             cornerRadius: 4,
+                             displayColors: false,
+
+                             callbacks: {
+                                 title: function (t, d) {
+                                     const o = d.datasets.map((ds) => ds.data[t[0].index] + " Mb/s")
+
+                                     return o.join(', ');
+                                 },
+                                 label: function (t, d) {
+                                     return d.labels[t.index];
+                                 }
+                             }
+                         },
+                         title: {
+                             text: "Public Bandwidth",
+                             display: false
+                         },
+                         maintainAspectRatio: true,
+                         spanGaps: false,
+                         elements: {
+                             line: {
+                                 tension: 0.3
+                             }
+                         },
+                         plugins: {
+                             filler: {
+                                 propagate: false
+                             }
+                         },
+                         scales: {
+                             xAxes: [
+                                 {
+                                     ticks: {
+                                         autoSkip: true,
+                                         maxTicksLimit: 20
+                                     },
+                                     gridLines: {
+                                         display: true,
+                                         drawOnChartArea: false,
+                                     }
+                                 }
+                             ]
+                         }
+                     }
+                 });
+
+
+
+             };
+         </script>
     <script>
         $(function () {
             var serverip = document.getElementById("<%=TextBox5.ClientID %>").value;
@@ -559,7 +788,7 @@
 
                         callbacks: {
                             title: function (t, d) {
-                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " mbps")
+                                const o = d.datasets.map((ds) => ds.data[t[0].index] + " Mb/s")
 
                                 return o.join(', ');
                             },
@@ -631,7 +860,7 @@
                         <font size="5">
                 맥 정보
           </font>
-               <Button ID="Button6" text="엑셀 저장" runat="server"  onserverclick="Button6_ServerClick" class="btn btn-primary btn-sm" style="margin-bottom:5px;">
+               <Button ID="Button6" text="엑셀 저장" runat="server"  onserverclick="Button6_ServerClick" class="btn btn-primary btn-sm" style="margin-bottom:5px; ">
                               <span class="glyphicon glyphicon-save-file" style='color:white;'></span> 엑셀 저장
                         </button>
                <Button ID="Button10" text="엑셀 저장" runat="server"  onserverclick="Button10_ServerClick" class="btn btn-primary btn-sm" style="margin-bottom:5px;">
@@ -647,7 +876,7 @@
                     
                     <br />
                     
-                    <div id="snmpadd" runat="server" style="width:100%; position:relative; margin-left: 10px;">
+              <%--      <div id="snmpadd" runat="server" style="width:100%; position:relative; margin-left: 10px;">
                         <font size="5">
                 Snmp 추가 
                  </font>
@@ -664,7 +893,7 @@
                                     <asp:Label ID="Label16" runat="server" Text="기능 : "></asp:Label>
                                     <asp:DropDownList ID="MYDDL3" AutoPostBack="true" runat="server"></asp:DropDownList>
                                             &nbsp;&nbsp;
-                                <asp:Button ID="Button11" runat="server" Text="Add" Class="btn btn-primary btn-xs" OnClick="Button11_Click" />
+                                <asp:Button ID="Button11" runat="server" Text="Add" Class="btn btn-primary btn-xs" OnClick="Button11_Click" />--%>
                         <style>
                             .spinner {
                                 content: '...loading';
@@ -682,7 +911,7 @@
                         <img src="../Img/Progress_Loading.gif"/ >
                         </div>
                         
-                    </div>
+                <%--    </div>--%>
 
 
 
@@ -692,18 +921,14 @@
                     <asp:HiddenField ID="HiddenField6" runat="server" />
                     
                     <asp:HiddenField ID="HiddenField7" runat="server" />
-                    <div id="snmplist" runat="server" style="margin-left: 10px; margin-bottom: 0px; width: 98%">
+             <%--       <div id="snmplist" runat="server" style="margin-left: 10px; margin-bottom: 0px; width: 98%">
                         <font size="5">
                 Snmp 리스트
                </font>
                     </div >
         <div id="snmplist2" runat="server" class="box box-info" style="width:98%">
             <asp:Table ID="TBLLIST3" runat="server" CssClass="table table-striped custab " Width="100%"></asp:Table>
-        </div>
-                    
-                    <br />
-
-
+        </div>--%>
                     <div style="float: left; width: 48%; margin-right: 20px;">
                         <div id="history" runat="server" style="text-align: right; margin-right: 37px; margin-top: -25px; margin-bottom: -30px;">
                             <a href="Service_History.aspx?no=<%=HiddenField2.Value%>&serverip=<%=TextBox5.Value%>&flag=0" data-toggle="modal" data-target="#myModal2">

@@ -178,7 +178,7 @@
                                     <div style="margin-left: 30px; margin-bottom: 0px; margin-top: 0px; width: 97.5%; height: 200px;">
                                         <div style="margin-left: 1%">
                                             <h4>
-                                                <span style="color: #d4d4d4;" class="glyphicon glyphicon-hdd" aria-hidden="true"></span><<font color="#d4d4d4"> 장비 수량</font>
+                                                <span style="color: #d4d4d4;" class="glyphicon glyphicon-hdd" aria-hidden="true"></span><font color="#d4d4d4"> 장비 수량</font>
                                             </h4>
                                         </div>
                                         <asp:UpdatePanel ID="UpdatePanel5" runat="server" UpdateMode="Always">
@@ -383,7 +383,8 @@
                                         temp_time2 = "";
                                         $(customers2).each(function () {
                                             serverip2 = this.serverip2;
-                                            temp_traffic2 += this.traffic2 + ",";
+                                            temp_traffic2 += (this.traffic2)+ ","; // 보통
+                                            //temp_traffic2 += (this.traffic2) * -1 + ","; // 리버스 할경우
                                             temp_time2 += this.time2 + ",";
 
                                         });
@@ -462,7 +463,7 @@
                                                         borderWidth: 1,
                                                         pointRadius: 1,
                                                         pointHoverRadius: 1,
-                                                        fill: "start"
+                                                        fill: "start" // 리버스 할경우 주석
                                                     }
                                                     , {
                                                         label: serverip3,

@@ -889,13 +889,13 @@ namespace WebApplication1
         protected void Button12_Click(object sender, EventArgs e)
         {
             XDocument doc = new XDocument(
-         new XElement("Root",
-             //new XElement("targetip", "192.168.0.170"),
-             new XElement("localip", "192.168.0.111")
-             //new XElement("category", "네트워크/보안 장비"),
-             //new XElement("os", "")
-         )
-     );
+                 new XElement("Root",
+                     //new XElement("targetip", "192.168.0.170"),
+                     new XElement("localip", "192.168.0.111")
+                     //new XElement("category", "네트워크/보안 장비"),
+                     //new XElement("os", "")
+                 )
+             );
             doc.Save("c:\\SSIM WATCHER\\IP.xml");
 
             Process.Start("c:\\SSIM WATCHER\\SocketServer.exe");

@@ -1,0 +1,7 @@
+D:\c#\c# 소스\source\repos\NMS\test8\bin\Release\test8.exe.config
+D:\c#\c# 소스\source\repos\NMS\test8\bin\Release\test8.exe
+D:\c#\c# 소스\source\repos\NMS\test8\bin\Release\test8.pdb
+D:\c#\c# 소스\source\repos\NMS\test8\obj\Release\test8.csproj.AssemblyReference.cache
+D:\c#\c# 소스\source\repos\NMS\test8\obj\Release\test8.csproj.CoreCompileInputs.cache
+D:\c#\c# 소스\source\repos\NMS\test8\obj\Release\test8.exe
+D:\c#\c# 소스\source\repos\NMS\test8\obj\Release\test8.pdb

@@ -64,7 +64,7 @@
                 <section class="content-header">
                     <h1>서비스로그
                
-                        <small>서비스로그들이 보여집니다</small>
+                        <small>서비스로그 확인페이지</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
